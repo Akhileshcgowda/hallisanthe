@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Halli-Santhe - Browse</title>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&amp;family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#9e4127",
+                        "tertiary-fixed": "#c7ecc7",
+                        "primary-fixed-dim": "#ffb5a1",
+                        "on-tertiary-fixed-variant": "#2f4e33",
+                        "secondary": "#8f4e00",
+                        "tertiary": "#446347",
+                        "on-tertiary-container": "#f7fff3",
+                        "on-primary-fixed-variant": "#7f2a12",
+                        "secondary-container": "#fe9832",
+                        "on-secondary-fixed": "#2e1500",
+                        "on-primary-fixed": "#3b0800",
+                        "inverse-surface": "#392e2b",
+                        "surface-bright": "#fff8f6",
+                        "surface": "#fff8f6",
+                        "surface-container-high": "#f7e4df",
+                        "on-secondary-container": "#683700",
+                        "surface-container-low": "#fff1ed",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#ddc0b9",
+                        "primary": "#9b3f25",
+                        "on-surface-variant": "#56423d",
+                        "surface-dim": "#e9d6d1",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#ffb5a1",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#ffdbd1",
+                        "on-secondary-fixed-variant": "#6d3a00",
+                        "surface-container-highest": "#f2deda",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#231917",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#fffbff",
+                        "outline": "#89726c",
+                        "inverse-on-surface": "#ffede9",
+                        "secondary-fixed-dim": "#ffb77a",
+                        "primary-container": "#bb563b",
+                        "surface-container": "#fdeae5",
+                        "tertiary-container": "#5c7c5e",
+                        "background": "#fff8f6",
+                        "surface-variant": "#f2deda",
+                        "tertiary-fixed-dim": "#acd0ac",
+                        "secondary-fixed": "#ffdcc2",
+                        "on-tertiary-fixed": "#02210a",
+                        "on-background": "#231917"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "xl": "80px",
+                        "xs": "4px",
+                        "md": "24px",
+                        "margin-desktop": "64px",
+                        "lg": "48px",
+                        "sm": "12px",
+                        "margin-mobile": "20px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Epilogue"],
+                        "headline-lg": ["Epilogue"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "display-xl": ["Epilogue"],
+                        "label-md": ["Be Vietnam Pro"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "label-sm": ["Be Vietnam Pro"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md antialiased pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="bg-[#FFFDFB] dark:bg-stone-900 border-b-[1px] border-[#C05A3E]/10 shadow-sm docked full-width top-0 z-40 sticky">
+<div class="flex justify-between items-center w-full px-6 h-16 max-w-7xl mx-auto">
+<button class="hover:bg-[#C05A3E]/5 transition-colors active:scale-95 duration-150 p-2 rounded-full hidden md:flex text-stone-500">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+<div class="flex items-center"><img alt="Halli-Santhe Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uiHzAqeJy7IaEttjT8DD-k5nnt2a-liQk60yXROA1yIPVu0Z-jO-Fy2rrAMwEoZqtjx1af3jAzhl4Gf5zBOyPg9k89F2fyYYVkNO0iGJBC6Oz1KcJDPJBB4mN_CumHsc8dIis7w5e222JwNoEk-uiOgtWokahbvIuU2lzAx_d5w91EIPiZH8OVwDtkagdKjPtdI34iudD7DmGkKDtUJ6EXg3-sG4T1kwxNBBj1AWcGN9vZCuXvxI7ZcoYzMHX4PY75FBhWbvc1tX7A"/></div>
+<!-- Web Nav Cluster -->
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-stone-500 hover:text-[#C05A3E] transition-colors font-['Epilogue'] font-medium text-sm flex items-center gap-2" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">home_app_logo</span>
+                    Home
+                </a>
+<a class="text-[#C05A3E] font-bold font-['Epilogue'] font-medium text-sm flex items-center gap-2" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+                    Browse
+                </a>
+<a class="text-stone-500 hover:text-[#C05A3E] transition-colors font-['Epilogue'] font-medium text-sm flex items-center gap-2" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">add_box</span>
+                    Sell
+                </a>
+<a class="text-stone-500 hover:text-[#C05A3E] transition-colors font-['Epilogue'] font-medium text-sm flex items-center gap-2" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">person</span>
+                    Account
+                </a>
+</nav>
+<button class="hover:bg-[#C05A3E]/5 transition-colors active:scale-95 duration-150 p-2 rounded-full text-stone-500">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shopping_cart</span>
+</button>
+</div>
+</header>
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col gap-8">
+<!-- Banner -->
+<section class="relative w-full rounded-2xl overflow-hidden min-h-[200px] md:min-h-[280px] flex items-center justify-center bg-surface-container-high shadow-sm border border-outline-variant/30">
+<div class="absolute inset-0 w-full h-full">
+<img alt="" class="w-full h-full object-cover opacity-60 mix-blend-multiply" data-alt="vibrant colorful traditional indian fabric textiles hanging in a bustling outdoor market with warm sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATpzSLCRgJOe3Nuzkkaj6W2txVi5dir1XLu1DqVcQWLwOUsvVHK12Et-ji12R31jP5PHv6oT5sIccddrWPwzqUZbhHKi7TzF25Q59dEalhbwuKN4Cj6LiArLStqBx9mfXS7iRh_iA2edUql-wP_277BR-7TeQJBApOhzwb9E7kKsUF_FCHJtvwLmbOgAbS3vde3K1UaA4S87OXiR26uNTRKly2VPVd4uhDHQFtIIauZcHUQV2r7Djff4tW9cBlh6XfOyl6GFHbBbun"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container/90 via-primary-container/70 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full px-6 md:px-12 flex flex-col items-start gap-4 max-w-3xl mr-auto">
+<span class="inline-block px-3 py-1 bg-surface-bright/20 backdrop-blur-md rounded-full text-on-primary-container font-label-sm border border-surface-bright/30">
+                    Support Artisans
+                </span>
+<h1 class="font-headline-lg md:font-display-xl text-on-primary-container">
+                    Vocal for Local
+                </h1>
+<p class="font-body-md md:font-body-lg text-on-primary-container/90 max-w-lg">
+                    Discover authentic handcrafted treasures from the heart of our villages. Every purchase sustains a legacy.
+                </p>
+</div>
+</section>
+<!-- Search & Filter Area -->
+<section class="flex flex-col md:flex-row gap-4 items-center justify-between z-10 sticky top-[72px] bg-background/80 backdrop-blur-lg py-2">
+<div class="relative w-full max-w-2xl">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline" style="font-variation-settings: 'FILL' 0;">search</span>
+<input class="w-full bg-surface-container-lowest border-2 border-outline-variant/50 focus:border-primary-container text-on-surface font-body-md rounded-full py-3 pl-12 pr-4 shadow-sm transition-colors outline-none placeholder:text-outline/70" placeholder="Search for 'Channapatna Toys'..." type="text"/>
+</div>
+<button class="flex items-center gap-2 bg-surface-container py-2 px-4 rounded-full border border-outline-variant hover:bg-surface-variant transition-colors text-on-surface shrink-0 w-full md:w-auto justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">tune</span>
+<span class="font-label-md">Filters</span>
+</button>
+</section>
+<!-- Categories List -->
+<section class="w-full overflow-x-auto hide-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0">
+<div class="flex gap-4 pb-4 min-w-max">
+<button class="flex flex-col items-center gap-2 group">
+<div class="w-16 h-16 rounded-full bg-surface-container-high border-2 border-primary-container flex items-center justify-center shadow-[0_4px_12px_rgba(155,63,37,0.15)] group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">category</span>
+</div>
+<span class="font-label-sm text-primary font-bold">All</span>
+</button>
+<button class="flex flex-col items-center gap-2 group">
+<div class="w-16 h-16 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center group-hover:border-primary-container group-hover:bg-surface-variant transition-all overflow-hidden relative">
+<img alt="" class="w-full h-full object-cover opacity-80" data-alt="close up of handmade terracotta clay pots stacked outdoors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm3hDIKsAg-BHKjR7GYCQqhna3C-VU73CKEpo10GiGMZ5v3iVOCs7K0YAN46iuODDfnQVhSl0pR0G5bTSizt51w9YVKbu4UFlIte8dYsRQHtkvjrPSko4T8dsdiJa2YkPkYNdsCaxxN7-xnBwzHE_PlzoCwBC74NnoMCCIkf3k-lcCeMljzl7R1e8gCBHyBe3WO2fTn8T5PCeRF4BOMaI1u9R9T9nb7Fa2_Rew5zw1C0n3tj2ixuGSsZcadLU8LbnvbhsuMpyMACGA"/>
+<div class="absolute inset-0 bg-secondary-container/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+<span class="font-label-sm text-on-surface-variant">Terracotta</span>
+</button>
+<button class="flex flex-col items-center gap-2 group">
+<div class="w-16 h-16 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center group-hover:border-primary-container group-hover:bg-surface-variant transition-all overflow-hidden relative">
+<img alt="" class="w-full h-full object-cover opacity-80" data-alt="colorful wooden channapatna dolls and toys arranged on a table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr36YRj8c7cE-xSnP_ybg5ffoqHSXnCOryMcNJlPQyfssXRmCOgrmeNgyRZxkEkr7yK9aYHYDUYzq2YRxw8MyGlcio93Fqomiu-A2pjo_CRsf4L3lZJxPm10Et1YVbicUc5tES3bzBSgs4Ml6uXIS9ssuRUkdtVFefTVO8EzJgAdZd0Md5f1-AlkVrMwltNbo8RaBRYSMJlGWYnF_3VGkw921iVl-2opFvHC8OfR9yf_WOAGBgl7VrhRmtaj-ZZZFAcZQhDQMRatam"/>
+<div class="absolute inset-0 bg-secondary-container/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+<span class="font-label-sm text-on-surface-variant">Toys</span>
+</button>
+<button class="flex flex-col items-center gap-2 group">
+<div class="w-16 h-16 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center group-hover:border-primary-container group-hover:bg-surface-variant transition-all overflow-hidden relative">
+<img alt="" class="w-full h-full object-cover opacity-80" data-alt="detailed close up of colorful handwoven textile fabric with intricate patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGDISWtUqKAZHOJYBKQirFmQbXAW-bJq-6D1j6yd8aQ5kN_L8TU2wizUT4OD3q9GXl-sOmDD7d8b-6U6SXSrb8pbXCQgVFrLW2sOijwrzterYYVxytNHtUw0zra6Y8uAA_ZmI4iEOLkCDo8ErhKsBqpanxvMCTP7ZUhPPels4iOGBYepbYpNepx-HrirSEqP7fsXSMwrvI51iZbPzBD6GTTOO9CsBjHS_1raU5gJCe_BR3osfljpz-KrX6827Zj4hVmfvumMXbgbHY"/>
+<div class="absolute inset-0 bg-secondary-container/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+<span class="font-label-sm text-on-surface-variant">Textiles</span>
+</button>
+<button class="flex flex-col items-center gap-2 group">
+<div class="w-16 h-16 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center group-hover:border-primary-container group-hover:bg-surface-variant transition-all overflow-hidden relative">
+<img alt="" class="w-full h-full object-cover opacity-80" data-alt="assortment of vibrant colorful indian spices in small rustic bowls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz2WjvcvvwzkgZJdLE9zRPosyzkssj_x1quEfvQplFbNU3pEZTi2J6NETVXymRcE5YUL82Rc9m_63QRccgv8b5lBtkcJqyDf6Fmoo_jRnYaHjVR0V3jPuQFvwRW8KslHSMTt6FutHuGoSl87I7m9DgkJ1AMpgyGCPyxPa4fad3VqIwyvPIB8ad0WkS8EOyVJdr1niTqPtdNyzPKrKAbwjbmV9BvmvthtdQghbkbrvR8RixgX6P0Qtht_86hQOrqnahb6MKr2Bzhr-R"/>
+<div class="absolute inset-0 bg-secondary-container/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+<span class="font-label-sm text-on-surface-variant">Spices</span>
+</button>
+<button class="flex flex-col items-center gap-2 group">
+<div class="w-16 h-16 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center group-hover:border-primary-container group-hover:bg-surface-variant transition-all overflow-hidden relative">
+<img alt="" class="w-full h-full object-cover opacity-80" data-alt="intricately woven natural cane and bamboo basket texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCal12C6OAo8IvM7LEv5P2lKL-eXpj1IPJOa5b631wSG5a8O5oBTxYAUkJCLu29tXULgJKjftvp4Tz1jRVSrdH3uStU19iG12PKwBUX_7KzxFSdL5D7eIhmE_QQPhC4Hu8iFJEw590AIB_bLoGwVp3NzvaIL5Gu7lQ9xHbJTK23Tn8HKvltglBR6wJ1x3ZIhA6bVKfgKdPaQ-L2gfonFa8MIeU1s8AG5ShV3Yn9ffJeMJTgpZRCQE3KpzNZs0z_6Vum80fxy7GD1itC"/>
+<div class="absolute inset-0 bg-secondary-container/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+<span class="font-label-sm text-on-surface-variant">Basketry</span>
+</button>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+<!-- Product Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(155,63,37,0.08)] transition-all duration-300">
+<div class="relative aspect-square w-full bg-surface-container overflow-hidden">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="colorful wooden channapatna dolls and toys arranged on a table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-wOy7476DgerlknxStWYuXJhw2HMKJkUB6Rd2IgnDk9x-GlWtIu4QkqZO3iIJB0i97OwEiSBQoK6-rPaR_Vo4BjnXYCYDWdu6XyYQ_Ix2-GuwRBGEbFfy30P7YghBkG45cz2dWY0qysON9dtwGpoN9pnYVvI_5UD9z7BOT0Q8fg2GCd7o5uC4dCZXsdxgoxz6z1bqbUvybjmh42pI5yih-5rJv469v4zdIsZgT7FOavul1kLWIh1ENW4z3Kwni2gWqaa4TaDLvIYg"/>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur flex items-center justify-center text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+<div class="absolute bottom-3 left-3 bg-tertiary-container text-on-tertiary font-label-sm px-2 py-1 rounded-md text-[10px] uppercase tracking-wider backdrop-blur flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">verified</span> Handcrafted
+                    </div>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<h3 class="font-headline-md text-on-surface text-[16px] leading-tight mb-1 truncate">Channapatna Wooden Train</h3>
+<p class="font-body-md text-on-surface-variant text-sm mb-3">By Ravi Kumar, Karnataka</p>
+<div class="mt-auto flex items-end justify-between">
+<span class="font-headline-md text-primary-container text-[18px]">₹450</span>
+<button class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 0;">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(155,63,37,0.08)] transition-all duration-300">
+<div class="relative aspect-square w-full bg-surface-container overflow-hidden">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="intricately woven natural cane and bamboo basket texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_UMztJIxGdtmwJM8lD4J-s0qkgTN5ndNYC65krPkO90r1WjcIZztPCHMAwv7fvyge09Dvx5RUWOJIGTD5UqaJXexywCSZO_jLbnXpJwotgate79DoN-5te0FdNaqI3mnAYcpVf-keYuV6UcF1u3Fa5BUKO-06K6Unty6hy61vJHfvTXE-m3a57sZpkUtlT2aEH0Q1whkLOnuSJtNBZKSncHV_b4C_jwEBZLQQFzxFz2MwV8i_jGgrl6wgNaR3J6VGhTrJJ4iYXxqu"/>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur flex items-center justify-center text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<h3 class="font-headline-md text-on-surface text-[16px] leading-tight mb-1 truncate">Cane Storage Basket</h3>
+<p class="font-body-md text-on-surface-variant text-sm mb-3">By Northeast Artisans Co-op</p>
+<div class="mt-auto flex items-end justify-between">
+<span class="font-headline-md text-primary-container text-[18px]">₹850</span>
+<button class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 0;">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(155,63,37,0.08)] transition-all duration-300">
+<div class="relative aspect-square w-full bg-surface-container overflow-hidden">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="close up of handmade terracotta clay pots stacked outdoors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX_Yugp_quNirN6eoKPWbdAW0nOBDvF8EGo-2oFvNwdoRA93I-lYV9fs3E2tEB0QYYOVPVDSCHDDw6Qm05gpq4sCJT1ubU3Ti55QoQT5Vl4bNraaK5OF0jB6jiytcl0eIrhcxpkt3R2-kGlcdw5iH49BtioGC_KTr8uVPRlBnHPIwyhYyPKGLs6_LAPcYVyblBM34AJjdkxVwdpRYs1NadMa3o8rUShvpa7eU8_fufmoghlCW3ah9oJ5PSyXdcHwv2luft_U2mtO4j"/>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur flex items-center justify-center text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<div class="absolute bottom-3 left-3 bg-secondary-container text-on-secondary-container font-label-sm px-2 py-1 rounded-md text-[10px] uppercase tracking-wider backdrop-blur flex items-center gap-1">
+                        Eco-friendly
+                    </div>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<h3 class="font-headline-md text-on-surface text-[16px] leading-tight mb-1 truncate">Traditional Clay Matka</h3>
+<p class="font-body-md text-on-surface-variant text-sm mb-3">By Kumbhar Wada Guild</p>
+<div class="mt-auto flex items-end justify-between">
+<span class="font-headline-md text-primary-container text-[18px]">₹320</span>
+<button class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 0;">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Product Card 4 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(155,63,37,0.08)] transition-all duration-300">
+<div class="relative aspect-square w-full bg-surface-container overflow-hidden">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="detailed close up of colorful handwoven textile fabric with intricate patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhQzH7aPFc-yxlR-KRE7q1FdoMPjRV0Znn_bb8PCshx-UAwqUcVzRuGKIAA5dLs85RsSln-2U5YZZuK5F4XAewDWaBKEmYm2PtopvTS9VWhc2HrKkWLx1qj-uJca7AOG83XEh0i3ujBapxG08zocoCXxjiIufC62f-ePN6WDZ145EoMLwFvYGbUt0M70-A9DQQMUsIwHB_OjGUah1Z7PhR2Jh4x0YjPzYtVXQfIW-8TE4kTV_UhcfJzuwVvwvQMC7vZXfs2M9PiBZG"/>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur flex items-center justify-center text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<h3 class="font-headline-md text-on-surface text-[16px] leading-tight mb-1 truncate">Handloom Cotton Stole</h3>
+<p class="font-body-md text-on-surface-variant text-sm mb-3">By Weaver's Knot</p>
+<div class="mt-auto flex items-end justify-between">
+<span class="font-headline-md text-primary-container text-[18px]">₹1,200</span>
+<button class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 0;">add</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- Empty State (Hidden by default, shown for demonstration) -->
+<section class="hidden w-full flex-col items-center justify-center py-16 text-center bg-surface-container-lowest rounded-2xl border border-outline-variant/30 border-dashed">
+<div class="w-48 h-48 mb-6 rounded-full bg-surface-container flex items-center justify-center relative">
+<span class="material-symbols-outlined text-[80px] text-outline-variant" style="font-variation-settings: 'FILL' 0;">search_off</span>
+<div class="absolute -bottom-2 -right-2 w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">potted_plant</span>
+</div>
+</div>
+<h3 class="font-headline-md text-on-surface mb-2">No items found</h3>
+<p class="font-body-md text-on-surface-variant max-w-md mx-auto mb-6">We couldn't find anything matching your search. The artisans are always making new things, try browsing a different category!</p>
+<button class="bg-primary text-on-primary font-label-md px-6 py-3 rounded-full hover:bg-primary-container transition-colors shadow-sm">
+                 Clear Search
+             </button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 w-full rounded-t-xl border-t border-[#E5D5C5] dark:border-stone-800 border-t-[0.5px] border-[#C05A3E]/20 shadow-[0_-4px_12px_rgba(192,90,62,0.08)] bg-[#FFFDFB] dark:bg-stone-950 z-50 flex justify-around items-center h-20 pb-safe px-4">
+<a class="flex flex-col items-center justify-center text-stone-400 hover:text-[#C05A3E] active:scale-90 transition-transform w-16" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">home_app_logo</span>
+<span class="font-['Epilogue'] font-medium text-[11px]">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#C05A3E] bg-[#C05A3E]/10 rounded-xl px-3 py-1 active:scale-90 transition-transform w-16" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-['Epilogue'] font-medium text-[11px] font-bold">Browse</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 hover:text-[#C05A3E] active:scale-90 transition-transform w-16" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">add_box</span>
+<span class="font-['Epilogue'] font-medium text-[11px]">Sell</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 hover:text-[#C05A3E] active:scale-90 transition-transform w-16" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">person</span>
+<span class="font-['Epilogue'] font-medium text-[11px]">Account</span>
+</a>
+</nav>
+</body></html>

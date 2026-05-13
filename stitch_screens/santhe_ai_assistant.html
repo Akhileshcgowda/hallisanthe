@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Santhe AI Assistant</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#186a22",
+                    "secondary": "#835400",
+                    "on-surface-variant": "#594137",
+                    "error-container": "#ffdad6",
+                    "primary-container": "#c74e00",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#88d982",
+                    "inverse-primary": "#ffb595",
+                    "surface-bright": "#fff8f6",
+                    "primary-fixed-dim": "#ffb595",
+                    "on-secondary-fixed-variant": "#643f00",
+                    "on-secondary-fixed": "#2a1800",
+                    "surface-container-highest": "#f7ddd3",
+                    "secondary-container": "#fcab28",
+                    "secondary-fixed-dim": "#ffb957",
+                    "on-tertiary-fixed-variant": "#005312",
+                    "on-tertiary-fixed": "#002204",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed-variant": "#7c2e00",
+                    "inverse-on-surface": "#ffede7",
+                    "surface-container": "#ffe9e1",
+                    "on-tertiary-container": "#f7fff1",
+                    "background": "#fff8f6",
+                    "surface": "#fff8f6",
+                    "on-secondary-container": "#694300",
+                    "on-primary-fixed": "#360f00",
+                    "tertiary-fixed": "#a3f69c",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#f7ddd3",
+                    "surface-dim": "#eed5cb",
+                    "primary": "#9e3d00",
+                    "inverse-surface": "#3c2d26",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-tint": "#a23f00",
+                    "outline-variant": "#e1bfb2",
+                    "on-primary-container": "#fffbff",
+                    "surface-container-high": "#fde3d9",
+                    "primary-fixed": "#ffdbcd",
+                    "on-surface": "#261813",
+                    "secondary-fixed": "#ffddb5",
+                    "on-background": "#261813",
+                    "tertiary-container": "#358438",
+                    "on-error": "#ffffff",
+                    "outline": "#8d7165",
+                    "surface-container-low": "#fff1ec"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "32px",
+                    "gutter": "12px",
+                    "container-margin": "16px",
+                    "sm": "8px",
+                    "md": "16px",
+                    "xs": "4px",
+                    "lg": "24px",
+                    "base": "4px"
+            },
+            "fontFamily": {
+                    "headline-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "title-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-sm": [
+                            "Plus Jakarta Sans"
+                    ]
+            },
+            "fontSize": {
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.5px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-lg": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-lg": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "title-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-sm": [
+                            "20px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+        },
+        },
+      }
+    </script>
+<style>
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .kolam-divider {
+            background-image: radial-gradient(circle, #D9D4CD 2px, transparent 2px);
+            background-size: 16px 16px;
+            background-position: center;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background h-screen flex flex-col antialiased">
+<header class="bg-[#FFF8F0] dark:bg-gray-900 docked full-width top-0 border-b-0 border-b border-[#D9D4CD] dark:border-gray-800 shadow-[0px_4px_12px_rgba(230,92,0,0.08)] flex justify-between items-center w-full px-4 h-16 shrink-0 z-50">
+<div class="flex items-center gap-sm">
+<button class="text-[#E65C00] dark:text-orange-500 hover:bg-orange-50 dark:hover:bg-gray-800 transition-colors w-10 h-10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<img alt="Santhe AI Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uj2tApFsGwmoD2la--e_6330RszmD_tUE1ECd6_Sy1EzcjX3MImZbpbSDXZpIBNdLpFukX5hVck0mIKeuVmJSGRZ-93Wbdq9QughKDhZC4fTkz9I1qQ8ojhnbEGWskwVSFFG8fHjP_70ClNz776y6VKggRPFm5cqlVwYPwIq9QttKkHoCtQ4aIHhBkxBeCP1rm_IZC3O-AbwpJRp7vkylqTMdnHoU7fnzoBdNR1zRYZZ5TX9yodGW8M34C87foWnTJZOZkeL6Z5Cg"/>
+</div>
+<img alt="User Profile" class="w-8 h-8 rounded-full border border-outline-variant object-cover shadow-sm" data-alt="A close up studio portrait of a young Indian woman with warm, natural lighting, representing a typical marketplace user profile picture. She has a subtle smile and is lit by soft, bright light mode illumination against a clean background, fitting a high-end UI aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfPsGnFiZajxA-8vj-335nkyhIDLg5ItV6wLfFjDtSsClpzS_oURs3JD-2VVCoe0GLCi9MsdM-7Vv8mxzu8obMOQPUoZ1qvsSyVsPu5JiBdocX-OgaD5T8bksSqncR5I1c7pRyJO2vtbqOTFAOWeXKH-Wvhn2-wnd6F-YO86-dBwyFPyFBxrSbo-jWoz_GCJ-NPxPQQZbgFS8IxKAAElttkPauN49ozZ3fv0dRHAre8me0gOSRcGA-wG3lx9GP5oc7Jc58XHglKjY"/>
+</header>
+<main class="flex-1 overflow-y-auto px-container-margin py-lg flex flex-col gap-lg relative">
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none kolam-divider z-0"></div>
+<div class="flex justify-center z-10">
+<span class="font-label-lg text-label-lg text-on-surface-variant bg-surface-container-low px-4 py-1 rounded-full border border-outline-variant shadow-sm">Today</span>
+</div>
+<div class="flex gap-sm z-10 w-full max-w-3xl mx-auto">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0 shadow-sm border border-secondary-fixed-dim"><img alt="AI Avatar" class="w-full h-full rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uj2tApFsGwmoD2la--e_6330RszmD_tUE1ECd6_Sy1EzcjX3MImZbpbSDXZpIBNdLpFukX5hVck0mIKeuVmJSGRZ-93Wbdq9QughKDhZC4fTkz9I1qQ8ojhnbEGWskwVSFFG8fHjP_70ClNz776y6VKggRPFm5cqlVwYPwIq9QttKkHoCtQ4aIHhBkxBeCP1rm_IZC3O-AbwpJRp7vkylqTMdnHoU7fnzoBdNR1zRYZZ5TX9yodGW8M34C87foWnTJZOZkeL6Z5Cg"/></div>
+<div class="flex flex-col gap-xs max-w-[85%] md:max-w-[70%]">
+<span class="font-label-lg text-label-lg text-on-surface-variant ml-1">Santhe AI</span>
+<div class="bg-surface text-on-surface font-body-lg text-body-lg p-md rounded-xl rounded-tl-none shadow-[0px_4px_12px_rgba(230,92,0,0.08)] border border-outline-variant">
+                    Namaskara! I am Santhe AI. I can help you with finding products, contacting sellers, uploading your products, and navigating the marketplace.
+                </div>
+</div>
+</div>
+<div class="flex gap-sm z-10 w-full max-w-3xl mx-auto">
+<div class="w-10 shrink-0"></div>
+<div class="bg-surface-container-low p-md rounded-xl border border-outline-variant shadow-[0px_4px_12px_rgba(230,92,0,0.08)] flex items-start gap-md max-w-[85%] md:max-w-[70%]">
+<div class="bg-primary-container text-on-primary-container rounded-full p-2 shrink-0">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg text-on-surface">Need Human Assistance?</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 mb-3">Our Sanchari support team is available from 9 AM to 6 PM to help you directly.</p>
+<button class="bg-primary text-on-primary font-label-lg text-label-lg px-4 py-2 rounded-full flex items-center gap-2 w-max hover:bg-surface-tint transition-colors shadow-md">
+<span class="material-symbols-outlined text-[18px]">call</span>
+                        Call 1800-SANTHE
+                    </button>
+</div>
+</div>
+</div>
+<div class="flex gap-sm overflow-x-auto pb-sm pl-[56px] hide-scrollbar z-10 w-full max-w-3xl mx-auto">
+<button class="border border-primary-fixed-dim bg-surface text-secondary font-label-lg text-label-lg px-4 py-2 rounded-full whitespace-nowrap shadow-sm hover:bg-surface-container transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">search</span>
+                Find Silk Sarees
+            </button>
+<button class="border border-primary-fixed-dim bg-surface text-secondary font-label-lg text-label-lg px-4 py-2 rounded-full whitespace-nowrap shadow-sm hover:bg-surface-container transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">storefront</span>
+                Contact Seller
+            </button>
+<button class="border border-primary bg-primary text-on-primary font-label-lg text-label-lg px-4 py-2 rounded-full whitespace-nowrap shadow-md flex items-center gap-2">
+                How do I upload my product?
+            </button>
+</div>
+<div class="flex gap-sm justify-end z-10 w-full max-w-3xl mx-auto mt-md">
+<div class="flex flex-col gap-xs items-end max-w-[85%] md:max-w-[70%]">
+<span class="font-label-lg text-label-lg text-on-surface-variant mr-1">You</span>
+<div class="bg-primary text-on-primary font-body-lg text-body-lg p-md rounded-xl rounded-tr-none shadow-[0px_4px_16px_rgba(230,92,0,0.12)]">
+                    How do I upload my product?
+                </div>
+</div>
+</div>
+<div class="flex gap-sm z-10 w-full max-w-3xl mx-auto mt-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0 shadow-sm border border-secondary-fixed-dim"><img alt="AI Avatar" class="w-full h-full rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uj2tApFsGwmoD2la--e_6330RszmD_tUE1ECd6_Sy1EzcjX3MImZbpbSDXZpIBNdLpFukX5hVck0mIKeuVmJSGRZ-93Wbdq9QughKDhZC4fTkz9I1qQ8ojhnbEGWskwVSFFG8fHjP_70ClNz776y6VKggRPFm5cqlVwYPwIq9QttKkHoCtQ4aIHhBkxBeCP1rm_IZC3O-AbwpJRp7vkylqTMdnHoU7fnzoBdNR1zRYZZ5TX9yodGW8M34C87foWnTJZOZkeL6Z5Cg"/></div>
+<div class="bg-surface text-on-surface p-md rounded-xl rounded-tl-none shadow-[0px_4px_12px_rgba(230,92,0,0.08)] border border-outline-variant flex items-center gap-1 w-20 h-12">
+<div class="w-2 h-2 bg-primary rounded-full animate-bounce" style="animation-delay: 0ms;"></div>
+<div class="w-2 h-2 bg-primary rounded-full animate-bounce" style="animation-delay: 150ms;"></div>
+<div class="w-2 h-2 bg-primary rounded-full animate-bounce" style="animation-delay: 300ms;"></div>
+</div>
+</div>
+<div class="h-4"></div>
+</main>
+<div class="bg-surface p-container-margin border-t border-outline-variant shadow-[0px_-4px_16px_rgba(230,92,0,0.05)] z-50 shrink-0">
+<div class="max-w-3xl mx-auto flex items-end gap-sm">
+<div class="flex-1 bg-surface-container-low border border-outline-variant focus-within:border-primary focus-within:ring-1 focus-within:ring-primary rounded-2xl p-1 pl-4 flex items-center min-h-[56px] transition-all shadow-sm">
+<textarea class="flex-1 bg-transparent border-none focus:ring-0 font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant resize-none h-[24px] max-h-[120px] overflow-y-auto py-0" placeholder="Ask Santhe AI anything..." rows="1"></textarea>
+<button class="text-on-surface-variant hover:text-primary p-2 rounded-full transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined">mic</span>
+</button>
+</div>
+<button class="bg-primary text-on-primary w-[56px] h-[56px] rounded-2xl flex items-center justify-center shrink-0 shadow-md hover:bg-surface-tint transition-colors">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">send</span>
+</button>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout | Halli Santhe</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800;900&amp;family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#ffb77a",
+                        "on-tertiary-fixed": "#02210a",
+                        "on-secondary-fixed-variant": "#6d3a00",
+                        "on-primary-container": "#fffbff",
+                        "surface-container-low": "#fff1ed",
+                        "outline": "#89726c",
+                        "on-surface": "#231917",
+                        "outline-variant": "#ddc0b9",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#acd0ac",
+                        "on-surface-variant": "#56423d",
+                        "surface-container": "#fdeae5",
+                        "surface": "#fff8f6",
+                        "tertiary": "#446347",
+                        "surface-container-highest": "#f2deda",
+                        "inverse-primary": "#ffb5a1",
+                        "secondary": "#8f4e00",
+                        "on-background": "#231917",
+                        "primary": "#9b3f25",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#ffdcc2",
+                        "tertiary-container": "#5c7c5e",
+                        "surface-tint": "#9e4127",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#ffb5a1",
+                        "inverse-surface": "#392e2b",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#2e1500",
+                        "on-primary-fixed": "#3b0800",
+                        "primary-container": "#bb563b",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#683700",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#ffdbd1",
+                        "inverse-on-surface": "#ffede9",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#2f4e33",
+                        "on-primary-fixed-variant": "#7f2a12",
+                        "surface-bright": "#fff8f6",
+                        "surface-variant": "#f2deda",
+                        "surface-dim": "#e9d6d1",
+                        "surface-container-high": "#f7e4df",
+                        "secondary-container": "#fe9832",
+                        "on-tertiary-container": "#f7fff3",
+                        "background": "#fff8f6",
+                        "tertiary-fixed": "#c7ecc7"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Be Vietnam Pro"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "label-sm": ["Be Vietnam Pro"],
+                        "headline-md": ["Epilogue"],
+                        "headline-lg": ["Epilogue"],
+                        "display-xl": ["Epilogue"],
+                        "body-md": ["Be Vietnam Pro"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "display-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .paper-shadow {
+            box-shadow: 0 4px 0 0 rgba(155, 63, 37, 0.05);
+        }
+        input:focus {
+            outline: none !important;
+            box-shadow: none !important;
+            border-bottom-color: #2F4E33 !important;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #D9C5B2;
+            border-radius: 10px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen selection:bg-primary/20">
+<!-- TopAppBar -->
+<header class="bg-[#FFFBF5] dark:bg-stone-950 docked full-width top-0 z-40 border-b-2 border-[#D9C5B2] dark:border-stone-800 shadow-sm sticky">
+<div class="flex justify-between items-center w-full px-6 h-16">
+<div class="flex items-center gap-4">
+<button class="text-[#C05A3E] dark:text-[#E28A6E] hover:bg-orange-50 dark:hover:bg-stone-900 transition-colors p-2 rounded-full active:opacity-80 active:scale-95">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<img alt="Halli Santhe Logo" class="w-auto object-contain h-12" src="https://lh3.googleusercontent.com/aida/ADBb0uiHzAqeJy7IaEttjT8DD-k5nnt2a-liQk60yXROA1yIPVu0Z-jO-Fy2rrAMwEoZqtjx1af3jAzhl4Gf5zBOyPg9k89F2fyYYVkNO0iGJBC6Oz1KcJDPJBB4mN_CumHsc8dIis7w5e222JwNoEk-uiOgtWokahbvIuU2lzAx_d5w91EIPiZH8OVwDtkagdKjPtdI34iudD7DmGkKDtUJ6EXg3-sG4T1kwxNBBj1AWcGN9vZCuXvxI7ZcoYzMHX4PY75FBhWbvc1tX7A"/>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-[#C05A3E] dark:text-[#E28A6E] hover:bg-orange-50 dark:hover:bg-stone-900 transition-colors p-2 rounded-full active:opacity-80 active:scale-95">
+<span class="material-symbols-outlined" data-icon="shopping_basket">shopping_basket</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-12">
+<!-- Progress Stepper -->
+<div class="mb-12 flex justify-center">
+<div class="flex items-center w-full max-w-2xl">
+<div class="flex flex-col items-center flex-1 relative">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold z-10">1</div>
+<span class="mt-2 font-label-sm text-primary">Shipping</span>
+<div class="absolute top-5 left-1/2 w-full h-0.5 bg-primary-fixed"></div>
+</div>
+<div class="flex flex-col items-center flex-1 relative">
+<div class="w-10 h-10 rounded-full bg-surface-container border-2 border-primary-fixed text-primary flex items-center justify-center font-bold z-10">2</div>
+<span class="mt-2 font-label-sm text-on-surface-variant">Payment</span>
+<div class="absolute top-5 left-1/2 w-full h-0.5 bg-surface-container-highest"></div>
+</div>
+<div class="flex flex-col items-center flex-1">
+<div class="w-10 h-10 rounded-full bg-surface-container border-2 border-primary-fixed text-primary flex items-center justify-center font-bold z-10">3</div>
+<span class="mt-2 font-label-sm text-on-surface-variant">Review</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Forms -->
+<div class="lg:col-span-7 space-y-12">
+<!-- Shipping Address Section -->
+<section>
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-primary" data-icon="local_shipping">local_shipping</span>
+<h2 class="font-headline-md text-on-surface">Shipping Address</h2>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-on-surface-variant">First Name</label>
+<input class="bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant py-2 focus:border-primary transition-colors font-body-md" placeholder="e.g. Ramesh" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-on-surface-variant">Last Name</label>
+<input class="bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant py-2 focus:border-primary transition-colors font-body-md" placeholder="e.g. Gowda" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-on-surface-variant">Street Address</label>
+<input class="bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant py-2 focus:border-primary transition-colors font-body-md" placeholder="Apartment, suite, house number, street name" type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-on-surface-variant">City</label>
+<input class="bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant py-2 focus:border-primary transition-colors font-body-md" placeholder="Bangalore" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-on-surface-variant">State</label>
+<select class="bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant py-2 focus:border-primary transition-colors font-body-md appearance-none">
+<option>Karnataka</option>
+<option>Tamil Nadu</option>
+<option>Kerala</option>
+<option>Maharashtra</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-on-surface-variant">Pincode</label>
+<input class="bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant py-2 focus:border-primary transition-colors font-body-md" placeholder="560001" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-on-surface-variant">Phone Number</label>
+<div class="flex items-center border-b-2 border-outline-variant focus-within:border-primary transition-colors">
+<span class="pr-2 font-body-md text-on-surface-variant">+91</span>
+<input class="w-full bg-transparent border-none py-2 focus:ring-0 font-body-md" placeholder="9876543210" type="tel"/>
+</div>
+</div>
+</form>
+</section>
+<!-- Payment Method Section -->
+<section>
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-primary" data-icon="payments">payments</span>
+<h2 class="font-headline-md text-on-surface">Payment Method</h2>
+</div>
+<div class="space-y-4">
+<!-- UPI -->
+<label class="flex items-center p-5 rounded-xl border-2 border-outline-variant bg-surface-container-lowest hover:border-primary cursor-pointer transition-all group has-[:checked]:border-primary has-[:checked]:bg-surface-container-low">
+<input checked="" class="w-5 h-5 text-primary border-outline focus:ring-primary" name="payment" type="radio"/>
+<div class="ml-4 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-body-lg font-semibold text-on-surface">UPI (PhonePe, GPay, Paytm)</span>
+<span class="material-symbols-outlined text-primary opacity-0 group-has-[:checked]:opacity-100" data-icon="check_circle">check_circle</span>
+</div>
+<p class="text-on-surface-variant text-label-md">Pay using any UPI app securely</p>
+</div>
+</label>
+<!-- Card -->
+<label class="flex items-center p-5 rounded-xl border-2 border-outline-variant bg-surface-container-lowest hover:border-primary cursor-pointer transition-all group has-[:checked]:border-primary has-[:checked]:bg-surface-container-low">
+<input class="w-5 h-5 text-primary border-outline focus:ring-primary" name="payment" type="radio"/>
+<div class="ml-4 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-body-lg font-semibold text-on-surface">Credit / Debit Card</span>
+<span class="material-symbols-outlined text-primary opacity-0 group-has-[:checked]:opacity-100" data-icon="check_circle">check_circle</span>
+</div>
+<p class="text-on-surface-variant text-label-md">Visa, Mastercard, RuPay, and Maestro</p>
+</div>
+</label>
+<!-- Cash on Delivery -->
+<label class="flex items-center p-5 rounded-xl border-2 border-outline-variant bg-surface-container-lowest hover:border-primary cursor-pointer transition-all group has-[:checked]:border-primary has-[:checked]:bg-surface-container-low">
+<input class="w-5 h-5 text-primary border-outline focus:ring-primary" name="payment" type="radio"/>
+<div class="ml-4 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-body-lg font-semibold text-on-surface">Cash on Delivery</span>
+<span class="material-symbols-outlined text-primary opacity-0 group-has-[:checked]:opacity-100" data-icon="check_circle">check_circle</span>
+</div>
+<p class="text-on-surface-variant text-label-md">Pay when your items arrive</p>
+</div>
+</label>
+</div>
+</section>
+</div>
+<!-- Right Column: Order Summary -->
+<aside class="lg:col-span-5">
+<div class="sticky top-24">
+<div class="bg-surface-container-high rounded-3xl p-8 border border-outline-variant shadow-lg">
+<h2 class="font-headline-md text-on-surface mb-8">Order Summary</h2>
+<!-- Items List -->
+<div class="space-y-6 max-h-[300px] overflow-y-auto pr-2 custom-scrollbar mb-8">
+<!-- Item 1 -->
+<div class="flex gap-4">
+<div class="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0 bg-surface-container-highest border border-outline-variant">
+<img alt="Handcrafted Blue Pottery Vase" class="w-full h-full object-cover" data-alt="close-up of a blue and white handcrafted ceramic pottery vase with intricate geometric patterns in a soft daylight setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-7LiF6ZtMe5ZSlTcSmCPQ9STazDNGQOGnlXGzZRaPQk7arN3JJ5zavzQszfNIErrZ2abMvaOoDsc4zixUMRDorE6sm0Ep-0Oyg18FKs_fnzf1-PovsJTfR1S1NEA4b3kHRrFfaePIQpKKL747jJlW8uV2pulcuQ4xXSH1XbBjCdGWxKKj6nqVHBclsWj6j-McPsLa831_ioSVZpW4xtD9H_P8HGjbACWUCykpbfbp6nn2ZDQ8vviMTPlW03qz4BzxcxbrZcV3BgT3"/>
+</div>
+<div class="flex flex-col justify-between py-1">
+<div>
+<h4 class="font-body-md font-bold text-on-surface">Blue Pottery Vase</h4>
+<p class="text-label-md text-on-surface-variant">Qty: 1 • Medium Size</p>
+</div>
+<span class="font-body-md font-bold text-primary">₹1,450.00</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex gap-4">
+<div class="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0 bg-surface-container-highest border border-outline-variant">
+<img alt="Handwoven Terracotta Lamp" class="w-full h-full object-cover" data-alt="warm orange terracotta lamp with detailed organic carvings glowing softly on a wooden table in a rustic room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0o2Wy-FC2LwkKRNYMDlQNfrX0MHhln5DvBlBqJgiZw5mMQcOesxgnrmREQzatvbMuhbhKWRxjfpYmXKzoXWwZ5u1eSzhD5gxinRo9eacDyF3GWiyg-O5zHzcgYoOrbvOkV42yIODYZsHdY5c-KrBc0l4XPHqbBsB80ydc4pT_HIaWtRMZutJz2cHVCtr2sPsWz6T7v_RHA95IwKTx97EBOGQdeQVNShqBfMr4jLIZRRy8G479_s2o4YxvGUoMl4QBVP9_J4F6S76f"/>
+</div>
+<div class="flex flex-col justify-between py-1">
+<div>
+<h4 class="font-body-md font-bold text-on-surface">Terracotta Night Lamp</h4>
+<p class="text-label-md text-on-surface-variant">Qty: 2 • Traditional Series</p>
+</div>
+<span class="font-body-md font-bold text-primary">₹890.00</span>
+</div>
+</div>
+</div>
+<!-- Price Breakdown -->
+<div class="space-y-4 border-t border-outline-variant pt-8">
+<div class="flex justify-between text-on-surface-variant font-body-md">
+<span>Subtotal</span>
+<span>₹2,340.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant font-body-md">
+<span>Shipping Fee</span>
+<span class="text-tertiary font-semibold">FREE</span>
+</div>
+<div class="flex justify-between text-on-surface-variant font-body-md">
+<span>Tax (GST 12%)</span>
+<span>₹280.80</span>
+</div>
+<div class="flex justify-between text-on-surface font-headline-md border-t border-dashed border-outline-variant pt-6 mt-2">
+<span>Total</span>
+<span class="text-primary">₹2,620.80</span>
+</div>
+</div>
+<!-- Checkout Button -->
+<button class="w-full mt-10 py-5 bg-primary text-on-primary rounded-full font-headline-md shadow-md hover:brightness-90 active:scale-95 transition-all flex items-center justify-center gap-3">
+                            Complete Order
+                            <span class="material-symbols-outlined" data-icon="lock">lock</span>
+</button>
+<!-- Trust Seal -->
+<div class="mt-8 flex items-center justify-center gap-4 py-4 border border-outline-variant rounded-2xl bg-surface-container-low/50">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-lg" data-icon="verified" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-label-sm font-bold text-on-tertiary-fixed-variant uppercase tracking-wider">Handmade Verified</span>
+</div>
+<div class="w-px h-4 bg-outline-variant"></div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="security" data-weight="fill" style="font-variation-settings: 'FILL' 1;">security</span>
+<span class="text-label-sm font-bold text-on-secondary-fixed-variant uppercase tracking-wider">Secure Payment</span>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="mt-20 border-t border-outline-variant bg-[#FFFBF5] py-12">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="md:col-span-2">
+<h3 class="font-headline-md text-primary mb-4">Halli Santhe</h3>
+<p class="text-on-surface-variant max-w-sm font-body-md">Bringing the soul of Indian villages to your doorstep. Every purchase supports local artisans and preserves our rich cultural heritage.</p>
+</div>
+<div>
+<h4 class="font-label-md font-bold text-on-surface uppercase mb-4 tracking-widest">Support</h4>
+<ul class="space-y-2 text-on-surface-variant font-body-md">
+<li><a class="hover:text-primary transition-colors" href="#">Help Center</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Shipping Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Returns &amp; Refunds</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md font-bold text-on-surface uppercase mb-4 tracking-widest">Connect</h4>
+<ul class="space-y-2 text-on-surface-variant font-body-md">
+<li><a class="hover:text-primary transition-colors" href="#">Artisan Stories</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-4 text-label-sm text-on-surface-variant/70">
+<p>© 2024 Halli Santhe Marketplace. Crafted with love in India.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

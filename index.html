@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Halli-Santhe – Indian Artisan Marketplace</title>
+<meta name="description" content="Discover authentic handcrafted treasures from Indian artisans. Shop terracotta, textiles, toys, spices and more on Halli-Santhe."/>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-error": "#ffffff",
+          "on-secondary": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "surface-tint": "#9e4127",
+          "tertiary-fixed": "#c7ecc7",
+          "primary-fixed-dim": "#ffb5a1",
+          "on-tertiary-fixed-variant": "#2f4e33",
+          "secondary": "#8f4e00",
+          "tertiary": "#446347",
+          "on-tertiary-container": "#f7fff3",
+          "on-primary-fixed-variant": "#7f2a12",
+          "secondary-container": "#fe9832",
+          "on-secondary-fixed": "#2e1500",
+          "on-primary-fixed": "#3b0800",
+          "inverse-surface": "#392e2b",
+          "surface-bright": "#fff8f6",
+          "surface": "#fff8f6",
+          "surface-container-high": "#f7e4df",
+          "on-secondary-container": "#683700",
+          "surface-container-low": "#fff1ed",
+          "on-error-container": "#93000a",
+          "outline-variant": "#ddc0b9",
+          "primary": "#9b3f25",
+          "on-surface-variant": "#56423d",
+          "surface-dim": "#e9d6d1",
+          "on-tertiary": "#ffffff",
+          "inverse-primary": "#ffb5a1",
+          "error": "#ba1a1a",
+          "primary-fixed": "#ffdbd1",
+          "on-secondary-fixed-variant": "#6d3a00",
+          "surface-container-highest": "#f2deda",
+          "error-container": "#ffdad6",
+          "on-surface": "#231917",
+          "on-primary": "#ffffff",
+          "on-primary-container": "#fffbff",
+          "outline": "#89726c",
+          "inverse-on-surface": "#ffede9",
+          "secondary-fixed-dim": "#ffb77a",
+          "primary-container": "#bb563b",
+          "surface-container": "#fdeae5",
+          "tertiary-container": "#5c7c5e",
+          "background": "#fff8f6",
+          "surface-variant": "#f2deda",
+          "tertiary-fixed-dim": "#acd0ac",
+          "secondary-fixed": "#ffdcc2",
+          "on-tertiary-fixed": "#02210a",
+          "on-background": "#231917"
+        },
+        borderRadius: {
+          DEFAULT: "0.25rem",
+          lg: "0.5rem",
+          xl: "0.75rem",
+          full: "9999px"
+        },
+        spacing: {
+          base: "8px",
+          xl: "80px",
+          xs: "4px",
+          md: "24px",
+          "margin-desktop": "64px",
+          lg: "48px",
+          sm: "12px",
+          "margin-mobile": "20px",
+          gutter: "16px"
+        },
+        fontFamily: {
+          "headline-md": ["Epilogue"],
+          "headline-lg": ["Epilogue"],
+          "body-md": ["Be Vietnam Pro"],
+          "display-xl": ["Epilogue"],
+          "label-md": ["Be Vietnam Pro"],
+          "body-lg": ["Be Vietnam Pro"],
+          "label-sm": ["Be Vietnam Pro"]
+        },
+        fontSize: {
+          "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+          "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "600" }],
+          "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+          "display-xl": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700" }],
+          "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "500" }],
+          "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+          "label-sm": ["12px", { lineHeight: "16px", fontWeight: "600" }]
+        }
+      }
+    }
+  }
+</script>
+
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen">
+
+  <!-- ===== TOP APP BAR ===== -->
+  <header id="top-bar" class="bg-[#FFFDFB] border-b border-[#C05A3E]/10 shadow-sm top-0 z-40 sticky transition-all duration-300">
+    <div class="flex justify-between items-center w-full px-4 sm:px-6 h-16 max-w-7xl mx-auto">
+      <!-- Left -->
+      <div class="flex items-center gap-2">
+        <button id="back-btn" class="hidden hover:bg-[#C05A3E]/5 transition-colors active:scale-95 duration-150 p-2 rounded-full text-stone-500" onclick="goBack()">
+          <span class="material-symbols-outlined">arrow_back</span>
+        </button>
+        <button class="hover:bg-[#C05A3E]/5 transition-colors active:scale-95 duration-150 p-2 rounded-full hidden md:flex text-stone-500" onclick="navigate('home')">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+      <!-- Logo -->
+      <div class="flex items-center absolute left-1/2 -translate-x-1/2">
+        <img alt="Halli-Santhe Logo" class="h-10 w-auto object-contain cursor-pointer" onclick="navigate('home')"
+          src="https://lh3.googleusercontent.com/aida/ADBb0uiHzAqeJy7IaEttjT8DD-k5nnt2a-liQk60yXROA1yIPVu0Z-jO-Fy2rrAMwEoZqtjx1af3jAzhl4Gf5zBOyPg9k89F2fyYYVkNO0iGJBC6Oz1KcJDPJBB4mN_CumHsc8dIis7w5e222JwNoEk-uiOgtWokahbvIuU2lzAx_d5w91EIPiZH8OVwDtkagdKjPtdI34iudD7DmGkKDtUJ6EXg3-sG4T1kwxNBBj1AWcGN9vZCuXvxI7ZcoYzMHX4PY75FBhWbvc1tX7A"/>
+      </div>
+      <!-- Right -->
+      <div class="flex items-center gap-1">
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-1 mr-2">
+          <button onclick="navigate('home')" data-nav="home" class="nav-link px-3 py-2 rounded-full text-stone-500 hover:text-[#C05A3E] hover:bg-[#C05A3E]/5 transition-colors font-medium text-sm flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[18px]">home_app_logo</span>Home
+          </button>
+          <button onclick="navigate('search')" data-nav="search" class="nav-link px-3 py-2 rounded-full text-stone-500 hover:text-[#C05A3E] hover:bg-[#C05A3E]/5 transition-colors font-medium text-sm flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[18px]">explore</span>Browse
+          </button>
+          <button onclick="navigate('sell')" data-nav="sell" class="nav-link px-3 py-2 rounded-full text-stone-500 hover:text-[#C05A3E] hover:bg-[#C05A3E]/5 transition-colors font-medium text-sm flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[18px]">add_box</span>Sell
+          </button>
+          <button onclick="navigate('profile')" data-nav="profile" class="nav-link px-3 py-2 rounded-full text-stone-500 hover:text-[#C05A3E] hover:bg-[#C05A3E]/5 transition-colors font-medium text-sm flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[18px]">person</span>Account
+          </button>
+        </nav>
+        <button onclick="navigate('cart')" class="relative hover:bg-[#C05A3E]/5 transition-colors active:scale-95 duration-150 p-2 rounded-full text-stone-500">
+          <span class="material-symbols-outlined">shopping_cart</span>
+          <span id="cart-badge" class="absolute top-1 right-1 w-4 h-4 bg-[#C05A3E] text-white rounded-full text-[10px] flex items-center justify-center font-bold">3</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== SCREENS ===== -->
+  <div id="app-root" class="pb-20 md:pb-0">
+    <!-- Screens injected by JS -->
+  </div>
+
+  <!-- ===== BOTTOM NAV (Mobile) ===== -->
+  <nav id="bottom-nav" class="md:hidden fixed bottom-0 w-full rounded-t-xl border-t border-[#C05A3E]/20 shadow-[0_-4px_12px_rgba(192,90,62,0.08)] bg-[#FFFDFB] z-50 flex justify-around items-center h-20 pb-safe px-4">
+    <button onclick="navigate('home')" data-bn="home" class="bn-link flex flex-col items-center justify-center text-stone-400 hover:text-[#C05A3E] active:scale-90 transition-all w-16">
+      <span class="material-symbols-outlined mb-0.5">home_app_logo</span>
+      <span class="text-[10px] font-medium">Home</span>
+    </button>
+    <button onclick="navigate('search')" data-bn="search" class="bn-link flex flex-col items-center justify-center text-stone-400 hover:text-[#C05A3E] active:scale-90 transition-all w-16">
+      <span class="material-symbols-outlined mb-0.5">explore</span>
+      <span class="text-[10px] font-medium">Browse</span>
+    </button>
+    <button onclick="navigate('sell')" data-bn="sell" class="bn-link flex flex-col items-center justify-center text-stone-400 hover:text-[#C05A3E] active:scale-90 transition-all w-16">
+      <span class="material-symbols-outlined mb-0.5">add_box</span>
+      <span class="text-[10px] font-medium">Sell</span>
+    </button>
+    <button onclick="navigate('cart')" data-bn="cart" class="bn-link flex flex-col items-center justify-center text-stone-400 hover:text-[#C05A3E] active:scale-90 transition-all w-16">
+      <span class="material-symbols-outlined mb-0.5">shopping_cart</span>
+      <span class="text-[10px] font-medium">Cart</span>
+    </button>
+    <button onclick="navigate('profile')" data-bn="profile" class="bn-link flex flex-col items-center justify-center text-stone-400 hover:text-[#C05A3E] active:scale-90 transition-all w-16">
+      <span class="material-symbols-outlined mb-0.5">person</span>
+      <span class="text-[10px] font-medium">Account</span>
+    </button>
+  </nav>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
