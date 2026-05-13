@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">हल्ली संतहे</string>
+
+    <string name="greeting_namaskara">नमस्ते</string>
+    <string name="greeting_guest">मेहमान</string>
+    <string name="search_hint">साड़ी, खिलौने, टोकरी खोजें...</string>
+    <string name="search">खोजें</string>
+    <string name="view_all">सभी देखें</string>
+    <string name="explore">अन्वेषण करें</string>
+    <string name="back">वापस</string>
+    <string name="save">सहेजें</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="delete">हटाएं</string>
+    <string name="add">जोड़ें</string>
+    <string name="remove">हटाएं</string>
+    <string name="total">कुल</string>
+    <string name="submit">जमा करें</string>
+    <string name="send">भेजें</string>
+    <string name="or">या</string>
+    <string name="verified">सत्यापित</string>
+    <string name="free">मुफ्त</string>
+    <string name="qty">मात्रा: %1$d</string>
+    <string name="currency">₹%1$s</string>
+
+    <string name="home_greeting_subtitle">स्थानीय हस्तकला खोजने के लिए तैयार हैं?</string>
+    <string name="home_banner_title">ताजा करघे से!</string>
+    <string name="home_banner_subtitle">स्थानीय कारीगरों से नई इल्काल सिल्क रचनाएँ खोजें।</string>
+    <string name="home_trending">अभी ट्रेंडिंग</string>
+    <string name="home_no_crafts_found">आपके मापदंड से मेल खाती कोई हस्तकला नहीं मिली।</string>
+    <string name="home_ai_fab">संतए AI</string>
+
+    <string name="login_register_title">लॉगिन और रजिस्टर</string>
+    <string name="login_tab">लॉगिन</string>
+    <string name="register_tab">रजिस्टर</string>
+    <string name="role_prompt">मैं इस रूप में शामिल हो रहा/रही हूँ</string>
+    <string name="role_buyer">खरीदार</string>
+    <string name="role_buyer_desc">उत्पाद ब्राउज़ और खरीदें</string>
+    <string name="role_seller">विक्रेता</string>
+    <string name="role_seller_desc">अपनी दुकान स्थापित करें</string>
+    <string name="full_name">पूरा नाम</string>
+    <string name="full_name_hint">अपना पूरा नाम दर्ज करें</string>
+    <string name="email">ईमेल</string>
+    <string name="email_hint">अपना ईमेल पता दर्ज करें</string>
+    <string name="password">पासवर्ड</string>
+    <string name="password_hint">अपना पासवर्ड दर्ज करें</string>
+    <string name="forgot_password">भूल गए?</string>
+    <string name="hide_password">पासवर्ड छिपाएं</string>
+    <string name="show_password">पासवर्ड दिखाएं</string>
+    <string name="login">लॉगिन</string>
+    <string name="create_account">खाता बनाएं</string>
+    <string name="continue_with_google">Google के साथ जारी रखें</string>
+    <string name="welcome_back">वापसी पर स्वागत!</string>
+    <string name="account_created">खाता बन गया!</string>
+    <string name="error_email_password_required">ईमेल और पासवर्ड आवश्यक हैं</string>
+    <string name="error_password_short">पासवर्ड कम से कम 6 अक्षरों का होना चाहिए</string>
+    <string name="error_full_name_required">पूरा नाम आवश्यक है</string>
+    <string name="login_failed">लॉगिन विफल</string>
+    <string name="registration_failed">पंजीकरण विफल</string>
+
+    <string name="reset_password">पासवर्ड रीसेट</string>
+    <string name="reset_password_desc">पासवर्ड रीसेट लिंक प्राप्त करने के लिए अपना ईमेल दर्ज करें।</string>
+    <string name="send_link">लिंक भेजें</string>
+    <string name="reset_email_sent">भेज दिया! अपना इनबॉक्स देखें।</string>
+    <string name="reset_email_failed">रीसेट ईमेल भेजने में विफल</string>
+    <string name="error_email_required">कृपया अपना ईमेल दर्ज करें</string>
+
+    <string name="cart_empty">आपका कार्ट खाली है</string>
+    <string name="start_shopping">खरीदारी शुरू करें</string>
+    <string name="subtotal">उप-योग</string>
+    <string name="shipping">शिपिंग</string>
+    <string name="proceed_to_checkout">चेकआउट करें</string>
+
+    <string name="no_orders_yet">अब तक कोई ऑर्डर नहीं</string>
+    <string name="orders_appear_here">खरीदारी करने के बाद आपके ऑर्डर यहां दिखाई देंगे।</string>
+    <string name="total_amount">कुल राशि</string>
+    <string name="order_status_delivered">डिलीवर किया गया</string>
+    <string name="order_status_pending">लंबित</string>
+
+    <string name="product_details">उत्पाद विवरण</string>
+    <string name="product_not_found">उत्पाद नहीं मिला</string>
+    <string name="by_artisan">%1$s द्वारा</string>
+    <string name="rating_reviews">4.8 (120 समीक्षाएँ)</string>
+    <string name="heritage_craft">विरासत और हस्तकला</string>
+    <string name="product_desc_fallback">यह %1$s से एक सुंदर हाथ से बना हुआ टुकड़ा है।</string>
+    <string name="saved">सहेजा गया</string>
+    <string name="save_for_later">बाद के लिए सहेजें</string>
+    <string name="buy_now">अभी खरीदें</string>
+    <string name="added_to_wishlist">इच्छा सूची में जोड़ा गया</string>
+    <string name="removed_from_wishlist">इच्छा सूची से हटाया गया</string>
+
+    <string name="seller_greeting_subtitle">आपकी दुकान आज अच्छा प्रदर्शन कर रही है।</string>
+    <string name="active_products">सक्रिय उत्पाद</string>
+    <string name="new_inquiries">नई पूछताछ</string>
+    <string name="total_sales">कुल बिक्री</string>
+    <string name="quick_actions">त्वरित कार्रवाइयाँ</string>
+    <string name="add_product">उत्पाद जोड़ें</string>
+    <string name="my_listings">मेरी लिस्टिंग</string>
+    <string name="inquiries">पूछताछ</string>
+    <string name="shop_settings">दुकान सेटिंग्स</string>
+    <string name="recent_inquiries">हाल की पूछताछ</string>
+    <string name="seller_ai_assistant">संतए AI सहायक</string>
+    <string name="default_seller_name">विक्रेता</string>
+
+    <string name="my_orders">मेरे ऑर्डर</string>
+    <string name="my_orders_desc">इतिहास देखें और ट्रैक करें</string>
+    <string name="wishlist">इच्छा सूची</string>
+    <string name="wishlist_desc">सहेजे गए आइटम</string>
+    <string name="notifications">सूचनाएँ</string>
+    <string name="notifications_desc">अपडेट और अलर्ट</string>
+    <string name="language">भाषा</string>
+    <string name="help_support">सहायता और समर्थन</string>
+    <string name="help_support_desc">FAQ और संपर्क जानकारी</string>
+
+    <string name="language_screen_title">Language / ಭಾಷೆ / भाषा</string>
+    <string name="choose_app_language">ऐप भाषा चुनें</string>
+    <string name="language_change_desc">यह पूरे ऐप में इंटरफ़ेस भाषा और AI चैट उत्तर बदल देगा।</string>
+    <string name="save_apply">सहेजें और लागू करें</string>
+
+    <string name="checkout">चेकआउट</string>
+    <string name="place_order">ऑर्डर दें</string>
+    <string name="cash_on_delivery">कैश ऑन डिलीवरी</string>
+    <string name="upi_payment">UPI भुगतान</string>
+    <string name="order_placed">ऑर्डर सफलतापूर्वक दिया गया!</string>
+
+    <string name="nav_home">होम</string>
+    <string name="nav_search">खोजें</string>
+    <string name="nav_cart">कार्ट</string>
+    <string name="nav_orders">ऑर्डर</string>
+    <string name="nav_profile">प्रोफाइल</string>
+    <string name="nav_seller_home">डैशबोर्ड</string>
+    <string name="nav_seller_ai">AI</string>
+    <string name="nav_seller_profile">प्रोफाइल</string>
+
+    <string name="ai_buyer_greeting">नमस्ते! मैं संतए AI हूँ, आपका खरीदार सहायक। मैं आपको हस्तकला उत्पाद खोजने, ऑर्डर ट्रैक करने, और बाज़ार में मार्गदर्शन करने में मदद कर सकता हूँ। मैं आज आपकी कैसे सहायता कर सकता हूँ?</string>
+    <string name="ai_seller_greeting">नमस्ते! मैं संतए AI हूँ, आपका विक्रेता सहायक। मैं आपको अपनी लिस्टिंग प्रबंधित करने, खरीदारों के प्रश्नों का उत्तर देने, मूल्य निर्धारण करने, और अपनी दुकान बढ़ाने में मदद कर सकता हूँ। मैं आज आपकी कैसे सहायता कर सकता हूँ?</string>
+    <string name="ai_input_hint">संदेश लिखें...</string>
+    <string name="ai_typing">संतए AI टाइप कर रहा है...</string>
+    <string name="ai_clear_chat">चैट साफ़ करें</string>
+    <string name="ai_send">भेजें</string>
+
+    <string name="add_product_title">नया उत्पाद जोड़ें</string>
+    <string name="product_name">उत्पाद का नाम</string>
+    <string name="product_price">कीमत (₹)</string>
+    <string name="product_category">श्रेणी</string>
+    <string name="product_description">विवरण</string>
+    <string name="product_location">गाँव / स्थान</string>
+    <string name="upload_photo">फोटो अपलोड करें</string>
+    <string name="generate_description">AI से विवरण जनरेट करें</string>
+    <string name="product_added">उत्पाद सफलतापूर्वक जोड़ा गया!</string>
+
+    <string name="my_listings_title">मेरी लिस्टिंग</string>
+    <string name="no_listings_yet">अब तक कोई लिस्टिंग नहीं</string>
+    <string name="add_your_first_product">बेचना शुरू करने के लिए अपना पहला उत्पाद जोड़ें।</string>
+
+    <string name="shop_settings_title">दुकान सेटिंग्स</string>
+    <string name="shop_name">दुकान का नाम</string>
+    <string name="craft_type">हस्तकला प्रकार</string>
+    <string name="village">गाँव</string>
+    <string name="bio">बायो</string>
+    <string name="phone">फोन</string>
+    <string name="settings_saved">सेटिंग्स सफलतापूर्वक सहेजी गईं!</string>
+
+    <string name="help_title">सहायता और समर्थन</string>
+    <string name="faq">अक्सर पूछे जाने वाले प्रश्न</string>
+    <string name="contact_us">हमसे संपर्क करें</string>
+    <string name="terms">नियम और शर्तें</string>
+    <string name="privacy">गोपनीयता नीति</string>
+
+    <string name="notifications_title">सूचनाएँ</string>
+    <string name="no_notifications">अब तक कोई सूचना नहीं</string>
+    <string name="clear_all">सभी साफ़ करें</string>
+
+    <string name="wishlist_title">इच्छा सूची</string>
+    <string name="wishlist_empty">आपकी इच्छा सूची खाली है</string>
+    <string name="browse_products">उत्पाद ब्राउज़ करें</string>
+
+    <string name="search_title">खोजें</string>
+    <string name="search_results">खोज परिणाम</string>
+    <string name="no_results">कोई परिणाम नहीं मिला</string>
+    <string name="try_different_keyword">कोई अन्य कीवर्ड आज़माएँ</string>
+
+    <string name="splash_welcome">हल्ली संतहे में आपका स्वागत है</string>
+    <string name="onboarding_title_1">स्थानीय हस्तकला खोजें</string>
+    <string name="onboarding_desc_1">भारत भर के गाँवों के कारीगरों से हाथ से बने उत्पाद खोजें।</string>
+    <string name="onboarding_title_2">कारीगरों का समर्थन करें</string>
+    <string name="onboarding_desc_2">हर खरीदारी सीधे कुशल कारीगरों और उनके परिवारों का समर्थन करती है।</string>
+    <string name="onboarding_title_3">अपनी हस्तकला बेचें</string>
+    <string name="onboarding_desc_3">क्या आप एक कारीगर हैं? अपने उत्पाद लिस्ट करें और देश भर के खरीदारों तक पहुँचें।</string>
+    <string name="get_started">शुरू करें</string>
+    <string name="next">अगला</string>
+    <string name="skip">छोड़ें</string>
+
+    <string name="seller_onboarding_title">अपनी दुकान स्थापित करें</string>
+    <string name="seller_onboarding_desc">हल्ली संतहे पर बेचने वाले हजारों कारीगरों में शामिल हों। इसमें कुछ ही मिनट लगते हैं।</string>
+    <string name="become_a_seller">विक्रेता बनें</string>
+
+    <string name="inquiries_title">पूछताछ</string>
+    <string name="no_inquiries">अब तक कोई पूछताछ नहीं</string>
+    <string name="mark_as_read">पढ़ा हुआ चिह्नित करें</string>
+
+    <string name="seller_login_title">विक्रेता लॉगिन</string>
+    <string name="seller_register_title">विक्रेता पंजीकरण</string>
+    <string name="not_a_seller_yet">अब तक विक्रेता नहीं हैं?</string>
+    <string name="register_as_seller">विक्रेता के रूप में रजिस्टर करें</string>
+
+    <string name="logout">लॉगआउट</string>
+    <string name="confirm_logout">क्या आप लॉगआउट करना चाहते हैं?</string>
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+    <string name="loading">लोड हो रहा है...</string>
+    <string name="retry">पुनः प्रयास करें</string>
+    <string name="error_generic">कुछ गलत हो गया। कृपया पुनः प्रयास करें।</string>
+    <string name="error_no_internet">कोई इंटरनेट कनेक्शन नहीं। कृपया अपना नेटवर्क जाँचें।</string>
+    <string name="copied">क्लिपबोर्ड पर कॉपी किया गया</string>
+    <string name="share">साझा करें</string>
+
+    <string name="upload_product">उत्पाद अपलोड करें</string>
+    <string name="upload_image">छवि अपलोड करें</string>
+    <string name="upload_image_desc">गैलरी या कैमरे से चुनने के लिए टैप करें</string>
+    <string name="select_image">छवि चुनें</string>
+    <string name="select_image_desc">उत्पाद छवि जोड़ने का तरीका चुनें।</string>
+    <string name="camera">कैमरा</string>
+    <string name="gallery">गैलरी</string>
+    <string name="product_name_hint">जैसे। हाथ से बनी सिल्क साड़ी</string>
+    <string name="price_hint">0.00</string>
+    <string name="location_hint">शहर/गाँव</string>
+    <string name="description_hint">सामग्री, मूल, और इस उत्पाद की कहानी का वर्णन करें...</string>
+    <string name="seller_name">विक्रेता / कारीगर का नाम</string>
+    <string name="seller_name_hint">आपका नाम या दुकान का नाम</string>
+    <string name="error_fill_all_fields">कृपया सभी आवश्यक क्षेत्र भरें</string>
+    <string name="error_valid_price">कृपया एक वैध मूल्य दर्ज करें</string>
+    <string name="error_login_to_add">उत्पाद जोड़ने के लिए आपको लॉग इन करना होगा</string>
+    <string name="product_uploaded">उत्पाद सफलतापूर्वक अपलोड किया गया!</string>
+    <string name="upload_failed">अपलोड विफल</string>
+    <string name="camera_permission_required">फोटो लेने के लिए कैमरा अनुमति आवश्यक है</string>
+    <string name="selected_product_image">चयनित उत्पाद छवि</string>
+
+    <string name="shipping_info">शिपिंग जानकारी</string>
+    <string name="full_name_label">पूरा नाम</string>
+    <string name="address_line_1">पता पंक्ति 1</string>
+    <string name="city_town">शहर / कस्बा</string>
+    <string name="continue_to_payment">भुगतान जारी रखें</string>
+    <string name="payment_method">भुगतान का तरीका</string>
+    <string name="upi_wallet">UPI / डिजिटल वॉलेट</string>
+    <string name="credit_debit_card">क्रेडिट / डेबिट कार्ड</string>
+    <string name="select_upi_app">UPI ऐप चुनें</string>
+    <string name="google_pay">Google Pay</string>
+    <string name="phonepe">PhonePe</string>
+    <string name="paytm">Paytm</string>
+    <string name="amazon_pay">Amazon Pay</string>
+    <string name="bhim_upi">BHIM UPI</string>
+    <string name="card_number">कार्ड नंबर</string>
+    <string name="card_expiry">समय सीमा (MM/YY)</string>
+    <string name="card_cvv">CVV</string>
+    <string name="card_holder_name">कार्ड धारक का नाम</string>
+    <string name="pay_on_delivery_msg">आपके ऑर्डर की डिलीवरी पर नकद भुगतान करें।</string>
+    <string name="review_order">ऑर्डर समीक्षा</string>
+    <string name="review_your_order">अपने ऑर्डर की समीक्षा करें</string>
+    <string name="items_count">आइटम: %1$d</string>
+    <string name="payment_label">भुगतान: %1$s</string>
+    <string name="shipping_to">शिप करने के लिए:</string>
+    <string name="not_provided">प्रदान नहीं किया गया</string>
+    <string name="failed_place_order">ऑर्डर देने में विफल</string>
+    <string name="order_placed_success">ऑर्डर सफलतापूर्वक दिया गया!</string>
+    <string name="thank_you_artisans">स्थानीय कारीगरों का समर्थन करने के लिए धन्यवाद।</string>
+    <string name="back_to_home">होम पर वापस जाएँ</string>
+
+    <string name="faq_question_1">मैं अपने ऑर्डर को कैसे ट्रैक करूँ?</string>
+    <string name="faq_answer_1">"आप अपने प्रोफाइल के 'मेरे ऑर्डर' अनुभाग में अपने ऑर्डर को ट्रैक कर सकते हैं।"</string>
+    <string name="faq_question_2">रिटर्न पॉलिसी क्या है?</string>
+    <string name="faq_answer_2">"अधिकांश वस्तुओं को डिलीवरी के 7 दिनों के भीतर यदि क्षतिग्रस्त या वर्णन के अनुरूप नहीं हैं तो वापस किया जा सकता है।"</string>
+    <string name="faq_question_3">कारीगरों की कैसे जाँच की जाती है?</string>
+    <string name="faq_answer_3">"हम प्रत्येक कारीगर की पहचान, स्थान, और शिल्प प्रामाणिकता की साइट विजिट के माध्यम से मैन्युअल रूप से जाँच करते हैं।"</string>
+    <string name="email_us">हमें ईमेल करें</string>
+    <string name="call_us">हमें कॉल करें</string>
+    <string name="live_chat">लाइव चैट</string>
+    <string name="legal_info">कानूनी जानकारी</string>
+    <string name="read_terms">हमारी नियम और शर्तें पढ़ें</string>
+
+    <string name="search_by_name">नाम या उत्पाद से खोजें...</string>
+    <string name="filter">फ़िल्टर</string>
+    <string name="all">सभी</string>
+    <string name="unread">अपठित</string>
+    <string name="replied">जवाब दिया</string>
+    <string name="reply_now">अब जवाब दें</string>
+
+    <string name="login_to_view_listings">अपनी लिस्टिंग देखने के लिए कृपया लॉग इन करें।</string>
+    <string name="products_will_appear">आपके द्वारा जोड़े गए उत्पाद यहाँ दिखाई देंगे।</string>
+    <string name="in_stock">स्टॉक में</string>
+    <string name="low_stock">कम स्टॉक</string>
+    <string name="edit">संपादित करें</string>
+    <string name="edit_coming_soon">संपादन सुविधा जल्द आ रही है!</string>
+    <string name="delete_coming_soon">हटाने की सुविधा जल्द आ रही है!</string>
+
+    <string name="all_caught_up">सब कुछ अप टू डेट!</string>
+    <string name="new_label">नया</string>
+    <string name="new_count">%1$d नया</string>
+    <string name="view_details">विवरण देखें</string>
+    <string name="dismiss">खारिज करें</string>
+
+    <string name="profile_picture">प्रोफाइल चित्र</string>
+    <string name="buyer_mode">खरीदार मोड</string>
+    <string name="seller_mode">विक्रेता मोड</string>
+
+    <string name="ai_title">संतए AI</string>
+    <string name="ai_placeholder">संतए AI से कुछ भी पूछें...</string>
+    <string name="ai_today">आज</string>
+    <string name="ai_you">आप</string>
+    <string name="suggestion_upload">मैं उत्पाद कैसे अपलोड करूँ?</string>
+    <string name="suggestion_silk">सिल्क साड़ियाँ खोजें</string>
+    <string name="suggestion_track">मेरा ऑर्डर ट्रैक करें</string>
+    <string name="suggestion_settings">दुकान सेटिंग्स अपडेट करें</string>
+
+    <string name="join_santhe">संतए में शामिल हों</string>
+    <string name="choose_role">अपनी भूमिका चुनें</string>
+    <string name="i_am_buyer">मैं एक खरीदार हूँ</string>
+    <string name="i_am_seller">मैं एक विक्रेता हूँ</string>
+    <string name="setup_shop">अपनी दुकान स्थापित करें</string>
+    <string name="login_as_seller">विक्रेता के रूप में लॉगिन करें</string>
+    <string name="create_seller_account">विक्रेता खाता बनाएँ</string>
+    <string name="seller_account_created">विक्रेता खाता बन गया!</string>
+    <string name="mobile_number">मोबाइल नंबर</string>
+    <string name="mobile_hint">10-अंकीय मोबाइल नंबर</string>
+    <string name="shop_name_artisan">दुकान का नाम / कारीगर ब्रांड</string>
+    <string name="shop_name_hint">आप अपने व्यवसाय को क्या कहते हैं?</string>
+    <string name="min_6_chars">कम से कम 6 अक्षर</string>
+    <string name="india_code">+91</string>
+
+    <string name="sell_your_craft">अपना शिल्प बेचें</string>
+    <string name="seller_onboarding_body">अपने हाथ से बने उत्पाद अपलोड करें और सीधे हजारों शहरी खरीदारों तक पहुँचें। हल्ली संतहे के समृद्ध समुदाय में शामिल हों।</string>
+    <string name="already_have_account">मेरे पास पहले से एक खाता है</string>
+
+    <string name="my_shop">मेरी दुकान</string>
+    <string name="optimize_insights">लिस्टिंग और जानकारी अनुकूलित करें</string>
+
+    <string name="shop_info">दुकान जानकारी</string>
+    <string name="shop_info_desc">खरीदारों को आपके शिल्प के बारे में अधिक जानने में मदद करने के लिए अपनी दुकान के विवरण अपडेट करें।</string>
+    <string name="shop_name_label">दुकान का नाम *</string>
+    <string name="craft_type_hint">शिल्प प्रकार (जैसे। कुंभारी, बुनाई)</string>
+    <string name="village_label">गाँव / स्थान</string>
+    <string name="shop_bio">दुकान बायो / विवरण</string>
+    <string name="contact_details">संपर्क विवरण</string>
+    <string name="phone_number_label">फ़ोन नंबर</string>
+    <string name="email_address_label">ईमेल पता</string>
+    <string name="save_settings">सेटिंग्स सहेजें</string>
+    <string name="please_log_in">कृपया पहले लॉग इन करें</string>
+    <string name="settings_save_failed">सहेजने में विफल: %1$s</string>
+
+    <string name="discover_crafts">शिल्प खोजें</string>
+</resources>

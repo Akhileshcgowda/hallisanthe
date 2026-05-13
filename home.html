@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Buyer Home - Halli-Santhe</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#ffdbcd",
+                        "tertiary": "#186a22",
+                        "surface": "#fff8f6",
+                        "on-tertiary-container": "#f7fff1",
+                        "on-secondary-fixed": "#2a1800",
+                        "surface-bright": "#fff8f6",
+                        "surface-tint": "#a23f00",
+                        "tertiary-container": "#358438",
+                        "secondary-container": "#fcab28",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#ffb595",
+                        "on-tertiary-fixed": "#002204",
+                        "on-primary-container": "#fffbff",
+                        "on-primary-fixed": "#360f00",
+                        "inverse-surface": "#3c2d26",
+                        "tertiary-fixed-dim": "#88d982",
+                        "on-background": "#261813",
+                        "background": "#fff8f6",
+                        "on-primary": "#ffffff",
+                        "secondary": "#835400",
+                        "surface-container-low": "#fff1ec",
+                        "inverse-primary": "#ffb595",
+                        "on-secondary-container": "#694300",
+                        "primary-container": "#c74e00",
+                        "on-surface": "#261813",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#594137",
+                        "error-container": "#ffdad6",
+                        "primary": "#9e3d00",
+                        "secondary-fixed": "#ffddb5",
+                        "surface-container-high": "#fde3d9",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#f7ddd3",
+                        "on-secondary-fixed-variant": "#643f00",
+                        "outline": "#8d7165",
+                        "on-primary-fixed-variant": "#7c2e00",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#a3f69c",
+                        "surface-dim": "#eed5cb",
+                        "surface-variant": "#f7ddd3",
+                        "outline-variant": "#e1bfb2",
+                        "surface-container": "#ffe9e1",
+                        "inverse-on-surface": "#ffede7",
+                        "secondary-fixed-dim": "#ffb957",
+                        "on-tertiary-fixed-variant": "#005312"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "8px",
+                        "xs": "4px",
+                        "xl": "32px",
+                        "lg": "24px",
+                        "gutter": "12px",
+                        "base": "4px",
+                        "md": "16px",
+                        "container-margin": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Plus Jakarta Sans"],
+                        "label-lg": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "title-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "700" }],
+                        "label-lg": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.5px", "fontWeight": "700" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md pb-24">
+<!-- TopAppBar -->
+<header class="bg-[#FFF8F0] dark:bg-gray-900 font-['Plus_Jakarta_Sans'] font-bold text-lg docked full-width top-0 border-b-0 border-b border-[#D9D4CD] dark:border-gray-800 shadow-[0px_4px_12px_rgba(230,92,0,0.08)] flex justify-between items-center w-full px-4 h-16 sticky z-40">
+<div class="flex items-center gap-4 cursor-pointer hover:bg-orange-50 dark:hover:bg-gray-800 transition-colors p-2 rounded-full active:scale-95 duration-150 text-[#E65C00] dark:text-orange-500">
+<span class="material-symbols-outlined text-2xl" data-icon="menu">menu</span>
+</div>
+<div class="flex items-center gap-2">
+<img alt="Logo" class="h-8 w-auto object-contain rounded" data-alt="A small, elegant circular logo graphic featuring a stylized traditional Indian motif, perhaps a subtle hint of a lotus or weaving pattern, rendered in warm saffron and deep brown tones. It sits cleanly on a light paper-like background, embodying the tactile modernism and 'Made in Karnataka' essence of the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0jBAn818un4YXfvmNmx-rzBC69jK1YsEiuARE4gf5AwvdK8im1KgmqmgTGlkL6PYJvrrWUmZGlFZsopfDkpv3zKd_8n6Nz9Yisn0fsXZtdTAImJRJq4a95zcvfjtIWHcxd3zPnxQ7OFNgvIE4sWIzg8jOPk6TYWtt5kd1KQLw8lzqY5lrETueyHRGVTNtYQfSv8ivbfo5lAQ6SJp54sCekG8D4BBl-vEssdKiooQsO3E6JQ8C91BYPwE2GHoasxbZ_ja3zhw2O3Q"/>
+<h1 class="text-2xl font-black text-[#E65C00] tracking-tight">Santhe</h1>
+</div>
+<div class="flex items-center gap-2 cursor-pointer hover:bg-orange-50 dark:hover:bg-gray-800 transition-colors p-1 rounded-full active:scale-95 duration-150">
+<img alt="User Profile" class="w-8 h-8 rounded-full border-2 border-primary object-cover" data-alt="A close-up portrait of a smiling Indian man in his 30s, viewed from the shoulders up. He has a neat beard and is wearing a simple, warm-toned shirt. The lighting is soft and flattering, creating a welcoming and approachable profile picture. The background is a slightly blurred, warm neutral color fitting the tactile modernism style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmBxly1SAkl6Pqgwf6HrXwRaCPKktaIJcpg_hUTOBYgnbGKWt4JR20_6pBGrisxFoVKTsJG8PWedbKnroG43aku2ELgBV67S2R88xax2Ne-cPQgkvQje2oMvYFx3X-vBTscgCbORbhWLbQNaZXUq-yTcRlio1roVzQR2bISeizW3uKaJS8bM7QAIAgA9pWlfMlY-C4DEkxi5_QCiX2DA7gBdl_sL8moT__UQ4ajSFcTrbUC9ZlAeV3wK7_eJdNiEdPaStyLjSvBmA"/>
+</div>
+</header>
+<main class="flex-grow max-w-4xl mx-auto w-full px-container-margin pt-lg pb-xl space-y-xl">
+<!-- Greeting & Role Toggle -->
+<section class="flex justify-between items-end">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Namaskara, Ravi! 👋</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-xs">Ready to explore local crafts?</p>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-high p-1 rounded-full border border-outline-variant shadow-sm">
+<span class="font-label-lg text-label-lg px-3 py-1 bg-primary text-on-primary rounded-full shadow-[0px_4px_12px_rgba(230,92,0,0.12)]">Buyer Mode</span>
+</div>
+</section>
+<!-- Search Bar -->
+<section>
+<div class="relative w-full group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 transform -translate-y-1/2 text-on-surface-variant group-focus-within:text-primary transition-colors" data-icon="search">search</span>
+<input class="w-full pl-12 pr-4 py-3 bg-surface-container-lowest border border-[#D9D4CD] rounded-[12px] font-body-lg text-body-lg text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all shadow-[0px_4px_12px_rgba(230,92,0,0.08)]" placeholder="Search sarees, toys, baskets..." type="text"/>
+</div>
+</section>
+<!-- Horizontal Categories -->
+<section>
+<div class="flex gap-sm overflow-x-auto hide-scrollbar pb-2">
+<button class="flex items-center justify-center px-4 py-2 bg-primary text-on-primary font-label-lg text-label-lg rounded-full shadow-[0px_4px_12px_rgba(230,92,0,0.12)] whitespace-nowrap flex-shrink-0 transition-transform active:scale-95">All</button>
+<button class="flex items-center justify-center px-4 py-2 bg-surface-container-lowest text-on-surface border border-outline-variant hover:bg-surface-container-low font-label-lg text-label-lg rounded-full shadow-[0px_4px_12px_rgba(230,92,0,0.08)] whitespace-nowrap flex-shrink-0 transition-transform active:scale-95">Textiles</button>
+<button class="flex items-center justify-center px-4 py-2 bg-surface-container-lowest text-on-surface border border-outline-variant hover:bg-surface-container-low font-label-lg text-label-lg rounded-full shadow-[0px_4px_12px_rgba(230,92,0,0.08)] whitespace-nowrap flex-shrink-0 transition-transform active:scale-95">Toys</button>
+<button class="flex items-center justify-center px-4 py-2 bg-surface-container-lowest text-on-surface border border-outline-variant hover:bg-surface-container-low font-label-lg text-label-lg rounded-full shadow-[0px_4px_12px_rgba(230,92,0,0.08)] whitespace-nowrap flex-shrink-0 transition-transform active:scale-95">Woodwork</button>
+</div>
+</section>
+<!-- Featured Banner -->
+<section class="relative w-full rounded-xl overflow-hidden shadow-[0px_4px_12px_rgba(230,92,0,0.08)] aspect-[21/9] md:aspect-[3/1]">
+<img alt="Fresh from the Loom" class="absolute inset-0 w-full h-full object-cover" data-alt="A vibrant, close-up photograph of traditional Indian silk weaving on a wooden handloom. Rich, high-saturation saffron, deep red, and gold threads are tightly interlaced. The lighting highlights the texture of the silk and the worn wood of the loom, creating an earthy, industrious atmosphere typical of a rural artisan workshop. The visual style is tactile and modern, focusing on the craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXqI5h8Ayw-ubyU6YWmfRRVvv0hpjrns4dfLN0KzdogXdtfUYpTUidmfivGplZenG6_cDvzp1W-qQ1PKVoG6ACi20FOYnKhQEixUaTKmXr6BrGkujnnDhIYIPDySRggJx8xKEG-NWpiUAbbTcVvAyqyLmzirYbQ3PU82sSnWwJY6ial104obw8xom_tU6JSPzs2k47GgSE-4ffzau7lEL82lBl38hySulFmWkbEYn2zO94U_f5t4-WSQ9RKcOeudIvBB1rh-RcaZo"/>
+<div class="absolute inset-0 bg-gradient-to-r from-inverse-surface/80 to-transparent flex flex-col justify-center p-md">
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest max-w-[60%]">Fresh from the Loom!</h3>
+<p class="font-body-md text-body-md text-surface-container-low mt-xs max-w-[50%]">Discover new Ilkal silk creations from local artisans.</p>
+<button class="mt-sm self-start px-4 py-2 bg-secondary-container text-on-secondary-fixed font-label-lg text-label-lg rounded-[24px] shadow-sm hover:opacity-90 transition-opacity">Explore</button>
+</div>
+</section>
+<!-- Kolam Divider -->
+<div class="w-full h-[24px] flex justify-center items-center opacity-50">
+<div class="w-full border-t-[2px] border-dotted border-[#D9D4CD]"></div>
+<span class="material-symbols-outlined absolute text-[#D9D4CD] bg-background px-2" data-icon="scatter_plot">scatter_plot</span>
+</div>
+<!-- Product Grid -->
+<section>
+<div class="flex justify-between items-center mb-md">
+<h3 class="font-headline-sm text-headline-sm text-on-background">Trending Now</h3>
+<button class="font-label-lg text-label-lg text-primary hover:underline flex items-center gap-1">View All <span class="material-symbols-outlined text-[16px]" data-icon="chevron_right">chevron_right</span></button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-[16px] shadow-[0px_4px_12px_rgba(230,92,0,0.08)] flex flex-col overflow-hidden group">
+<div class="relative aspect-square">
+<img alt="Ilkal Silk Saree" class="w-full h-full object-cover rounded-t-[12px] group-hover:scale-105 transition-transform duration-300" data-alt="A beautifully folded Ilkal silk saree displaying a rich, deep red color with a distinct, intricately patterned golden border. The fabric is softly draped on a clean, light surface, catching warm, natural light that highlights its sheen and texture. The presentation is modern, clean, and emphasizes the high-quality craftsmanship of the traditional textile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA24UO84eblo0-3JFTeu_ZpaFoZ2LhPUFF1Hqwv2QegGUkYF4ghsw1QzRfgb2Bx_Tm1vphO8RsPDwsTN7QXsajTs2B2jfvGWAUaiXvFAQnNdLgKp_srMODMjTXzadQpXI5rTnIe1Zf6Wlmq7Y6AxW3D_rpzNXWlPZZe2Y0BlMnObTY8zurmMwUO_-lZcOcDe_sSOJxrcN1Ao7qgsUUCxh1hjEQGEQHmMAGTrnju5S0hM7C8hLF6mzbPAauKOHGQw4i_J5jGXlGrySs"/>
+<button class="absolute top-2 right-2 bg-surface-container-lowest/80 backdrop-blur-sm p-1.5 rounded-full text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite_border">favorite_border</span>
+</button>
+<div class="absolute bottom-2 left-2 bg-tertiary-container text-on-tertiary-container font-label-lg text-[10px] px-2 py-0.5 rounded-full shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]" data-icon="verified">verified</span> Verified
+                        </div>
+</div>
+<div class="p-3 flex flex-col flex-grow">
+<h4 class="font-title-lg text-[14px] text-on-background leading-tight line-clamp-2 mb-1">Ilkal Silk Saree by Suma Devi</h4>
+<div class="flex items-center gap-1 mt-auto">
+<img alt="Artisan" class="w-5 h-5 rounded-full border border-primary object-cover" data-alt="A small circular portrait of an Indian woman artisan, smiling warmly." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdlFQUqK7bmC9tclF7wLHYu4YD7yUIY_S5eiFEeooGPZn9S7f7AGCsJi2FDDqMrat4TxyDr6g8gLA20vXGFoGQXtcdnSEf4Qp8Z42ldX517pwCJUSs74EIA67xV5TczoTjR53nkCd1Cgf-SC82OSApW_RQDdw0OE-3geB4eMgzoIe8wAJwgGzRxLj0LEaBKS21FlcmpILTeEDDnioxSAjtGoQbI4h3gP86xagKSRE6PdUI1vCxGHOkMWN_OBXG-o7iJ89r2uWHlGE"/>
+<span class="font-body-md text-[11px] text-on-surface-variant truncate">Suma Devi • Bagalkot</span>
+</div>
+<div class="flex justify-between items-center mt-2 pt-2 border-t border-outline-variant/30">
+<span class="font-label-lg text-label-lg text-primary">₹ 4,500</span>
+<button class="bg-secondary-container text-on-secondary-fixed p-1.5 rounded-lg hover:bg-secondary-fixed transition-colors active:scale-95 shadow-[0px_4px_12px_rgba(230,92,0,0.08)]">
+<span class="material-symbols-outlined text-[18px]" data-icon="add_shopping_cart">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-[16px] shadow-[0px_4px_12px_rgba(230,92,0,0.08)] flex flex-col overflow-hidden group">
+<div class="relative aspect-square">
+<img alt="Channapatna Wooden Toys" class="w-full h-full object-cover rounded-t-[12px] group-hover:scale-105 transition-transform duration-300" data-alt="A vibrant collection of traditional Channapatna wooden toys, featuring glossy, rounded shapes in bright primary colors like red, yellow, and green. They are arranged playfully on a clean, light-colored wooden table. The lighting is bright and cheerful, highlighting the smooth, lacquered finish of the handcrafted toys, fitting the tactile modernism aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVEwW3BRhaUkIN3pZYzNSZWFtipn_pOsDiP2ZKT8akBiWRYLoSlV3_3QdlUaamWmzYF43Q_G5tEjhCFZGDg_9JOOEt8NNeNQ0WKFPxtwAprT7KTuflerL7yOvGx1kS74SHTgHvL4LmOSGPA9qIalmHWR2qDVAX__nKynvxnRNtN3o4SvtXbleKkAy7M4xKV7wkdmYz5VAfEMlWqiKHeSDPIxmBci5nVmKpM0NGpikxaUwL9qpK2UEIqkeSwAP9xIMIwZl1vQ2A8VU"/>
+<button class="absolute top-2 right-2 bg-surface-container-lowest/80 backdrop-blur-sm p-1.5 rounded-full text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite_border">favorite_border</span>
+</button>
+</div>
+<div class="p-3 flex flex-col flex-grow">
+<h4 class="font-title-lg text-[14px] text-on-background leading-tight line-clamp-2 mb-1">Handcrafted Channapatna Train</h4>
+<div class="flex items-center gap-1 mt-auto">
+<img alt="Artisan" class="w-5 h-5 rounded-full border border-primary object-cover" data-alt="A small circular portrait of an Indian male artisan, focused expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyRz3ef2xzvE-SpeBcNPUg6yWpZOKJOuhGtq_FJ1WWHXi7h-q5yAzxg78qZCvbDm1STBQy0HlX_nkP8TKFiu-6zHPmXxQ6FkpAMTXghsKzR2WYP88PakLFmEXXgIW_OR2oQswjE-NST_k0m1ang-HNJIqxzyfYS0plZ-abIg2L1tgZzhOixocnc-jqW_a3dgcRcFhFUBA9grWEm2DIW0u3I8L8rbR5eATpwXvdZkMLU6ZRo8mQ7JoLNrOZI11-7L1c-M5rws2uqdc"/>
+<span class="font-body-md text-[11px] text-on-surface-variant truncate">Ramesh K • Ramanagara</span>
+</div>
+<div class="flex justify-between items-center mt-2 pt-2 border-t border-outline-variant/30">
+<span class="font-label-lg text-label-lg text-primary">₹ 850</span>
+<button class="bg-secondary-container text-on-secondary-fixed p-1.5 rounded-lg hover:bg-secondary-fixed transition-colors active:scale-95 shadow-[0px_4px_12px_rgba(230,92,0,0.08)]">
+<span class="material-symbols-outlined text-[18px]" data-icon="add_shopping_cart">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Santhe AI FAB -->
+<button class="fixed bottom-24 right-4 z-40 bg-primary text-on-primary rounded-[24px] px-4 py-3 flex items-center gap-2 shadow-[0px_4px_16px_rgba(230,92,0,0.2)] hover:bg-primary-container transition-colors active:scale-95">
+<span class="material-symbols-outlined" data-icon="smart_toy">smart_toy</span>
+<span class="font-label-lg text-label-lg">Santhe AI</span>
+</button>
+<!-- BottomNavBar -->
+<nav class="bg-white dark:bg-gray-900 font-['Plus_Jakarta_Sans'] text-[10px] font-semibold fixed bottom-0 w-full z-50 rounded-t-xl border-t border-[#D9D4CD] dark:border-gray-800 shadow-[0px_-4px_12px_rgba(230,92,0,0.08)] md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-2 py-3 pb-safe">
+<!-- Home (Active) -->
+<a class="flex flex-col items-center justify-center bg-orange-50 dark:bg-orange-900/20 text-[#E65C00] rounded-xl px-3 py-1 translate-y-[-2px] duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home</span>
+<span>Home</span>
+</a>
+<!-- Search (Inactive) -->
+<a class="flex flex-col items-center justify-center text-gray-500 dark:text-gray-400 px-3 py-1 hover:text-[#E65C00] transition-all" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="search">search</span>
+<span>Search</span>
+</a>
+<!-- Cart (Inactive) -->
+<a class="flex flex-col items-center justify-center text-gray-500 dark:text-gray-400 px-3 py-1 hover:text-[#E65C00] transition-all relative" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="shopping_cart">shopping_cart</span>
+<span>Cart</span>
+<span class="absolute top-0 right-2 bg-error w-2 h-2 rounded-full"></span>
+</a>
+<!-- Profile (Inactive) -->
+<a class="flex flex-col items-center justify-center text-gray-500 dark:text-gray-400 px-3 py-1 hover:text-[#E65C00] transition-all" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span>Profile</span>
+</a>
+</nav>
+</body></html>

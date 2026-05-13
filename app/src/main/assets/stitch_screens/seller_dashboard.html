@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Seller Dashboard - Halli-Santhe</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#186a22",
+                        "secondary": "#835400",
+                        "on-surface-variant": "#594137",
+                        "error-container": "#ffdad6",
+                        "primary-container": "#c74e00",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#88d982",
+                        "inverse-primary": "#ffb595",
+                        "surface-bright": "#fff8f6",
+                        "primary-fixed-dim": "#ffb595",
+                        "on-secondary-fixed-variant": "#643f00",
+                        "on-secondary-fixed": "#2a1800",
+                        "surface-container-highest": "#f7ddd3",
+                        "secondary-container": "#fcab28",
+                        "secondary-fixed-dim": "#ffb957",
+                        "on-tertiary-fixed-variant": "#005312",
+                        "on-tertiary-fixed": "#002204",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#7c2e00",
+                        "inverse-on-surface": "#ffede7",
+                        "surface-container": "#ffe9e1",
+                        "on-tertiary-container": "#f7fff1",
+                        "background": "#fff8f6",
+                        "surface": "#fff8f6",
+                        "on-secondary-container": "#694300",
+                        "on-primary-fixed": "#360f00",
+                        "tertiary-fixed": "#a3f69c",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#f7ddd3",
+                        "surface-dim": "#eed5cb",
+                        "primary": "#9e3d00",
+                        "inverse-surface": "#3c2d26",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#a23f00",
+                        "outline-variant": "#e1bfb2",
+                        "on-primary-container": "#fffbff",
+                        "surface-container-high": "#fde3d9",
+                        "primary-fixed": "#ffdbcd",
+                        "on-surface": "#261813",
+                        "secondary-fixed": "#ffddb5",
+                        "on-background": "#261813",
+                        "tertiary-container": "#358438",
+                        "on-error": "#ffffff",
+                        "outline": "#8d7165",
+                        "surface-container-low": "#fff1ec"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "32px",
+                        "gutter": "12px",
+                        "container-margin": "16px",
+                        "sm": "8px",
+                        "md": "16px",
+                        "xs": "4px",
+                        "lg": "24px",
+                        "base": "4px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "label-lg": ["Plus Jakarta Sans"],
+                        "title-lg": ["Plus Jakarta Sans"],
+                        "headline-sm": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.5px", "fontWeight": "700"}],
+                        "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-lg": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                        "title-lg": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+                        "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .kolam-divider {
+            background-image: radial-gradient(circle, #D9D4CD 2px, transparent 2px);
+            background-size: 8px 8px;
+            background-position: center;
+            height: 24px;
+            width: 100%;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased">
+<!-- TopAppBar -->
+<header class="docked full-width top-0 border-b border-[#D9D4CD] shadow-[0px_4px_12px_rgba(230,92,0,0.08)] flex justify-between items-center w-full px-4 h-16 bg-[#FFF8F0] z-40 sticky">
+<div class="flex items-center gap-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden border-2 border-primary">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="A close-up, high-quality portrait of a traditional Indian artisan woman. The lighting is warm and natural, highlighting her features. The aesthetic is authentic and earthy, aligning with a tactile modernism style. She is smiling gently against a neutral background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUWjCALBqfiXBHNoWW2JaE85L2J9oO2o883PYkENqpJXJi2SU4DmGWwJoe00Um4OFUdxwYw8WCJ1NrGRWR8vNQ_qD2XSb2EL0_rsqH-JjJc190kyK7hzgGqRAOKbPCSQ1V-cBSR9pHt2rTlOXnAW2QQGbWwDvpo4LOUDDPQTW0ReLSURuW2I3EvI1wmu7-ut70QK7rQxOXHNIW87d2N6bO77BRZPcWn_k0mgBy2UAwmOm89yU0RzTmSugHs-lDVM5Uf-lpKtqJjaI"/>
+</div>
+<img alt="Logo" class="object-contain h-9" data-alt="The Halli-Santhe brand logo, featuring a minimalist, modern interpretation of a traditional Indian village market motif. The logo uses warm saffron and deep earthy tones on a pristine white background. The design is crisp, scalable, and conveys a sense of trust and heritage." src="https://lh3.googleusercontent.com/aida/ADBb0uj2tApFsGwmoD2la--e_6330RszmD_tUE1ECd6_Sy1EzcjX3MImZbpbSDXZpIBNdLpFukX5hVck0mIKeuVmJSGRZ-93Wbdq9QughKDhZC4fTkz9I1qQ8ojhnbEGWskwVSFFG8fHjP_70ClNz776y6VKggRPFm5cqlVwYPwIq9QttKkHoCtQ4aIHhBkxBeCP1rm_IZC3O-AbwpJRp7vkylqTMdnHoU7fnzoBdNR1zRYZZ5TX9yodGW8M34C87foWnTJZOZkeL6Z5Cg"/>
+</div>
+<div class="flex items-center gap-md">
+<div class="flex bg-surface-variant rounded-full p-1">
+<button class="px-3 py-1 rounded-full text-label-lg font-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-highest">Buyer</button>
+<button class="px-3 py-1 rounded-full text-label-lg font-label-lg bg-primary text-on-primary shadow-sm">Seller Mode</button>
+</div>
+<button class="text-[#E65C00] hover:bg-orange-50 transition-colors p-2 rounded-full flex items-center justify-center flex items-center"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">storefront</span><span class="font-label-lg ml-1">My Shop</span></button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 px-container-margin py-lg md:px-xl md:py-xl max-w-7xl mx-auto w-full pb-24 md:pb-lg">
+<!-- Welcome Banner -->
+<section class="bg-surface-container-low rounded-[16px] p-md mb-lg shadow-[0px_4px_12px_rgba(230,92,0,0.08)] flex items-center justify-between">
+<div>
+<h1 class="font-headline-sm text-headline-sm text-primary mb-xs">Namaskara, Suma Devi!</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Here's a quick overview of your shop.</p>
+</div>
+<div class="flex items-center gap-xs bg-[#e8f5e9] text-tertiary px-3 py-1.5 rounded-full border border-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-lg text-label-lg">Verified Seller</span>
+</div>
+</section>
+<!-- Stats Grid (Bento Style) -->
+<section class="grid grid-cols-2 md:grid-cols-4 gap-sm md:gap-md mb-lg">
+<div class="bg-white rounded-[16px] p-md shadow-[0px_4px_12px_rgba(230,92,0,0.08)] flex flex-col justify-between">
+<div class="flex items-center justify-between mb-sm">
+<span class="font-body-md text-body-md text-on-surface-variant">Active Products</span>
+<span class="material-symbols-outlined text-primary">inventory_2</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-on-surface">12</div>
+</div>
+<div class="bg-white rounded-[16px] p-md shadow-[0px_4px_12px_rgba(230,92,0,0.08)] flex flex-col justify-between">
+<div class="flex items-center justify-between mb-sm">
+<span class="font-body-md text-body-md text-on-surface-variant">New Inquiries</span>
+<span class="material-symbols-outlined text-secondary">forum</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-on-surface">34</div>
+</div>
+<div class="bg-white rounded-[16px] p-md shadow-[0px_4px_12px_rgba(230,92,0,0.08)] flex flex-col justify-between col-span-2 md:col-span-2 bg-gradient-to-br from-surface-container to-surface-variant border border-outline-variant">
+<div class="flex items-center justify-between mb-sm">
+<span class="font-body-md text-body-md text-on-surface">Shop Performance</span>
+<span class="material-symbols-outlined text-primary">trending_up</span>
+</div>
+<div class="flex items-end gap-sm mt-auto">
+<div class="w-full bg-white h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[75%] rounded-full"></div>
+</div>
+<span class="font-label-lg text-label-lg text-primary">75%</span>
+</div>
+<p class="font-label-lg text-label-lg text-on-surface-variant mt-xs text-right">Profile Completion</p>
+</div>
+</section>
+<div class="kolam-divider mb-lg"></div>
+<!-- Quick Actions -->
+<section class="mb-lg">
+<h2 class="font-title-lg text-title-lg text-on-surface mb-md">Quick Actions</h2>
+<div class="grid grid-cols-2 gap-sm md:gap-md">
+<button class="bg-primary text-on-primary rounded-[24px] py-3 px-4 shadow-[0px_4px_16px_rgba(230,92,0,0.12)] flex items-center justify-center gap-xs hover:bg-surface-tint transition-colors">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="font-label-lg text-label-lg">Add Product</span>
+</button>
+<button class="bg-secondary text-on-secondary rounded-[24px] py-3 px-4 shadow-[0px_4px_16px_rgba(230,92,0,0.12)] flex items-center justify-center gap-xs hover:bg-[#9e6600] transition-colors">
+<span class="material-symbols-outlined">list_alt</span>
+<span class="font-label-lg text-label-lg">My Listings</span>
+</button>
+<button class="bg-white border border-outline-variant text-on-surface rounded-[24px] py-3 px-4 shadow-[0px_4px_12px_rgba(230,92,0,0.08)] flex items-center justify-center gap-xs hover:bg-surface-container-lowest transition-colors">
+<span class="material-symbols-outlined text-secondary">mark_chat_unread</span>
+<span class="font-label-lg text-label-lg">Inquiries</span>
+</button>
+<button class="bg-white border border-outline-variant text-on-surface rounded-[24px] py-3 px-4 shadow-[0px_4px_12px_rgba(230,92,0,0.08)] flex items-center justify-center gap-xs hover:bg-surface-container-lowest transition-colors">
+<span class="material-symbols-outlined text-primary">edit</span>
+<span class="font-label-lg text-label-lg">Edit Profile</span>
+</button>
+</div>
+</section>
+<!-- Recent Inquiries Preview (Glassmorphism inspired) -->
+<section class="bg-white/80 backdrop-blur-md rounded-[16px] p-md shadow-[0px_4px_12px_rgba(230,92,0,0.08)] border border-white mb-lg">
+<div class="flex justify-between items-center mb-md">
+<h3 class="font-title-lg text-title-lg text-on-surface">Recent Inquiries</h3>
+<button class="text-primary font-label-lg text-label-lg hover:underline">View All</button>
+</div>
+<div class="flex flex-col gap-sm">
+<div class="flex items-center gap-md p-sm rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer border border-transparent hover:border-outline-variant">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-primary font-title-lg">A</div>
+<div class="flex-1">
+<h4 class="font-body-md text-body-md font-semibold text-on-surface">Ananya S.</h4>
+<p class="font-body-md text-[13px] text-on-surface-variant truncate">Is the red silk saree available in a darker shade?</p>
+</div>
+<span class="font-label-lg text-[10px] text-on-surface-variant">2h ago</span>
+</div>
+<div class="flex items-center gap-md p-sm rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer border border-transparent hover:border-outline-variant">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-primary font-title-lg">K</div>
+<div class="flex-1">
+<h4 class="font-body-md text-body-md font-semibold text-on-surface">Kiran Kumar</h4>
+<p class="font-body-md text-[13px] text-on-surface-variant truncate">Bulk order pricing for wooden toys?</p>
+</div>
+<span class="font-label-lg text-[10px] text-on-surface-variant">5h ago</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Floating Action Button (Santhe AI) - Left Aligned -->
+<button class="fixed bottom-24 left-4 z-40 bg-secondary-container text-on-secondary-container rounded-[24px] py-3 px-4 shadow-[0px_4px_16px_rgba(230,92,0,0.12)] flex items-center justify-center gap-xs hover:scale-95 transition-transform duration-150 ease-in-out md:bottom-8 md:left-8">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-lg text-label-lg font-bold">Santhe AI</span>
+</button>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 pb-safe px-2 bg-white rounded-t-[24px] shadow-[0px_-4px_16px_rgba(230,92,0,0.12)]">
+<button class="flex flex-col items-center justify-center text-[#E65C00] font-bold scale-90 duration-200 px-4 py-1.5 transition-all">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold">Dashboard</span>
+</button>
+<button class="flex flex-col items-center justify-center text-stone-400 px-4 py-1.5 hover:text-[#E65C00] transition-all">
+<span class="material-symbols-outlined mb-1">inventory_2</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold">Listings</span>
+</button>
+<button class="flex flex-col items-center justify-center text-stone-400 px-4 py-1.5 hover:text-[#E65C00] transition-all">
+<span class="material-symbols-outlined mb-1">forum</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold">Inquiries</span>
+</button>
+<button class="flex flex-col items-center justify-center text-stone-400 px-4 py-1.5 hover:text-[#E65C00] transition-all">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold">Profile</span>
+</button>
+</nav>
+</body></html>

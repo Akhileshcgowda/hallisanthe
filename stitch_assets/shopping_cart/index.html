@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Halli Santhe - Your Cart</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800;900&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#ffb77a",
+                    "on-tertiary-fixed": "#02210a",
+                    "on-secondary-fixed-variant": "#6d3a00",
+                    "on-primary-container": "#fffbff",
+                    "surface-container-low": "#fff1ed",
+                    "outline": "#89726c",
+                    "on-surface": "#231917",
+                    "outline-variant": "#ddc0b9",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#acd0ac",
+                    "on-surface-variant": "#56423d",
+                    "surface-container": "#fdeae5",
+                    "surface": "#fff8f6",
+                    "tertiary": "#446347",
+                    "surface-container-highest": "#f2deda",
+                    "inverse-primary": "#ffb5a1",
+                    "secondary": "#8f4e00",
+                    "on-background": "#231917",
+                    "primary": "#9b3f25",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#ffdcc2",
+                    "tertiary-container": "#5c7c5e",
+                    "surface-tint": "#9e4127",
+                    "on-error-container": "#93000a",
+                    "primary-fixed-dim": "#ffb5a1",
+                    "inverse-surface": "#392e2b",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#2e1500",
+                    "on-primary-fixed": "#3b0800",
+                    "primary-container": "#bb563b",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#683700",
+                    "on-error": "#ffffff",
+                    "primary-fixed": "#ffdbd1",
+                    "inverse-on-surface": "#ffede9",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#2f4e33",
+                    "on-primary-fixed-variant": "#7f2a12",
+                    "surface-bright": "#fff8f6",
+                    "surface-variant": "#f2deda",
+                    "surface-dim": "#e9d6d1",
+                    "surface-container-high": "#f7e4df",
+                    "secondary-container": "#fe9832",
+                    "on-tertiary-container": "#f7fff3",
+                    "background": "#fff8f6",
+                    "tertiary-fixed": "#c7ecc7"
+            },
+            "fontFamily": {
+                    "label-md": ["Be Vietnam Pro"],
+                    "body-lg": ["Be Vietnam Pro"],
+                    "label-sm": ["Be Vietnam Pro"],
+                    "headline-md": ["Epilogue"],
+                    "headline-lg": ["Epilogue"],
+                    "display-xl": ["Epilogue"],
+                    "body-md": ["Be Vietnam Pro"]
+            }
+          },
+        },
+      }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+.clay-card {
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4), 0 2px 4px rgba(155, 63, 37, 0.08)
+    }
+.paper-texture {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBILRNfPcpgMYcItTBiBI8A-dRLG1rlTHtwbtzJE79uIpyVwd6WpHg2b56AlGsxyZvYrLfLRJUGkPR_T_Z4HjmvHg6o-ErdPQqGkJn3vPS8XHazrsqcVVFhwVKvlFLbN-FdmqTeYztHbHeDC6Vtz8RKklDzFicjqRjc80hmYN0RqV1p5VLf9fa16oYu2AlJIr1Gg37tWLzvUbiJrXVSn1ZaXibchfFS_83O4x5WLddO4unZRAjLnvnVpKakVusn1LAJu2dBpNUk_H_P)
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed-variant min-h-screen pb-24 paper-texture">
+<!-- TopAppBar -->
+<header class="bg-[#FFFBF5] dark:bg-stone-950 docked full-width top-0 z-40 border-b-2 border-[#D9C5B2] dark:border-stone-800 shadow-sm fixed w-full">
+<div class="flex justify-between items-center w-full px-6 h-16">
+<button class="hover:bg-orange-50 dark:hover:bg-stone-900 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined text-[#C05A3E] dark:text-[#E28A6E]" data-icon="menu">menu</span>
+</button>
+<img alt="HalliSanthe Digital Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uiHzAqeJy7IaEttjT8DD-k5nnt2a-liQk60yXROA1yIPVu0Z-jO-Fy2rrAMwEoZqtjx1af3jAzhl4Gf5zBOyPg9k89F2fyYYVkNO0iGJBC6Oz1KcJDPJBB4mN_CumHsc8dIis7w5e222JwNoEk-uiOgtWokahbvIuU2lzAx_d5w91EIPiZH8OVwDtkagdKjPtdI34iudD7DmGkKDtUJ6EXg3-sG4T1kwxNBBj1AWcGN9vZCuXvxI7ZcoYzMHX4PY75FBhWbvc1tX7A"/>
+<button class="text-[#C05A3E] font-bold hover:bg-orange-50 dark:hover:bg-stone-900 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined" data-icon="shopping_basket">shopping_basket</span>
+</button>
+</div>
+</header>
+<main class="pt-24 px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+<div class="flex flex-col lg:flex-row gap-lg">
+<!-- Shopping Cart Items List -->
+<div class="flex-grow space-y-md">
+<div class="flex items-center justify-between mb-sm">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Your Basket</h2>
+<span class="font-label-md text-label-md text-on-surface-variant bg-surface-container-high px-4 py-1 rounded-full">3 Items</span>
+</div>
+<!-- Cart Item 1 -->
+<div class="clay-card bg-surface-container-lowest border border-outline-variant p-md rounded-xl flex gap-md items-start group hover:border-primary transition-colors">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img alt="Hand-woven Ikat Fabric" class="w-full h-full object-cover" data-alt="Close-up of vibrant blue and orange Ikat hand-woven fabric with intricate geometric patterns, soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSoMF7u0p-W-EhRQUGf8JfhjJQ6IStxb35BNQ9xRkscL9D7Y5mJAuuWdOp2UEubf2vh22xjCU4gCRzPGkUqVCJonSMM5IlpKJgY4N-lfO_60h_wU7dJVfZ2H7WfHELbRFdQ4Jo19B_tCqNdgHCHLR-89hgevQti2HgPP11E76tSdGB3Kn8F7a5pt4ahnOI82FgW2QpLCbzY0C3uzMFJuXbpyMitWb609MrJu5Basu5KH2Xt48I52j4plFzbppco7KzWo8dOZxd38Ri"/>
+</div>
+<div class="flex-grow flex flex-col h-full">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Blue Ikat Cushion Cover</h3>
+<p class="font-label-md text-label-md text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="brush">brush</span> 
+                                    By Kavitha from Pochampally
+                                </p>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1">
+<span class="material-symbols-outlined" data-icon="delete">delete</span>
+</button>
+</div>
+<div class="mt-auto pt-sm flex justify-between items-end">
+<div class="flex items-center bg-surface-container rounded-lg p-1 border border-outline-variant">
+<button class="w-8 h-8 flex items-center justify-center hover:bg-surface-container-high rounded transition-colors text-on-surface">
+<span class="material-symbols-outlined text-sm" data-icon="remove">remove</span>
+</button>
+<span class="px-4 font-label-md text-label-md font-bold">01</span>
+<button class="w-8 h-8 flex items-center justify-center hover:bg-surface-container-high rounded transition-colors text-on-surface">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+</button>
+</div>
+<span class="font-headline-md text-headline-md text-secondary">₹1,250</span>
+</div>
+</div>
+</div>
+<!-- Cart Item 2 -->
+<div class="clay-card bg-surface-container-lowest border border-outline-variant p-md rounded-xl flex gap-md items-start group hover:border-primary transition-colors">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img alt="Terracotta Clay Pot" class="w-full h-full object-cover" data-alt="Traditional handmade terracotta clay water pot with ornate carvings, earthy brown texture, dramatic side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuf4_dr32jKn2rWTGz8Yf2e5sRWEb6ZSjpoScAlzYYvUIBduuUBdkF2lEtBzUfL3AuXqLkbwNwm-1qqlrn1vCVpyMeokP3R45E9TaOgmz6HQQILvIJY-iK4zokWFlb5ihtHj622O63NqgQyn_dRqkOIWEACYEFK4_t0nwFnV2a8eVL1NdtrELMhfqa2Rpy1BJzC4zsZEe6WXacyJ4NZpBDDsPTN-Q9aBxe0lw0tcWrMipz3prjPFGt-IGPQBxqr7jZ2nU5CT3OEwGA"/>
+</div>
+<div class="flex-grow flex flex-col h-full">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Traditional Clay Matka</h3>
+<p class="font-label-md text-label-md text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="brush">brush</span> 
+                                    By Somnath Potteries
+                                </p>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1">
+<span class="material-symbols-outlined" data-icon="delete">delete</span>
+</button>
+</div>
+<div class="mt-auto pt-sm flex justify-between items-end">
+<div class="flex items-center bg-surface-container rounded-lg p-1 border border-outline-variant">
+<button class="w-8 h-8 flex items-center justify-center hover:bg-surface-container-high rounded transition-colors text-on-surface">
+<span class="material-symbols-outlined text-sm" data-icon="remove">remove</span>
+</button>
+<span class="px-4 font-label-md text-label-md font-bold">02</span>
+<button class="w-8 h-8 flex items-center justify-center hover:bg-surface-container-high rounded transition-colors text-on-surface">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+</button>
+</div>
+<span class="font-headline-md text-headline-md text-secondary">₹890</span>
+</div>
+</div>
+</div>
+<!-- Cart Item 3 -->
+<div class="clay-card bg-surface-container-lowest border border-outline-variant p-md rounded-xl flex gap-md items-start group hover:border-primary transition-colors">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img alt="Handmade Wooden Toys" class="w-full h-full object-cover" data-alt="Hand-painted Channapatna wooden toys in bright lacquer colors, glossy finish, cultural craft aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDNYaJkCDJWz9L9yzCZg8945qlOBhTS63G6N2Q2Bm5Bmr5M8ON7dF7YkDzJJB9kaKu-NFx9_SDGHLCzzf-NtB8j65T2GAqq3xHi80IyBKWI7N6i6s2AGRB5QNnaSfiZWmsDP3QUxwLbriCPkoszIbiblGm12fok1BEjbFxTMo3Zo1pHTlM4MEfFrPrrttoToVu9Wl2fQI333y6SJXPv0AIMo5KdWb3eQ7Gv3gUcs6ufFG3Vm7_Krx4NNHlBfOrbWI6P0B5zxoAC-I9"/>
+</div>
+<div class="flex-grow flex flex-col h-full">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Channapatna Wooden Stackers</h3>
+<p class="font-label-md text-label-md text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="brush">brush</span> 
+                                    By Artisan Raju
+                                </p>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1">
+<span class="material-symbols-outlined" data-icon="delete">delete</span>
+</button>
+</div>
+<div class="mt-auto pt-sm flex justify-between items-end">
+<div class="flex items-center bg-surface-container rounded-lg p-1 border border-outline-variant">
+<button class="w-8 h-8 flex items-center justify-center hover:bg-surface-container-high rounded transition-colors text-on-surface">
+<span class="material-symbols-outlined text-sm" data-icon="remove">remove</span>
+</button>
+<span class="px-4 font-label-md text-label-md font-bold">01</span>
+<button class="w-8 h-8 flex items-center justify-center hover:bg-surface-container-high rounded transition-colors text-on-surface">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+</button>
+</div>
+<span class="font-headline-md text-headline-md text-secondary">₹640</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Price Details Summary -->
+<aside class="w-full lg:w-96">
+<div class="bg-surface-container border-2 border-outline-variant rounded-2xl p-lg sticky top-24 shadow-lg">
+<h2 class="font-headline-md text-headline-md text-on-surface border-b border-outline-variant pb-4 mb-6">Price Details</h2>
+<div class="space-y-4">
+<div class="flex justify-between font-body-md text-body-md text-on-surface-variant">
+<span>Price (3 items)</span>
+<span>₹2,780</span>
+</div>
+<div class="flex justify-between font-body-md text-body-md text-tertiary">
+<span>Discount (Artisan Promo)</span>
+<span>-₹300</span>
+</div>
+<div class="flex justify-between font-body-md text-body-md text-on-surface-variant border-b border-outline-variant pb-4 border-dashed">
+<span>Delivery Charges</span>
+<div class="flex gap-2">
+<span class="line-through opacity-50">₹80</span>
+<span class="text-tertiary font-bold">FREE</span>
+</div>
+</div>
+<div class="flex justify-between font-headline-md text-headline-md text-on-surface pt-2">
+<span>Total Amount</span>
+<span>₹2,480</span>
+</div>
+</div>
+<div class="mt-8 bg-tertiary-fixed text-on-tertiary-fixed p-3 rounded-lg flex items-center gap-2 mb-8">
+<span class="material-symbols-outlined" data-icon="eco" style="font-variation-settings: 'FILL' 1;">eco</span>
+<p class="font-label-sm text-label-sm">This order supports 3 local artisans and sustainable practices.</p>
+</div>
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary py-4 rounded-xl font-headline-md text-headline-md shadow-lg transition-all active:scale-[0.98] flex items-center justify-center gap-3">
+                        Place Order
+                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<div class="mt-6 flex flex-col items-center gap-2">
+<div class="flex gap-4 opacity-40 grayscale group-hover:grayscale-0 transition-all">
+<span class="material-symbols-outlined text-2xl" data-icon="verified_user">verified_user</span>
+<span class="material-symbols-outlined text-2xl" data-icon="local_shipping">local_shipping</span>
+<span class="material-symbols-outlined text-2xl" data-icon="payments">payments</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant opacity-60">100% Secure Checkout</p>
+</div>
+</div>
+</aside>
+</div>
+<!-- Artisan Story Interstitial -->
+<section class="mt-xl mb-md">
+<div class="relative rounded-3xl overflow-hidden h-64 flex items-center">
+<img alt="Artisan at work" class="absolute inset-0 w-full h-full object-cover" data-alt="Artisan woman in traditional saree meticulously painting Madhubani art, warm sunlight illuminating the workspace, cultural workshop background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByPMa2OxckWeyGUwuWOugmjO9CZbr9MFnJ1gbNIdsID6s2kd82kfHg4KUAhr2nYeQzfffd4o0p9s49GtVTHQ_htw8kDFaaJsWzzup7fiAC94RqdPwx9MyXMFaXXxUgPJ7nU9lMHt1Y8TPqvwBa_XSskawEMdq0W2BerbZe1zMwOMwPoiR-0QPrKkIAhNUdXI6YS9YtANRLqvl41ombmvk9V1zpYo_kCKK5jmyriuqjuBPxbful9bWtBqLqXcJzI-5m7XyIyN7RwpWn"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-transparent"></div>
+<div class="relative z-10 p-lg max-w-lg text-on-primary">
+<h3 class="font-headline-lg text-headline-lg mb-2">Meet Your Makers</h3>
+<p class="font-body-md text-body-md opacity-90 mb-4">Every thread, every brushstroke has a story. See how your items were crafted in our Artisan Stories section.</p>
+<button class="flex items-center gap-2 font-label-md text-label-md border-b-2 border-on-primary pb-1 hover:opacity-80 transition-opacity">
+                        Read Stories <span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-[#FFFBF5] dark:bg-stone-900 border-t border-[#D9C5B2] shadow-[0_-4px_10px_rgba(192,90,62,0.05)] rounded-t-3xl">
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-4 py-1.5 hover:text-[#C05A3E] dark:hover:text-[#E28A6E]" href="#">
+<span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+<span class="font-['Epilogue'] text-xs font-medium">Market</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-4 py-1.5 hover:text-[#C05A3E] dark:hover:text-[#E28A6E]" href="#">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="font-['Epilogue'] text-xs font-medium">Search</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#C05A3E] text-white rounded-2xl px-4 py-1.5 transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_cart" style="font-variation-settings: 'FILL' 1;">shopping_cart</span>
+<span class="font-['Epilogue'] text-xs font-medium">Cart</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-4 py-1.5 hover:text-[#C05A3E] dark:hover:text-[#E28A6E]" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Epilogue'] text-xs font-medium">Profile</span>
+</a>
+</nav>
+</body></html>

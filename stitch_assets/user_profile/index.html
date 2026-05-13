@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800;900&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#ffb77a",
+                        "on-tertiary-fixed": "#02210a",
+                        "on-secondary-fixed-variant": "#6d3a00",
+                        "on-primary-container": "#fffbff",
+                        "surface-container-low": "#fff1ed",
+                        "outline": "#89726c",
+                        "on-surface": "#231917",
+                        "outline-variant": "#ddc0b9",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#acd0ac",
+                        "on-surface-variant": "#56423d",
+                        "surface-container": "#fdeae5",
+                        "surface": "#fff8f6",
+                        "tertiary": "#446347",
+                        "surface-container-highest": "#f2deda",
+                        "inverse-primary": "#ffb5a1",
+                        "secondary": "#8f4e00",
+                        "on-background": "#231917",
+                        "primary": "#9b3f25",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#ffdcc2",
+                        "tertiary-container": "#5c7c5e",
+                        "surface-tint": "#9e4127",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#ffb5a1",
+                        "inverse-surface": "#392e2b",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#2e1500",
+                        "on-primary-fixed": "#3b0800",
+                        "primary-container": "#bb563b",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#683700",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#ffdbd1",
+                        "inverse-on-surface": "#ffede9",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#2f4e33",
+                        "on-primary-fixed-variant": "#7f2a12",
+                        "surface-bright": "#fff8f6",
+                        "surface-variant": "#f2deda",
+                        "surface-dim": "#e9d6d1",
+                        "surface-container-high": "#f7e4df",
+                        "secondary-container": "#fe9832",
+                        "on-tertiary-container": "#f7fff3",
+                        "background": "#fff8f6",
+                        "tertiary-fixed": "#c7ecc7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "80px",
+                        "md": "24px",
+                        "margin-desktop": "64px",
+                        "lg": "48px",
+                        "sm": "12px",
+                        "xs": "4px",
+                        "gutter": "16px",
+                        "base": "8px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Be Vietnam Pro"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "label-sm": ["Be Vietnam Pro"],
+                        "headline-md": ["Epilogue"],
+                        "headline-lg": ["Epilogue"],
+                        "display-xl": ["Epilogue"],
+                        "body-md": ["Be Vietnam Pro"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "display-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .textile-pattern {
+            background-image: radial-gradient(#C05A3E 0.5px, transparent 0.5px), radial-gradient(#C05A3E 0.5px, #fff8f6 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            opacity: 0.1;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen pb-32">
+<!-- TopAppBar from JSON -->
+<header class="fixed top-0 left-0 w-full z-40 bg-[#FFFBF5] shadow-sm border-b-2 border-[#D9C5B2] flex justify-between items-center px-6 h-16">
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-orange-50 transition-colors text-[#C05A3E]">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<img alt="Halli-Santhe Logo" class="w-auto object-contain h-12" src="https://lh3.googleusercontent.com/aida/ADBb0uiHzAqeJy7IaEttjT8DD-k5nnt2a-liQk60yXROA1yIPVu0Z-jO-Fy2rrAMwEoZqtjx1af3jAzhl4Gf5zBOyPg9k89F2fyYYVkNO0iGJBC6Oz1KcJDPJBB4mN_CumHsc8dIis7w5e222JwNoEk-uiOgtWokahbvIuU2lzAx_d5w91EIPiZH8OVwDtkagdKjPtdI34iudD7DmGkKDtUJ6EXg3-sG4T1kwxNBBj1AWcGN9vZCuXvxI7ZcoYzMHX4PY75FBhWbvc1tX7A"/>
+</div>
+<button class="p-2 rounded-full hover:bg-orange-50 transition-colors text-[#C05A3E]">
+<span class="material-symbols-outlined" data-icon="shopping_basket">shopping_basket</span>
+</button>
+</header>
+<main class="pt-20 px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+<!-- Profile Header Section -->
+<section class="mt-8 flex flex-col md:flex-row items-center gap-8 bg-surface-container p-8 rounded-[2rem] border border-outline-variant relative overflow-hidden">
+<div class="absolute inset-0 textile-pattern pointer-events-none"></div>
+<div class="relative z-10">
+<div class="w-32 h-32 rounded-full p-1 bg-gradient-to-tr from-primary via-secondary to-tertiary">
+<div class="w-full h-full rounded-full border-4 border-surface overflow-hidden">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close-up portrait of a smiling middle-aged man with warm lighting and a natural outdoor background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIQoisw1-3Ld6Z6v0NfMUOPXXzeOANQYL8OPTviwOXYixYiqZHFFF0wl3ev0S9SVqYHTP6wqf2xcfMAJFJqXZSRkPfdMp9OFFVFkB3E3enIKmBKG2evabFp1LnZzeCt52yfOTddryFclcI81glPeOkBC3-FfcEExk3ugDieRxM07KDeZZAL9-BB7avoUx3LOnUBYX3IU065LlCu6YKO3rDZx15jNowHvm7WtvqmXgD0gUCPomdH8ww8PegKL-u39gUgHQh7bYddrsY"/>
+</div>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-secondary text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg border-2 border-surface">
+<span class="material-symbols-outlined" style="font-size: 20px;">edit</span>
+</div>
+</div>
+<div class="text-center md:text-left z-10 flex-1">
+<p class="font-label-md text-secondary uppercase tracking-widest mb-1">Namaste,</p>
+<h2 class="font-headline-lg text-primary mb-2">Arjun Deshpande</h2>
+<p class="font-body-md text-on-surface-variant max-w-md">Proud patron of local craftsmanship since 2022. Welcome back to your Santhe corner.</p>
+<div class="mt-6 flex flex-wrap justify-center md:justify-start gap-4">
+<div class="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-full border border-outline-variant">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-on-surface">Verified Patron</span>
+</div>
+<div class="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-full border border-outline-variant">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-on-surface">Gold Member</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact Section: High-End Bento Grid -->
+<section class="mt-12">
+<div class="flex justify-between items-end mb-6">
+<div>
+<h3 class="font-headline-md text-primary">Your Impact Circle</h3>
+<p class="font-body-md text-on-surface-variant">Every purchase weaves a story of support.</p>
+</div>
+<button class="font-label-md text-primary hover:underline flex items-center gap-1">
+                    See Journey <span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Large Impact Card -->
+<div class="md:col-span-2 bg-tertiary-container/20 p-8 rounded-[2rem] border border-tertiary-container/30 flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-8 -top-8 w-48 h-48 bg-tertiary/10 rounded-full blur-3xl group-hover:scale-125 transition-transform duration-700"></div>
+<div>
+<div class="bg-tertiary text-white w-12 h-12 rounded-2xl flex items-center justify-center mb-6 shadow-md">
+<span class="material-symbols-outlined" data-icon="diversity_3" style="font-variation-settings: 'FILL' 1;">diversity_3</span>
+</div>
+<h4 class="font-headline-lg text-tertiary mb-2">5 Artisan Families</h4>
+<p class="font-body-lg text-on-tertiary-fixed-variant">Supported directly through your ethical choices this year. You've helped preserve traditional Channapatna woodcraft and Handloom weaving.</p>
+</div>
+<div class="mt-8 flex -space-x-4">
+<img class="w-12 h-12 rounded-full border-4 border-background object-cover" data-alt="Portrait of an Indian woman weaver in a colorful saree at a loom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvtNKtwPPhYlwLcCmygI2Po2UpCWk_YCx9dwCsByByXIu6TqTz1HmD-1ES9VdE0yYiNZfCprkwfK__Gcr0ti60TyanKSuD5_TaKQhEH9X9P3dK4f76AxMM0k-l9DJNwJn8KgWqGNFWtFz6ZdrU9Le59s8x5ZHEEMJTJUl0XSomR07zWoAyZ8CWHxgWHI0xDqdvnS1kmDHNoWSDm9cupAococUscQ4UOFED8Em_6kR1CiAdS1H0iY8cFnABOfd08ONTnVeYGFj-YVTi"/>
+<img class="w-12 h-12 rounded-full border-4 border-background object-cover" data-alt="Close-up of an elderly man carving wood with traditional tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk1GvGWx0upUK9XWEeQan-fH6OyvZM3z3yADsvRC1LB6n2ouS00BkLkQG1DeV0GcjRra9n5NLKvsnMu0k69wN-6k3fvsems0f9qAOuTWRJu6ZBb5Pms75oewmbcmyD2bvXoJnNeWe5yEwtE1WNI0bwXYxvO0il9PWF_oeOM_LJ712Zvkq1wbXP5eztonhdRSmEANt9ec-mliRVndK_AcxOGR_BawnAaE8kf-39vE1E3M0-IIaqTPE9qv8hAX8jGrq2VtQGgBGdKcIk"/>
+<img class="w-12 h-12 rounded-full border-4 border-background object-cover" data-alt="Artisan woman holding a finished piece of pottery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzb1ZWYnnxSIZSa_Rh0hQ9CzFGu1kiv10MAboODsrBZ1PLb8Cp5pX8CaTVmvvkvTyoSZjCUjGdATXrvTvTCYMIWdrwFnZlKo8oJye30qWUst_AF6BfdyDUtGtVy_bmFf__9wKJIhlRSwoDiH8Y0OkbxxnqWzCvxSTUq3ZfB0PNRXnCXZ1FZdJ7kmzk-EVt5T4knJi1AIWWayEQpZ0fVYQlq86LU1TldvgRdIRMIzBwHZ8BAJWy6NaPSrKBl4cweHrWhKoe-UzTq1kT"/>
+<div class="w-12 h-12 rounded-full border-4 border-background bg-surface-container-highest flex items-center justify-center text-on-surface-variant font-label-sm">+2</div>
+</div>
+</div>
+<!-- Secondary Impact Card -->
+<div class="bg-secondary-container/20 p-8 rounded-[2rem] border border-secondary-container/30 flex flex-col justify-center items-center text-center relative overflow-hidden">
+<div class="mb-4 bg-secondary/10 p-4 rounded-full">
+<span class="material-symbols-outlined text-secondary text-5xl" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<h4 class="font-headline-md text-secondary">Zero Plastic</h4>
+<p class="font-body-md text-on-secondary-fixed-variant">12kg of plastic waste avoided through your eco-friendly packaging choices.</p>
+</div>
+</div>
+</section>
+<!-- Quick Links: Asymmetric Layout -->
+<section class="mt-16 mb-20">
+<h3 class="font-headline-md text-primary mb-8 px-2">Account Hub</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<!-- My Orders -->
+<a class="col-span-2 md:col-span-2 bg-surface-container-high p-6 rounded-[2rem] border border-outline-variant hover:shadow-lg transition-all group relative overflow-hidden" href="#">
+<div class="flex justify-between items-start">
+<div>
+<span class="material-symbols-outlined text-primary text-3xl mb-4 block" data-icon="package_2">package_2</span>
+<h5 class="font-headline-md text-on-surface">My Orders</h5>
+<p class="font-label-sm text-on-surface-variant">Track, return, or reorder</p>
+</div>
+<div class="bg-primary/10 text-primary px-3 py-1 rounded-full font-label-sm">2 Active</div>
+</div>
+<span class="material-symbols-outlined absolute bottom-6 right-6 text-primary/30 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+<!-- Wishlist -->
+<a class="col-span-1 bg-surface-container p-6 rounded-[2rem] border border-outline-variant hover:shadow-lg transition-all group flex flex-col justify-between" href="#">
+<span class="material-symbols-outlined text-primary text-3xl mb-4" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<div>
+<h5 class="font-label-md font-bold text-on-surface">Wishlist</h5>
+<p class="font-label-sm text-on-surface-variant">15 items</p>
+</div>
+</a>
+<!-- Saved Artisans -->
+<a class="col-span-1 bg-surface-container p-6 rounded-[2rem] border border-outline-variant hover:shadow-lg transition-all group flex flex-col justify-between" href="#">
+<span class="material-symbols-outlined text-tertiary text-3xl mb-4" data-icon="brush">brush</span>
+<div>
+<h5 class="font-label-md font-bold text-on-surface">Saved Artisans</h5>
+<p class="font-label-sm text-on-surface-variant">8 Makers</p>
+</div>
+</a>
+<!-- Address Book -->
+<a class="col-span-1 bg-surface-container p-6 rounded-[2rem] border border-outline-variant hover:shadow-lg transition-all group flex flex-col justify-between" href="#">
+<span class="material-symbols-outlined text-secondary text-3xl mb-4" data-icon="location_on">location_on</span>
+<div>
+<h5 class="font-label-md font-bold text-on-surface">Address Book</h5>
+<p class="font-label-sm text-on-surface-variant">2 locations</p>
+</div>
+</a>
+<!-- Settings -->
+<a class="col-span-1 bg-surface-container p-6 rounded-[2rem] border border-outline-variant hover:shadow-lg transition-all group flex flex-col justify-between" href="#">
+<span class="material-symbols-outlined text-on-surface-variant text-3xl mb-4" data-icon="settings">settings</span>
+<div>
+<h5 class="font-label-md font-bold text-on-surface">Settings</h5>
+<p class="font-label-sm text-on-surface-variant">Profile &amp; Privacy</p>
+</div>
+</a>
+<!-- Help Support (Wide) -->
+<a class="col-span-2 bg-surface-container-lowest p-6 rounded-[2rem] border-2 border-dashed border-outline-variant hover:border-primary transition-all group flex items-center gap-6" href="#">
+<div class="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">contact_support</span>
+</div>
+<div>
+<h5 class="font-label-md font-bold text-on-surface">Need help with an artisan order?</h5>
+<p class="font-label-sm text-on-surface-variant">Our Santhe support is here for you 24/7</p>
+</div>
+</a>
+</div>
+</section>
+<!-- Log Out CTA -->
+<div class="flex justify-center mb-12">
+<button class="flex items-center gap-2 px-8 py-4 border border-error text-error rounded-full hover:bg-error-container transition-colors font-label-md">
+<span class="material-symbols-outlined">logout</span>
+                Logout from Account
+            </button>
+</div>
+</main>
+<!-- BottomNavBar from JSON -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-[#FFFBF5] flex justify-around items-center px-2 py-3 shadow-[0_-4px_10px_rgba(192,90,62,0.05)] border-t border-[#D9C5B2] rounded-t-3xl">
+<a class="flex flex-col items-center justify-center text-stone-500 px-4 py-1.5 hover:text-[#C05A3E]" href="#">
+<span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+<span class="font-['Epilogue'] text-xs font-medium mt-1">Market</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 px-4 py-1.5 hover:text-[#C05A3E]" href="#">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="font-['Epilogue'] text-xs font-medium mt-1">Search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 px-4 py-1.5 hover:text-[#C05A3E]" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-['Epilogue'] text-xs font-medium mt-1">Cart</span>
+</a>
+<!-- Profile is Active -->
+<a class="flex flex-col items-center justify-center bg-[#C05A3E] text-white rounded-2xl px-4 py-1.5 transition-all scale-100" href="#">
+<span class="material-symbols-outlined" data-icon="person" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-['Epilogue'] text-xs font-medium mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

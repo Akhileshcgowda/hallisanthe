@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800;900&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#ffb77a",
+                    "on-tertiary-fixed": "#02210a",
+                    "on-secondary-fixed-variant": "#6d3a00",
+                    "on-primary-container": "#fffbff",
+                    "surface-container-low": "#fff1ed",
+                    "outline": "#89726c",
+                    "on-surface": "#231917",
+                    "outline-variant": "#ddc0b9",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#acd0ac",
+                    "on-surface-variant": "#56423d",
+                    "surface-container": "#fdeae5",
+                    "surface": "#fff8f6",
+                    "tertiary": "#446347",
+                    "surface-container-highest": "#f2deda",
+                    "inverse-primary": "#ffb5a1",
+                    "secondary": "#8f4e00",
+                    "on-background": "#231917",
+                    "primary": "#9b3f25",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#ffdcc2",
+                    "tertiary-container": "#5c7c5e",
+                    "surface-tint": "#9e4127",
+                    "on-error-container": "#93000a",
+                    "primary-fixed-dim": "#ffb5a1",
+                    "inverse-surface": "#392e2b",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#2e1500",
+                    "on-primary-fixed": "#3b0800",
+                    "primary-container": "#bb563b",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#683700",
+                    "on-error": "#ffffff",
+                    "primary-fixed": "#ffdbd1",
+                    "inverse-on-surface": "#ffede9",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#2f4e33",
+                    "on-primary-fixed-variant": "#7f2a12",
+                    "surface-bright": "#fff8f6",
+                    "surface-variant": "#f2deda",
+                    "surface-dim": "#e9d6d1",
+                    "surface-container-high": "#f7e4df",
+                    "secondary-container": "#fe9832",
+                    "on-tertiary-container": "#f7fff3",
+                    "background": "#fff8f6",
+                    "tertiary-fixed": "#c7ecc7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "80px",
+                    "md": "24px",
+                    "margin-desktop": "64px",
+                    "lg": "48px",
+                    "sm": "12px",
+                    "xs": "4px",
+                    "gutter": "16px",
+                    "base": "8px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "label-md": ["Be Vietnam Pro"],
+                    "body-lg": ["Be Vietnam Pro"],
+                    "label-sm": ["Be Vietnam Pro"],
+                    "headline-md": ["Epilogue"],
+                    "headline-lg": ["Epilogue"],
+                    "display-xl": ["Epilogue"],
+                    "body-md": ["Be Vietnam Pro"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "display-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .clay-card {
+            box-shadow: inset 2px 2px 5px rgba(255,255,255,0.3), inset -2px -2px 5px rgba(0,0,0,0.05);
+        }
+        .rangoli-bg {
+            background-image: radial-gradient(circle at 10px 10px, #D9C5B2 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background font-body-md text-on-background min-h-screen pb-24">
+<!-- Top Navigation Anchor -->
+<header class="bg-[#FFFBF5] dark:bg-stone-950 docked full-width top-0 z-40 border-b-2 border-[#D9C5B2] dark:border-stone-800 shadow-sm flex justify-between items-center w-full px-6 h-16 sticky">
+<div class="flex items-center gap-4">
+<button class="text-[#C05A3E] dark:text-[#E28A6E] hover:bg-orange-50 dark:hover:bg-stone-900 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<img alt="Halli-Santhe Logo" class="w-auto object-contain max-h-12 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0uiHzAqeJy7IaEttjT8DD-k5nnt2a-liQk60yXROA1yIPVu0Z-jO-Fy2rrAMwEoZqtjx1af3jAzhl4Gf5zBOyPg9k89F2fyYYVkNO0iGJBC6Oz1KcJDPJBB4mN_CumHsc8dIis7w5e222JwNoEk-uiOgtWokahbvIuU2lzAx_d5w91EIPiZH8OVwDtkagdKjPtdI34iudD7DmGkKDtUJ6EXg3-sG4T1kwxNBBj1AWcGN9vZCuXvxI7ZcoYzMHX4PY75FBhWbvc1tX7A"/>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-[#C05A3E] dark:text-[#E28A6E] hover:bg-orange-50 dark:hover:bg-stone-900 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined" data-icon="shopping_basket">shopping_basket</span>
+</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-8">
+<!-- Search Section -->
+<section class="mb-lg">
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline" data-icon="search">search</span>
+</div>
+<input class="w-full bg-surface-container-lowest border-b-2 border-primary focus:border-tertiary py-4 pl-12 pr-4 font-body-lg text-on-surface outline-none transition-all clay-card" placeholder="Search for handicrafts..." type="text" value="Terracotta"/>
+</div>
+<!-- Filters/Tags -->
+<div class="flex flex-wrap gap-sm mt-md">
+<div class="bg-primary text-on-primary px-4 py-1.5 rounded-full flex items-center gap-2 font-label-md shadow-sm">
+<span>Terracotta</span>
+<span class="material-symbols-outlined text-sm cursor-pointer" data-icon="close">close</span>
+</div>
+<div class="bg-primary text-on-primary px-4 py-1.5 rounded-full flex items-center gap-2 font-label-md shadow-sm">
+<span>Under ₹500</span>
+<span class="material-symbols-outlined text-sm cursor-pointer" data-icon="close">close</span>
+</div>
+<button class="border border-outline px-4 py-1.5 rounded-full flex items-center gap-2 font-label-md text-on-surface-variant hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="tune">tune</span>
+<span>All Filters</span>
+</button>
+</div>
+</section>
+<!-- Results Info -->
+<div class="flex justify-between items-center mb-md px-2">
+<p class="font-headline-md text-on-surface-variant">4 Treasures Found</p>
+<div class="flex items-center gap-2 font-label-sm text-outline">
+<span>Sort by:</span>
+<span class="text-primary font-bold">Popularity</span>
+<span class="material-symbols-outlined text-sm" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Product Grid (Bento Style) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter">
+<!-- Result Item 1: Large Featured Card -->
+<div class="lg:col-span-2 lg:row-span-2 group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant shadow-sm transition-all hover:shadow-md">
+<div class="relative h-[400px] lg:h-[600px]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Intricately hand-carved terracotta clay water pot with floral motifs sitting on a rustic stone ledge with warm sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRAQweZKgCr6e5RYU2Kjm4IlWh4DqxqODD46GAd-zAXQn6BZMnYy_dp_XWYmyYx_TwQ4ym97oQy4bEzTkgEa_ujjR5Rm9M6JBkcHu2lerEIhm7YmXO_8nqzEKv7qi3R7AUY4gzD2XMXP5DTPsE0Xjj5VNXgCPvCrjFxhNPxc3P1XcLUmAUV4DbqthD9WLHHYN4-PtrbxPN7jXiwr8sn-Rww7GZUz3I4XunsOvaRKU1a0UJaeiPuNWTgEVgKgngMV-aE-zCLob1mph7"/>
+<button class="absolute top-4 right-4 bg-white/80 backdrop-blur-md p-3 rounded-full text-primary hover:bg-white transition-all shadow-lg">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+<div class="absolute bottom-4 left-4">
+<span class="bg-secondary text-white px-3 py-1 rounded-lg font-label-sm">Best Seller</span>
+</div>
+</div>
+<div class="p-lg flex flex-col justify-between h-auto lg:h-[calc(100%-600px)]">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-lg text-primary">Prithvi Terracotta Pot</h3>
+<span class="font-display-xl text-primary-container">₹850</span>
+</div>
+<div class="flex items-center gap-2 mb-4">
+<div class="w-8 h-8 rounded-full border-2 border-secondary overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of an elderly Indian artisan smiling, wearing traditional clothing in a rural setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB38cjAmVplsXrO3MOb3hGAinEEOcdYqqrh2eOaekNTVrpmPwIAR3a68tDQsTKH4-LNw5q33zU_AvV1iePNojxvZjGFkH14HNir1K5wi7_OT7_Grpf4wynEbuZdDtZV7NE4FtUn15QxKPclh_-TOxnVSIhLcYxKE9ejGM_sAYdY9JRfnEBGmCFvjBmQJz6WuWWw9wFv6L636yeo2bput6Diw4Lan5CGq-mxjiDVU8E0jXhiI0W8f67OLrnm2BRLVsG1j5B4zWteDCO3"/>
+</div>
+<span class="font-label-md text-on-surface-variant">by Ramesh Kumar</span>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-label-md flex items-center justify-center gap-2 hover:bg-primary-container transition-colors shadow-lg">
+<span class="material-symbols-outlined" data-icon="local_mall">local_mall</span>
+                        Add to Basket
+                    </button>
+</div>
+</div>
+<!-- Result Item 2 -->
+<div class="group bg-surface-container rounded-3xl overflow-hidden border border-outline-variant shadow-sm transition-all hover:shadow-md h-fit">
+<div class="relative h-64">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Small handmade terracotta tea cups arranged on a wooden board with scattered tea leaves and earthy textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaswKqcfnVW8hzXhR85kuKLVbhc0uofKGMmBkGrP6v2TlW-lrIo1BoaLRkkKCWLUy5CL38k_MbVBqZvhD27PmOl-ZpF-xumx3HX6cxtbZjJQBbJeuL8KuTBvtOjnCPWpnlX80UNz8Xk9OtDGh8bML7A-URC-Biw1PLNBFyiRgRmnDNccZUz0YVPNlt_chbRN8LsZfO9Z8GebPbyUYquBwArAYNCqXUbL6pZLycerCBFJucq3JlhnYYcM6LOTh7KNvflb_VAGoK5DPQ"/>
+<button class="absolute top-3 right-3 bg-white/90 p-2 rounded-full text-outline hover:text-primary transition-all">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-on-surface mb-1">Set of 4 Kulhads</h3>
+<p class="font-label-md text-outline mb-4">Artisan: Sunita Bai</p>
+<div class="flex justify-between items-center">
+<span class="font-headline-md text-primary">₹320</span>
+<button class="text-primary hover:bg-primary-container hover:text-white p-2 rounded-lg transition-all border border-primary">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Result Item 3 -->
+<div class="group bg-surface-container-highest rounded-3xl overflow-hidden border border-outline-variant shadow-sm transition-all hover:shadow-md h-fit">
+<div class="relative h-64">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Vibrant hand-painted terracotta mask with traditional Indian folk art patterns in primary colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRRDxilqziN1JhlwjRia6gBmYS8Cvaw27JXt-cDvj3Qkr65HkVH9lIOjXmhWdwmdo7ZGrvLoriTjpKk7B0G5iI-hH-S4If4COw7QqKxz0m1P-WANH1nPjT-wazrtKDgMQHvDrwfLalwkCAe_Ml3th7FdwJFxYRTty-wDmfigKw9aQQe0zECz7Gm-P0WjpQ-GdJEwoYHmFrjQL_2egThCTDTUOloquWV8HE0YbEQpx5utFEzXN_H_hnp6ajGVwgX9tvjYcT4m2ta6wE"/>
+<button class="absolute top-3 right-3 bg-white/90 p-2 rounded-full text-outline hover:text-primary transition-all">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-on-surface mb-1">Folk Art Wall Mask</h3>
+<p class="font-label-md text-outline mb-4">Artisan: Gopal Das</p>
+<div class="flex justify-between items-center">
+<span class="font-headline-md text-primary">₹480</span>
+<button class="text-primary hover:bg-primary-container hover:text-white p-2 rounded-lg transition-all border border-primary">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Result Item 4 -->
+<div class="group bg-surface-container rounded-3xl overflow-hidden border border-outline-variant shadow-sm transition-all hover:shadow-md h-fit">
+<div class="relative h-64">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Traditional terracotta diya lamp lit with a cotton wick and oil, casting a warm orange glow in the dark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAxygNYmZHLbwbmrXq_sE4qxohfguBtFAW0p92BLxJ3KudIyux0W8vlDN6doUqXQQx0hGJ5teNXzDwpwonHGMLs2bmnsZS2g1JTX-QReULwrUnF2gPe09BUoYFPiFmXuYj9jMVTeHjG5NX8hB89af_PSVmmeGFe4Pa7qe5Z886GHlJlAMfuaTlJF40psNZ5jPL_viwGWdBBNhpZanGVVKZorFWwwTXnYmimSMFOodY7RMGef-vETvxPj56OYtS2HpS9Kq8xUbvBKSx"/>
+<button class="absolute top-3 right-3 bg-white/90 p-2 rounded-full text-outline hover:text-primary transition-all">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-on-surface mb-1">Hand-etched Diya</h3>
+<p class="font-label-md text-outline mb-4">Artisan: Meena Devi</p>
+<div class="flex justify-between items-center">
+<span class="font-headline-md text-primary">₹150</span>
+<button class="text-primary hover:bg-primary-container hover:text-white p-2 rounded-lg transition-all border border-primary">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Suggestion Card (Bento Slot) -->
+<div class="lg:col-span-2 bg-[#F7E4DF] rounded-3xl p-lg flex flex-col md:flex-row items-center gap-lg border-2 border-dashed border-primary/30 rangoli-bg">
+<div class="flex-1">
+<h2 class="font-headline-lg text-secondary mb-2">Can't find it?</h2>
+<p class="font-body-md text-on-surface-variant mb-6">Connect directly with our terracotta masters for custom orders. Tell us your vision!</p>
+<button class="bg-tertiary text-on-tertiary px-6 py-3 rounded-xl font-label-md hover:opacity-90 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+                        Talk to an Artisan
+                    </button>
+</div>
+<div class="w-full md:w-1/3 aspect-square bg-white rounded-2xl p-4 shadow-inner clay-card flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-primary/20" style="font-variation-settings: 'opsz' 48;">brush</span>
+</div>
+</div>
+</div>
+<!-- Empty State Example (Hidden by default, used for logic) -->
+<div class="hidden flex-col items-center justify-center py-20 text-center">
+<div class="w-48 h-48 mb-8 relative">
+<div class="absolute inset-0 bg-primary/10 rounded-full animate-pulse"></div>
+<span class="material-symbols-outlined text-8xl text-outline-variant absolute inset-0 flex items-center justify-center" data-icon="sentiment_dissatisfied">sentiment_dissatisfied</span>
+</div>
+<h2 class="font-headline-lg text-on-surface mb-4">No treasures found... yet!</h2>
+<p class="font-body-md text-on-surface-variant max-w-md mx-auto mb-8">Even the busiest market has its quiet corners. Try adjusting your filters or searching for something else like "Handloom" or "Wooden toys".</p>
+<button class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary-container transition-all">Clear all filters</button>
+</div>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-[#FFFBF5] dark:bg-stone-900 border-t border-[#D9C5B2] dark:border-stone-800 shadow-[0_-4px_10px_rgba(192,90,62,0.05)]">
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-4 py-1.5 hover:text-[#C05A3E] dark:hover:text-[#E28A6E]" href="#">
+<span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+<span class="font-['Epilogue'] text-xs font-medium">Market</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#C05A3E] text-white rounded-2xl px-4 py-1.5 transition-all shadow-lg scale-110" href="#">
+<span class="material-symbols-outlined" data-icon="search" style="font-variation-settings: 'FILL' 1;">search</span>
+<span class="font-['Epilogue'] text-xs font-medium">Search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-4 py-1.5 hover:text-[#C05A3E] dark:hover:text-[#E28A6E]" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-['Epilogue'] text-xs font-medium">Cart</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-4 py-1.5 hover:text-[#C05A3E] dark:hover:text-[#E28A6E]" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Epilogue'] text-xs font-medium">Profile</span>
+</a>
+</nav>
+<!-- Floating Action Button for Filters (Mobile) -->
+<button class="md:hidden fixed right-6 bottom-24 bg-secondary text-white p-4 rounded-full shadow-2xl flex items-center justify-center active:scale-95 transition-transform z-40">
+<span class="material-symbols-outlined" data-icon="filter_list">filter_list</span>
+</button>
+</body></html>

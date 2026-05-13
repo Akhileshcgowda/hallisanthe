@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ಹಳ್ಳಿ ಸಂತೆ</string>
+
+    <string name="greeting_namaskara">ನಮಸ್ಕಾರ</string>
+    <string name="greeting_guest">ಅತಿಥಿ</string>
+    <string name="search_hint">ಸೀರೆ, ಬೊಂಬೆ, ಬುಟ್ಟಿಗಳನ್ನು ಹುಡುಕಿ...</string>
+    <string name="search">ಹುಡುಕಿ</string>
+    <string name="view_all">ಎಲ್ಲಾ ವೀಕ್ಷಿಸಿ</string>
+    <string name="explore">ಅನ್ವೇಷಿಸಿ</string>
+    <string name="back">ಹಿಂದೆ</string>
+    <string name="save">ಉಳಿಸಿ</string>
+    <string name="cancel">ರದ್ದು</string>
+    <string name="delete">ಅಳಿಸಿ</string>
+    <string name="add">ಸೇರಿಸಿ</string>
+    <string name="remove">ತೆಗೆಯಿರಿ</string>
+    <string name="total">ಒಟ್ಟು</string>
+    <string name="submit">ಸಲ್ಲಿಸಿ</string>
+    <string name="send">ಕಳುಹಿಸಿ</string>
+    <string name="or">ಅಥವಾ</string>
+    <string name="verified">ಪರಿಶೀಲಿತ</string>
+    <string name="free">ಉಚಿತ</string>
+    <string name="qty">ಪ್ರಮಾಣ: %1$d</string>
+    <string name="currency">₹%1$s</string>
+
+    <string name="home_greeting_subtitle">ಸ್ಥಳೀಯ ಕಲೆಗಳನ್ನು ಅನ್ವೇಷಿಸಲು ಸಿದ್ಧರಾಗಿದ್ದೀರಾ?</string>
+    <string name="home_banner_title">ನೇಯ್ಗೆಯಿಂದ ತಾಜಾ!</string>
+    <string name="home_banner_subtitle">ಸ್ಥಳೀಯ ಕಾರಿಗರರಿಂದ ಹೊಸ ಇಳಕಲ್ ಸಿಲ್ಕ್ ಸೃಷ್ಟಿಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ.</string>
+    <string name="home_trending">ಈಗ ಟ್ರೆಂಡಿಂಗ್</string>
+    <string name="home_no_crafts_found">ನಿಮ್ಮ ಮಾನದಂಡಗಳಿಗೆ ಹೊಂದಿಕೆಯಾಗುವ ಕಲೆಗಳು ಕಂಡುಬಂದಿಲ್ಲ.</string>
+    <string name="home_ai_fab">ಸಂತೆ AI</string>
+
+    <string name="login_register_title">ಲಾಗಿನ್ ಮತ್ತು ರಿಜಿಸ್ಟರ್</string>
+    <string name="login_tab">ಲಾಗಿನ್</string>
+    <string name="register_tab">ರಿಜಿಸ್ಟರ್</string>
+    <string name="role_prompt">ನಾನು ಇದಾಗಿ ಸೇರುತ್ತಿದ್ದೇನೆ</string>
+    <string name="role_buyer">ಖರೀದಿದಾರ</string>
+    <string name="role_buyer_desc">ಉತ್ಪನ್ನಗಳನ್ನು ವೀಕ್ಷಿಸಿ ಮತ್ತು ಖರೀದಿಸಿ</string>
+    <string name="role_seller">ಮಾರಾಟಗಾರ</string>
+    <string name="role_seller_desc">ನಿಮ್ಮ ಅಂಗಡಿ ಸ್ಥಾಪಿಸಿ</string>
+    <string name="full_name">ಪೂರ್ಣ ಹೆಸರು</string>
+    <string name="full_name_hint">ನಿಮ್ಮ ಪೂರ್ಣ ಹೆಸರನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="email">ಇಮೇಲ್</string>
+    <string name="email_hint">ನಿಮ್ಮ ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="password">ಪಾಸ್‌ವರ್ಡ್</string>
+    <string name="password_hint">ನಿಮ್ಮ ಪಾಸ್‌ವರ್ಡ್ ನಮೂದಿಸಿ</string>
+    <string name="forgot_password">ಮರೆತಿರಾ?</string>
+    <string name="hide_password">ಪಾಸ್‌ವರ್ಡ್ ಮರೆಮಾಡಿ</string>
+    <string name="show_password">ಪಾಸ್‌ವರ್ಡ್ ತೋರಿಸಿ</string>
+    <string name="login">ಲಾಗಿನ್</string>
+    <string name="create_account">ಖಾತೆ ರಚಿಸಿ</string>
+    <string name="continue_with_google">Google ನೊಂದಿಗೆ ಮುಂದುವರೆಯಿರಿ</string>
+    <string name="welcome_back">ಮರಳಿ ಸ್ವಾಗತ!</string>
+    <string name="account_created">ಖಾತೆ ರಚನೆಯಾಯಿತು!</string>
+    <string name="error_email_password_required">ಇಮೇಲ್ ಮತ್ತು ಪಾಸ್‌ವರ್ಡ್ ಅಗತ್ಯವಿದೆ</string>
+    <string name="error_password_short">ಪಾಸ್‌ವರ್ಡ್ ಕನಿಷ್ಠ 6 ಅಕ್ಷರಗಳಿರಬೇಕು</string>
+    <string name="error_full_name_required">ಪೂರ್ಣ ಹೆಸರು ಅಗತ್ಯವಿದೆ</string>
+    <string name="login_failed">ಲಾಗಿನ್ ವಿಫಲವಾಗಿದೆ</string>
+    <string name="registration_failed">ನೋಂದಣಿ ವಿಫಲವಾಗಿದೆ</string>
+
+    <string name="reset_password">ಪಾಸ್‌ವರ್ಡ್ ಮರುಹೊಂದಿಸಿ</string>
+    <string name="reset_password_desc">ಪಾಸ್‌ವರ್ಡ್ ಮರುಹೊಂದಿಸುವ ಲಿಂಕ್ ಪಡೆಯಲು ನಿಮ್ಮ ಇಮೇಲ್ ನಮೂದಿಸಿ.</string>
+    <string name="send_link">ಲಿಂಕ್ ಕಳುಹಿಸಿ</string>
+    <string name="reset_email_sent">ಕಳುಹಿಸಲಾಗಿದೆ! ನಿಮ್ಮ ಇನ್‌ಬಾಕ್ಸ್ ಪರಿಶೀಲಿಸಿ.</string>
+    <string name="reset_email_failed">ಮರುಹೊಂದಿಸುವ ಇಮೇಲ್ ಕಳುಹಿಸುವಲ್ಲಿ ವಿಫಲ</string>
+    <string name="error_email_required">ದಯವಿಟ್ಟು ನಿಮ್ಮ ಇಮೇಲ್ ನಮೂದಿಸಿ</string>
+
+    <string name="cart_empty">ನಿಮ್ಮ ಕಾರ್ಟ್ ಖಾಲಿಯಾಗಿದೆ</string>
+    <string name="start_shopping">ಖರೀದಿ ಪ್ರಾರಂಭಿಸಿ</string>
+    <string name="subtotal">ಉಪಒಟ್ಟು</string>
+    <string name="shipping">ರವಾನೆ</string>
+    <string name="proceed_to_checkout">ಚೆಕ್‌ಔಟ್ ಮಾಡಿ</string>
+
+    <string name="no_orders_yet">ಇನ್ನೂ ಯಾವುದೇ ಆರ್ಡರ್ ಇಲ್ಲ</string>
+    <string name="orders_appear_here">ಖರೀದಿಸಿದ ನಂತರ ನಿಮ್ಮ ಆರ್ಡರ್‌ಗಳು ಇಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ.</string>
+    <string name="total_amount">ಒಟ್ಟು ಮೊತ್ತ</string>
+    <string name="order_status_delivered">ವಿತರಿಸಲಾಗಿದೆ</string>
+    <string name="order_status_pending">ಬಾಕಿ ಇದೆ</string>
+
+    <string name="product_details">ಉತ್ಪನ್ನ ವಿವರಗಳು</string>
+    <string name="product_not_found">ಉತ್ಪನ್ನ ಕಂಡುಬಂದಿಲ್ಲ</string>
+    <string name="by_artisan">%1$s ರವರಿಂದ</string>
+    <string name="rating_reviews">4.8 (120 ವಿಮರ್ಶೆಗಳು)</string>
+    <string name="heritage_craft">ಪರಂಪರೆ ಮತ್ತು ಕಲೆ</string>
+    <string name="product_desc_fallback">ಇದು %1$s ನಿಂದ ಅಂದವಾಗಿ ಕೈಯಿಂದ ಮಾಡಿದ ವಸ್ತು.</string>
+    <string name="saved">ಉಳಿಸಲಾಗಿದೆ</string>
+    <string name="save_for_later">ನಂತರಕ್ಕೆ ಉಳಿಸಿ</string>
+    <string name="buy_now">ಈಗ ಖರೀದಿಸಿ</string>
+    <string name="added_to_wishlist">ಇಚ್ಛಾಪಟ್ಟಿಗೆ ಸೇರಿಸಲಾಗಿದೆ</string>
+    <string name="removed_from_wishlist">ಇಚ್ಛಾಪಟ್ಟಿಯಿಂದ ತೆಗೆಯಲಾಗಿದೆ</string>
+
+    <string name="seller_greeting_subtitle">ನಿಮ್ಮ ಅಂಗಡಿ ಇಂದು ಉತ್ತಮವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿದೆ.</string>
+    <string name="active_products">ಸಕ್ರಿಯ ಉತ್ಪನ್ನಗಳು</string>
+    <string name="new_inquiries">ಹೊಸ ವಿಚಾರಣೆಗಳು</string>
+    <string name="total_sales">ಒಟ್ಟು ಮಾರಾಟ</string>
+    <string name="quick_actions">ತ್ವರಿತ ಕ್ರಿಯೆಗಳು</string>
+    <string name="add_product">ಉತ್ಪನ್ನ ಸೇರಿಸಿ</string>
+    <string name="my_listings">ನನ್ನ ಪಟ್ಟಿ</string>
+    <string name="inquiries">ವಿಚಾರಣೆಗಳು</string>
+    <string name="shop_settings">ಅಂಗಡಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
+    <string name="recent_inquiries">ಇತ್ತೀಚಿನ ವಿಚಾರಣೆಗಳು</string>
+    <string name="seller_ai_assistant">ಸಂತೆ AI ಸಹಾಯಕ</string>
+    <string name="default_seller_name">ಮಾರಾಟಗಾರ</string>
+
+    <string name="my_orders">ನನ್ನ ಆರ್ಡರ್‌ಗಳು</string>
+    <string name="my_orders_desc">ಇತಿಹಾಸ ವೀಕ್ಷಿಸಿ ಮತ್ತು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ</string>
+    <string name="wishlist">ಇಚ್ಛಾಪಟ್ಟಿ</string>
+    <string name="wishlist_desc">ಉಳಿಸಿದ ವಸ್ತುಗಳು</string>
+    <string name="notifications">ಸೂಚನೆಗಳು</string>
+    <string name="notifications_desc">ನವೀಕರಣಗಳು ಮತ್ತು ಎಚ್ಚರಿಕೆಗಳು</string>
+    <string name="language">ಭಾಷೆ</string>
+    <string name="help_support">ಸಹಾಯ ಮತ್ತು ಬೆಂಬಲ</string>
+    <string name="help_support_desc">FAQ ಮತ್ತು ಸಂಪರ್ಕ ಮಾಹಿತಿ</string>
+
+    <string name="language_screen_title">Language / ಭಾಷೆ / भाषा</string>
+    <string name="choose_app_language">ಅಪ್ಲಿಕೇಶನ್ ಭಾಷೆ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="language_change_desc">ಇದು ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ಇಂಟರ್ಫೇಸ್ ಭಾಷೆ ಮತ್ತು AI ಚಾಟ್ ಉತ್ತರಗಳನ್ನು ಬದಲಾಯಿಸುತ್ತದೆ.</string>
+    <string name="save_apply">ಉಳಿಸಿ ಮತ್ತು ಅನ್ವಯಿಸಿ</string>
+
+    <string name="checkout">ಚೆಕ್‌ಔಟ್</string>
+    <string name="place_order">ಆರ್ಡರ್ ನೀಡಿ</string>
+    <string name="cash_on_delivery">ಹಣ ಪಾವತಿ ವಿತರಣೆಯಲ್ಲಿ</string>
+    <string name="upi_payment">UPI ಪಾವತಿ</string>
+    <string name="order_placed">ಆರ್ಡರ್ ಯಶಸ್ವಿಯಾಗಿ ನೀಡಲಾಗಿದೆ!</string>
+
+    <string name="nav_home">ಮುಖಪುಟ</string>
+    <string name="nav_search">ಹುಡುಕಿ</string>
+    <string name="nav_cart">ಕಾರ್ಟ್</string>
+    <string name="nav_orders">ಆರ್ಡರ್‌ಗಳು</string>
+    <string name="nav_profile">ಪ್ರೊಫೈಲ್</string>
+    <string name="nav_seller_home">ಡ್ಯಾಶ್‌ಬೋರ್ಡ್</string>
+    <string name="nav_seller_ai">AI</string>
+    <string name="nav_seller_profile">ಪ್ರೊಫೈಲ್</string>
+
+    <string name="ai_buyer_greeting">ನಮಸ್ಕಾರ! ನಾನು ಸಂತೆ AI, ನಿಮ್ಮ ಖರೀದಿದಾರ ಸಹಾಯಕ. ಕುಶಲ ಕಲೆಯ ಉತ್ಪನ್ನಗಳನ್ನು ಹುಡುಕಲು, ಆರ್ಡರ್‌ಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು, ಮತ್ತು ಮಾರುಕಟ್ಟೆಯನ್ನು ನ್ಯಾವಿಗೇಟ್ ಮಾಡಲು ನಾನು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಬಹುದು. ನಾನು ಇಂದು ನಿಮಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು?</string>
+    <string name="ai_seller_greeting">ನಮಸ್ಕಾರ! ನಾನು ಸಂತೆ AI, ನಿಮ್ಮ ವ್ಯಾಪಾರಿ ಸಹಾಯಕ. ನಿಮ್ಮ ಪಟ್ಟಿಯನ್ನು ನಿರ್ವಹಿಸಲು, ಖರೀದಿದಾರರ ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸಲು, ಬೆಲೆ ನಿರ್ಧರಿಸಲು, ಮತ್ತು ನಿಮ್ಮ ಅಂಗಡಿಯನ್ನು ಬೆಳೆಸಲು ನಾನು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಬಹುದು. ನಾನು ಇಂದು ನಿಮಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು?</string>
+    <string name="ai_input_hint">ಸಂದೇಶ ಟೈಪ್ ಮಾಡಿ...</string>
+    <string name="ai_typing">ಸಂತೆ AI ಟೈಪ್ ಮಾಡುತ್ತಿದೆ...</string>
+    <string name="ai_clear_chat">ಚಾಟ್ ಸ್ಪಷ್ಟಪಡಿಸಿ</string>
+    <string name="ai_send">ಕಳುಹಿಸಿ</string>
+
+    <string name="add_product_title">ಹೊಸ ಉತ್ಪನ್ನ ಸೇರಿಸಿ</string>
+    <string name="product_name">ಉತ್ಪನ್ನದ ಹೆಸರು</string>
+    <string name="product_price">ಬೆಲೆ (₹)</string>
+    <string name="product_category">ವರ್ಗ</string>
+    <string name="product_description">ವಿವರಣೆ</string>
+    <string name="product_location">ಹಳ್ಳಿ / ಸ್ಥಳ</string>
+    <string name="upload_photo">ಫೋಟೋ ಅಪ್ಲೋಡ್ ಮಾಡಿ</string>
+    <string name="generate_description">AI ನಿಂದ ವಿವರಣೆ ರಚಿಸಿ</string>
+    <string name="product_added">ಉತ್ಪನ್ನ ಯಶಸ್ವಿಯಾಗಿ ಸೇರಿಸಲಾಗಿದೆ!</string>
+
+    <string name="my_listings_title">ನನ್ನ ಪಟ್ಟಿ</string>
+    <string name="no_listings_yet">ಇನ್ನೂ ಯಾವುದೇ ಪಟ್ಟಿ ಇಲ್ಲ</string>
+    <string name="add_your_first_product">ಮಾರಾಟ ಪ್ರಾರಂಭಿಸಲು ನಿಮ್ಮ ಮೊದಲ ಉತ್ಪನ್ನವನ್ನು ಸೇರಿಸಿ.</string>
+
+    <string name="shop_settings_title">ಅಂಗಡಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
+    <string name="shop_name">ಅಂಗಡಿ ಹೆಸರು</string>
+    <string name="craft_type">ಕಲೆ ಪ್ರಕಾರ</string>
+    <string name="village">ಹಳ್ಳಿ</string>
+    <string name="bio">ಬಯೋ</string>
+    <string name="phone">ಫೋನ್</string>
+    <string name="settings_saved">ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಯಶಸ್ವಿಯಾಗಿ ಉಳಿಸಲಾಗಿದೆ!</string>
+
+    <string name="help_title">ಸಹಾಯ ಮತ್ತು ಬೆಂಬಲ</string>
+    <string name="faq">ಪದೇ ಪದೇ ಕೇಳುವ ಪ್ರಶ್ನೆಗಳು</string>
+    <string name="contact_us">ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ</string>
+    <string name="terms">ನಿಯಮಗಳು ಮತ್ತು ಷರತ್ತುಗಳು</string>
+    <string name="privacy">ಗೌಪ್ಯತಾ ನೀತಿ</string>
+
+    <string name="notifications_title">ಸೂಚನೆಗಳು</string>
+    <string name="no_notifications">ಇನ್ನೂ ಯಾವುದೇ ಸೂಚನೆ ಇಲ್ಲ</string>
+    <string name="clear_all">ಎಲ್ಲಾ ತೆರವುಗೊಳಿಸಿ</string>
+
+    <string name="wishlist_title">ಇಚ್ಛಾಪಟ್ಟಿ</string>
+    <string name="wishlist_empty">ನಿಮ್ಮ ಇಚ್ಛಾಪಟ್ಟಿ ಖಾಲಿಯಾಗಿದೆ</string>
+    <string name="browse_products">ಉತ್ಪನ್ನಗಳನ್ನು ವೀಕ್ಷಿಸಿ</string>
+
+    <string name="search_title">ಹುಡುಕಿ</string>
+    <string name="search_results">ಹುಡುಕಾಟ ಫಲಿತಾಂಶಗಳು</string>
+    <string name="no_results">ಯಾವುದೇ ಫಲಿತಾಂಶಗಳು ಕಂಡುಬಂದಿಲ್ಲ</string>
+    <string name="try_different_keyword">ಬೇರೆ ಕೀವರ್ಡ್ ಪ್ರಯತ್ನಿಸಿ</string>
+
+    <string name="splash_welcome">ಹಳ್ಳಿ ಸಂತೆಗೆ ಸ್ವಾಗತ</string>
+    <string name="onboarding_title_1">ಸ್ಥಳೀಯ ಕಲೆಗಳನ್ನು ಅನ್ವೇಷಿಸಿ</string>
+    <string name="onboarding_desc_1">ಭಾರತದಾದ್ಯಂತ ಗ್ರಾಮೀಣ ಕಾರಿಗರರ ಕೈಮಾಡಿದ ಉತ್ಪನ್ನಗಳನ್ನು ಅನ್ವೇಷಿಸಿ.</string>
+    <string name="onboarding_title_2">ಕಾರಿಗರರನ್ನು ಬೆಂಬಲಿಸಿ</string>
+    <string name="onboarding_desc_2">ಪ್ರತಿ ಖರೀದಿ ನೇರವಾಗಿ ನೈಪುಣ್ಯ ಕಾರಿಗರರು ಮತ್ತು ಅವರ ಕುಟುಂಬಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ.</string>
+    <string name="onboarding_title_3">ನಿಮ್ಮ ಕಲೆಗಳನ್ನು ಮಾರಾಟಮಾಡಿ</string>
+    <string name="onboarding_desc_3">ನೀವು ಕಾರಿಗರರಾಗಿದ್ದೀರಾ? ನಿಮ್ಮ ಉತ್ಪನ್ನಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡಿ ಮತ್ತು ದೇಶಾದ್ಯಂತ ಖರೀದಿದಾರರನ್ನು ತಲಪಿ.</string>
+    <string name="get_started">ಪ್ರಾರಂಭಿಸಿ</string>
+    <string name="next">ಮುಂದೆ</string>
+    <string name="skip">ಬಿಡಿ</string>
+
+    <string name="seller_onboarding_title">ನಿಮ್ಮ ಅಂಗಡಿ ಸ್ಥಾಪಿಸಿ</string>
+    <string name="seller_onboarding_desc">ಹಳ್ಳಿ ಸಂತೆಯಲ್ಲಿ ಮಾರಾಟ ಮಾಡುವ ಸಾವಿರಾರು ಕಾರಿಗರರೊಂದಿಗೆ ಸೇರಿ. ಕೇವಲ ಕೆಲವೇ ನಿಮಿಷಗಳು.</string>
+    <string name="become_a_seller">ಮಾರಾಟಗಾರರಾಗಿ</string>
+
+    <string name="inquiries_title">ವಿಚಾರಣೆಗಳು</string>
+    <string name="no_inquiries">ಇನ್ನೂ ಯಾವುದೇ ವಿಚಾರಣೆ ಇಲ್ಲ</string>
+    <string name="mark_as_read">ಓದಿದ್ದಾಗಿ ಗುರುತಿಸಿ</string>
+
+    <string name="seller_login_title">ಮಾರಾಟಗಾರ ಲಾಗಿನ್</string>
+    <string name="seller_register_title">ಮಾರಾಟಗಾರ ನೋಂದಣಿ</string>
+    <string name="not_a_seller_yet">ಇನ್ನೂ ಮಾರಾಟಗಾರರಲ್ಲವೇ?</string>
+    <string name="register_as_seller">ಮಾರಾಟಗಾರರಾಗಿ ನೋಂದಣಿ</string>
+
+    <string name="logout">ಲಾಗ್‌ಔಟ್</string>
+    <string name="confirm_logout">ನೀವು ಲಾಗ್‌ಔಟ್ ಮಾಡಲು ಬಯಸುತ್ತೀರಾ?</string>
+    <string name="yes">ಹೌದು</string>
+    <string name="no">ಇಲ್ಲ</string>
+    <string name="loading">ಲೋಡ್ ಆಗುತ್ತಿದೆ...</string>
+    <string name="retry">ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ</string>
+    <string name="error_generic">ಏನೋ ತಪ್ಪಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="error_no_internet">ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕ ಇಲ್ಲ. ದಯವಿಟ್ಟು ನಿಮ್ಮ ನೆಟ್‌ವರ್ಕ್ ಪರಿಶೀಲಿಸಿ.</string>
+    <string name="copied">ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ</string>
+    <string name="share">ಹಂಚಿಕೊಳ್ಳಿ</string>
+
+    <string name="upload_product">ಉತ್ಪನ್ನ ಅಪ್ಲೋಡ್ ಮಾಡಿ</string>
+    <string name="upload_image">ಚಿತ್ರ ಅಪ್ಲೋಡ್ ಮಾಡಿ</string>
+    <string name="upload_image_desc">ಗ್ಯಾಲರಿ ಅಥವಾ ಕ್ಯಾಮರಾದಿಂದ ಆಯ್ಕೆಮಾಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ</string>
+    <string name="select_image">ಚಿತ್ರ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="select_image_desc">ನೀವು ಉತ್ಪನ್ನ ಚಿತ್ರವನ್ನು ಹೇಗೆ ಸೇರಿಸಲು ಬಯಸುತ್ತೀರಿ ಎಂದು ಆಯ್ಕೆಮಾಡಿ.</string>
+    <string name="camera">ಕ್ಯಾಮರಾ</string>
+    <string name="gallery">ಗ್ಯಾಲರಿ</string>
+    <string name="product_name_hint">ಉದಾ. ಕೈನೇಕಲ್ ಸೀರೆ</string>
+    <string name="price_hint">0.00</string>
+    <string name="location_hint">ನಗರ/ಹಳ್ಳಿ</string>
+    <string name="description_hint">ವಸ್ತುಗಳು, ಮೂಲ, ಮತ್ತು ಈ ಉತ್ಪನ್ನದ ಹಿಂದಿನ ಕಥೆಯನ್ನು ವಿವರಿಸಿ...</string>
+    <string name="seller_name">ಮಾರಾಟಗಾರ / ಕಾರಿಗರರ ಹೆಸರು</string>
+    <string name="seller_name_hint">ನಿಮ್ಮ ಹೆಸರು ಅಥವಾ ಅಂಗಡಿ ಹೆಸರು</string>
+    <string name="error_fill_all_fields">ದಯವಿಟ್ಟು ಎಲ್ಲಾ ಅಗತ್ಯ ಕ್ಷೇತ್ರಗಳನ್ನು ತುಂಬಿ</string>
+    <string name="error_valid_price">ದಯವಿಟ್ಟು ಸರಿಯಾದ ಬೆಲೆಯನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="error_login_to_add">ಉತ್ಪನ್ನ ಸೇರಿಸಲು ನೀವು ಲಾಗಿನ್ ಆಗಿರಬೇಕು</string>
+    <string name="product_uploaded">ಉತ್ಪನ್ನ ಯಶಸ್ವಿಯಾಗಿ ಅಪ್ಲೋಡ್ ಆಯಿತು!</string>
+    <string name="upload_failed">ಅಪ್ಲೋಡ್ ವಿಫಲವಾಗಿದೆ</string>
+    <string name="camera_permission_required">ಫೋಟೋ ತೆಗೆಯಲು ಕ್ಯಾಮರಾ ಅನುಮತಿ ಅಗತ್ಯವಿದೆ</string>
+    <string name="selected_product_image">ಆಯ್ಕೆಮಾಡಿದ ಉತ್ಪನ್ನ ಚಿತ್ರ</string>
+
+    <string name="shipping_info">ರವಾನೆ ಮಾಹಿತಿ</string>
+    <string name="full_name_label">ಪೂರ್ಣ ಹೆಸರು</string>
+    <string name="address_line_1">ವಿಳಾಸ ಸಾಲು 1</string>
+    <string name="city_town">ನಗರ / ಪಟ್ಟಣ</string>
+    <string name="continue_to_payment">ಪಾವತಿಗೆ ಮುಂದುವರೆಯಿರಿ</string>
+    <string name="payment_method">ಪಾವತಿ ವಿಧಾನ</string>
+    <string name="upi_wallet">UPI / ಡಿಜಿಟಲ್ ವ್ಯಾಲೆಟ್</string>
+    <string name="credit_debit_card">ಕ್ರೆಡಿಟ್ / ಡೆಬಿಟ್ ಕಾರ್ಡ್</string>
+    <string name="select_upi_app">UPI ಅಪ್ಲಿಕೇಶನ್ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="google_pay">Google Pay</string>
+    <string name="phonepe">PhonePe</string>
+    <string name="paytm">Paytm</string>
+    <string name="amazon_pay">Amazon Pay</string>
+    <string name="bhim_upi">BHIM UPI</string>
+    <string name="card_number">ಕಾರ್ಡ್ ಸಂಖ್ಯೆ</string>
+    <string name="card_expiry">ಅವಧಿ (MM/YY)</string>
+    <string name="card_cvv">CVV</string>
+    <string name="card_holder_name">ಕಾರ್ಡ್ ಹೊಂದಿರುವವರ ಹೆಸರು</string>
+    <string name="pay_on_delivery_msg">ನಿಮ್ಮ ಆರ್ಡರ್ ವಿತರಣೆಯಾಗಿದ್ದಾಗ ನಗದು ಪಾವತಿಸಿ.</string>
+    <string name="review_order">ಆರ್ಡರ್ ಪರಿಶೀಲಿಸಿ</string>
+    <string name="review_your_order">ನಿಮ್ಮ ಆರ್ಡರ್ ಪರಿಶೀಲಿಸಿ</string>
+    <string name="items_count">ವಸ್ತುಗಳು: %1$d</string>
+    <string name="payment_label">ಪಾವತಿ: %1$s</string>
+    <string name="shipping_to">ರವಾನೆ ವಿಳಾಸ:</string>
+    <string name="not_provided">ನೀಡಲಾಗಿಲ್ಲ</string>
+    <string name="failed_place_order">ಆರ್ಡರ್ ನೀಡುವಲ್ಲಿ ವಿಫಲ</string>
+    <string name="order_placed_success">ಆರ್ಡರ್ ಯಶಸ್ವಿಯಾಗಿ ನೀಡಲಾಗಿದೆ!</string>
+    <string name="thank_you_artisans">ಸ್ಥಳೀಯ ಕಾರಿಗರರನ್ನು ಬೆಂಬಲಿಸಿದ್ದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು.</string>
+    <string name="back_to_home">ಮುಖಪುಟಕ್ಕೆ ಹಿಂತಿರುಗಿ</string>
+
+    <string name="faq_question_1">ನನ್ನ ಆರ್ಡರ್ ಅನ್ನು ನಾನು ಹೇಗೆ ಟ್ರ್ಯಾಕ್ ಮಾಡಬಹುದು?</string>
+    <string name="faq_answer_1">"ನಿಮ್ಮ ಪ್ರೊಫೈಲ್‌ನಲ್ಲಿರುವ 'ನನ್ನ ಆರ್ಡರ್‌ಗಳು' ವಿಭಾಗದಲ್ಲಿ ನೀವು ನಿಮ್ಮ ಆರ್ಡರ್ ಅನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಬಹುದು."</string>
+    <string name="faq_question_2">ಹಿಂದಿರುಗಿಸುವ ನೀತಿ ಏನು?</string>
+    <string name="faq_answer_2">"ಹೆಚ್ಚಿನ ವಸ್ತುಗಳನ್ನು ಡೆಲಿವರಿಯ 7 ದಿನಗಳೊಳಗೆ ಹಾನಿಗೊಳಗಾದ ಅಥವಾ ವಿವರಣೆಗೆ ಅನುಗುಣವಾಗಿಲ್ಲದಿದ್ದರೆ ಹಿಂದಿರುಗಿಸಬಹುದು."</string>
+    <string name="faq_question_3">ಕಾರಿಗರರನ್ನು ಹೇಗೆ ಪರಿಶೀಲಿಸಲಾಗುತ್ತದೆ?</string>
+    <string name="faq_answer_3">"ಪ್ರತಿ ಕಾರಿಗರರ ಗುರುತು, ಸ್ಥಳ, ಮತ್ತು ಕಲೆಯ ನೈಜತೆಯನ್ನು ನಾವು ಸೈಟ್ ಭೇಟಿಗಳ ಮೂಲಕ ಕೈಯಿಂದ ಪರಿಶೀಲಿಸುತ್ತೇವೆ."</string>
+    <string name="email_us">ನಮಗೆ ಇಮೇಲ್ ಮಾಡಿ</string>
+    <string name="call_us">ನಮಗೆ ಕರೆ ಮಾಡಿ</string>
+    <string name="live_chat">ನೇರ ಸಂವಾದ</string>
+    <string name="legal_info">ಕಾನೂನು ಮಾಹಿತಿ</string>
+    <string name="read_terms">ನಮ್ಮ ನಿಯಮಗಳು ಮತ್ತು ಷರತ್ತುಗಳನ್ನು ಓದಿ</string>
+
+    <string name="search_by_name">ಹೆಸರು ಅಥವಾ ಉತ್ಪನ್ನದ ಮೂಲಕ ಹುಡುಕಿ...</string>
+    <string name="filter">ಫಿಲ್ಟರ್</string>
+    <string name="all">ಎಲ್ಲಾ</string>
+    <string name="unread">ಓದದಿದ್ದವು</string>
+    <string name="replied">ಉತ್ತರಿಸಲಾಗಿದೆ</string>
+    <string name="reply_now">ಈಗ ಉತ್ತರಿಸಿ</string>
+
+    <string name="login_to_view_listings">ನಿಮ್ಮ ಪಟ್ಟಿಯನ್ನು ವೀಕ್ಷಿಸಲು ದಯವಿಟ್ಟು ಲಾಗಿನ್ ಆಗಿ.</string>
+    <string name="products_will_appear">ನೀವು ಸೇರಿಸಿದ ಉತ್ಪನ್ನಗಳು ಇಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ.</string>
+    <string name="in_stock">ಸ್ಟಾಕ್‌ನಲ್ಲಿದೆ</string>
+    <string name="low_stock">ಕಡಿಮೆ ಸ್ಟಾಕ್</string>
+    <string name="edit">ಸಂಪಾದಿಸಿ</string>
+    <string name="edit_coming_soon">ಸಂಪಾದನೆ ವೈಶಿಷ್ಟ್ಯ ಶೀಘ್ರದಲ್ಲೇ ಬರಲಿದೆ!</string>
+    <string name="delete_coming_soon">ಅಳಿಸುವ ವೈಶಿಷ್ಟ್ಯ ಶೀಘ್ರದಲ್ಲೇ ಬರಲಿದೆ!</string>
+
+    <string name="all_caught_up">ಎಲ್ಲಾ ನವೀಕೃತ!</string>
+    <string name="new_label">ಹೊಸ</string>
+    <string name="new_count">%1$d ಹೊಸ</string>
+    <string name="view_details">ವಿವರಗಳನ್ನು ವೀಕ್ಷಿಸಿ</string>
+    <string name="dismiss">ವಜಾಗೊಳಿಸಿ</string>
+
+    <string name="profile_picture">ಪ್ರೊಫೈಲ್ ಚಿತ್ರ</string>
+    <string name="buyer_mode">ಖರೀದಿದಾರ ಮೋಡ್</string>
+    <string name="seller_mode">ಮಾರಾಟಗಾರ ಮೋಡ್</string>
+
+    <string name="ai_title">ಸಂತೆ AI</string>
+    <string name="ai_placeholder">ಸಂತೆ AI ಗೆ ಏನಾದರೂ ಕೇಳಿ...</string>
+    <string name="ai_today">ಇಂದು</string>
+    <string name="ai_you">ನೀವು</string>
+    <string name="suggestion_upload">ನಾನು ಉತ್ಪನ್ನವನ್ನು ಹೇಗೆ ಅಪ್ಲೋಡ್ ಮಾಡಬಹುದು?</string>
+    <string name="suggestion_silk">ಸೀರೆಗಳನ್ನು ಹುಡುಕಿ</string>
+    <string name="suggestion_track">ನನ್ನ ಆರ್ಡರ್ ಅನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ</string>
+    <string name="suggestion_settings">ಅಂಗಡಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ನವೀಕರಿಸಿ</string>
+
+    <string name="join_santhe">ಸಂತೆಯಲ್ಲಿ ಸೇರಿ</string>
+    <string name="choose_role">ನಿಮ್ಮ ಪಾತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="i_am_buyer">ನಾನು ಖರೀದಿದಾರ</string>
+    <string name="i_am_seller">ನಾನು ಮಾರಾಟಗಾರ</string>
+    <string name="setup_shop">ನಿಮ್ಮ ಅಂಗಡಿ ಸ್ಥಾಪಿಸಿ</string>
+    <string name="login_as_seller">ಮಾರಾಟಗಾರರಾಗಿ ಲಾಗಿನ್</string>
+    <string name="create_seller_account">ಮಾರಾಟಗಾರ ಖಾತೆ ರಚಿಸಿ</string>
+    <string name="seller_account_created">ಮಾರಾಟಗಾರ ಖಾತೆ ರಚನೆಯಾಯಿತು!</string>
+    <string name="mobile_number">ಮೊಬೈಲ್ ಸಂಖ್ಯೆ</string>
+    <string name="mobile_hint">10-ಅಂಕಿಯ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ</string>
+    <string name="shop_name_artisan">ಅಂಗಡಿ ಹೆಸರು / ಕಾರಿಗರರ ಬ್ರ್ಯಾಂಡ್</string>
+    <string name="shop_name_hint">ನಿಮ್ಮ ವ್ಯವಹಾರಕ್ಕೆ ನೀವು ಏನು ಕರೆಯುತ್ತೀರಿ?</string>
+    <string name="min_6_chars">ಕನಿಷ್ಠ 6 ಅಕ್ಷರಗಳು</string>
+    <string name="india_code">+91</string>
+
+    <string name="sell_your_craft">ನಿಮ್ಮ ಕಲೆಯನ್ನು ಮಾರಾಟಮಾಡಿ</string>
+    <string name="seller_onboarding_body">ನಿಮ್ಮ ಕೈಯಿಂದ ಮಾಡಿದ ಉತ್ಪನ್ನಗಳನ್ನು ಅಪ್ಲೋಡ್ ಮಾಡಿ ಮತ್ತು ನೇರವಾಗಿ ಸಾವಿರಾರು ನಗರ ಖರೀದಿದಾರರನ್ನು ತಲಪಿ. ಹಳ್ಳಿ ಸಂತೆಯ ಉತ್ಥಾನಕಾರಿ ಸಮುದಾಯಕ್ಕೆ ಸೇರಿ.</string>
+    <string name="already_have_account">ನನಗೆ ಈಗಾಗಲೇ ಖಾತೆ ಇದೆ</string>
+
+    <string name="my_shop">ನನ್ನ ಅಂಗಡಿ</string>
+    <string name="optimize_insights">ಪಟ್ಟಿ ಮತ್ತು ಒಳನೋಟಗಳನ್ನು ಆಪ್ಟಿಮೈಸ್ ಮಾಡಿ</string>
+
+    <string name="shop_info">ಅಂಗಡಿ ಮಾಹಿತಿ</string>
+    <string name="shop_info_desc">ಖರೀದಿದಾರರು ನಿಮ್ಮ ಕಲೆಯ ಬಗ್ಗೆ ಹೆಚ್ಚು ತಿಳಿಯಲು ನಿಮ್ಮ ಅಂಗಡಿ ವಿವರಗಳನ್ನು ನವೀಕರಿಸಿ.</string>
+    <string name="shop_name_label">ಅಂಗಡಿ ಹೆಸರು *</string>
+    <string name="craft_type_hint">ಕಲೆ ಪ್ರಕಾರ (ಉದಾ. ಕುಂಬಾರಿಕೆ, ನೇಯ್ಗೆ)</string>
+    <string name="village_label">ಹಳ್ಳಿ / ಸ್ಥಳ</string>
+    <string name="shop_bio">ಅಂಗಡಿ ಬಯೋ / ವಿವರಣೆ</string>
+    <string name="contact_details">ಸಂಪರ್ಕ ವಿವರಗಳು</string>
+    <string name="phone_number_label">ಫೋನ್ ಸಂಖ್ಯೆ</string>
+    <string name="email_address_label">ಇಮೇಲ್ ವಿಳಾಸ</string>
+    <string name="save_settings">ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಉಳಿಸಿ</string>
+    <string name="please_log_in">ದಯವಿಟ್ಟು ಮೊದಲು ಲಾಗಿನ್ ಆಗಿ</string>
+    <string name="settings_save_failed">ಉಳಿಸುವಲ್ಲಿ ವಿಫಲ: %1$s</string>
+
+    <string name="discover_crafts">ಕಲೆಗಳನ್ನು ಅನ್ವೇಷಿಸಿ</string>
+</resources>

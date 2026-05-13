@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Halli-Santhe - Product Detail</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Epilogue:ital,wght@0,600;0,700;0,900;1,900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-tint": "#9e4127",
+                      "tertiary-fixed": "#c7ecc7",
+                      "primary-fixed-dim": "#ffb5a1",
+                      "on-tertiary-fixed-variant": "#2f4e33",
+                      "secondary": "#8f4e00",
+                      "tertiary": "#446347",
+                      "on-tertiary-container": "#f7fff3",
+                      "on-primary-fixed-variant": "#7f2a12",
+                      "secondary-container": "#fe9832",
+                      "on-secondary-fixed": "#2e1500",
+                      "on-primary-fixed": "#3b0800",
+                      "inverse-surface": "#392e2b",
+                      "surface-bright": "#fff8f6",
+                      "surface": "#fff8f6",
+                      "surface-container-high": "#f7e4df",
+                      "on-secondary-container": "#683700",
+                      "surface-container-low": "#fff1ed",
+                      "on-error-container": "#93000a",
+                      "outline-variant": "#ddc0b9",
+                      "primary": "#9b3f25",
+                      "on-surface-variant": "#56423d",
+                      "surface-dim": "#e9d6d1",
+                      "on-tertiary": "#ffffff",
+                      "inverse-primary": "#ffb5a1",
+                      "error": "#ba1a1a",
+                      "primary-fixed": "#ffdbd1",
+                      "on-secondary-fixed-variant": "#6d3a00",
+                      "surface-container-highest": "#f2deda",
+                      "error-container": "#ffdad6",
+                      "on-surface": "#231917",
+                      "on-primary": "#ffffff",
+                      "on-primary-container": "#fffbff",
+                      "outline": "#89726c",
+                      "inverse-on-surface": "#ffede9",
+                      "secondary-fixed-dim": "#ffb77a",
+                      "primary-container": "#bb563b",
+                      "surface-container": "#fdeae5",
+                      "tertiary-container": "#5c7c5e",
+                      "background": "#fff8f6",
+                      "surface-variant": "#f2deda",
+                      "tertiary-fixed-dim": "#acd0ac",
+                      "secondary-fixed": "#ffdcc2",
+                      "on-tertiary-fixed": "#02210a",
+                      "on-background": "#231917"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base": "8px",
+                      "xl": "80px",
+                      "xs": "4px",
+                      "md": "24px",
+                      "margin-desktop": "64px",
+                      "lg": "48px",
+                      "sm": "12px",
+                      "margin-mobile": "20px",
+                      "gutter": "16px"
+              },
+              "fontFamily": {
+                      "headline-md": ["Epilogue"],
+                      "headline-lg": ["Epilogue"],
+                      "body-md": ["Be Vietnam Pro"],
+                      "display-xl": ["Epilogue"],
+                      "label-md": ["Be Vietnam Pro"],
+                      "body-lg": ["Be Vietnam Pro"],
+                      "label-sm": ["Be Vietnam Pro"]
+              },
+              "fontSize": {
+                      "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                      "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                      "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                      "display-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                      "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                      "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                      "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-filled {
+            font-variation-settings: 'FILL' 1;
+        }
+        /* Custom subtle grain overlay to mimic tactile paper/clay feel */
+        .bg-tactile {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-md bg-tactile pb-[100px] md:pb-0 antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Task-Focused Top Bar (Suppresses Global Nav) -->
+<header class="fixed top-0 w-full z-40 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 transition-all duration-300">
+<div class="max-w-5xl mx-auto flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16">
+<button class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container hover:bg-surface-variant transition-colors border border-outline-variant/50 group">
+<span class="material-symbols-outlined text-on-surface group-hover:text-primary transition-colors" data-icon="arrow_back">arrow_back</span>
+</button><img alt="Halli-Santhe Logo" class="w-auto object-contain mx-auto h-12" src="https://lh3.googleusercontent.com/aida/ADBb0uiHzAqeJy7IaEttjT8DD-k5nnt2a-liQk60yXROA1yIPVu0Z-jO-Fy2rrAMwEoZqtjx1af3jAzhl4Gf5zBOyPg9k89F2fyYYVkNO0iGJBC6Oz1KcJDPJBB4mN_CumHsc8dIis7w5e222JwNoEk-uiOgtWokahbvIuU2lzAx_d5w91EIPiZH8OVwDtkagdKjPtdI34iudD7DmGkKDtUJ6EXg3-sG4T1kwxNBBj1AWcGN9vZCuXvxI7ZcoYzMHX4PY75FBhWbvc1tX7A"/>
+<div class="flex gap-sm">
+<button class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container hover:bg-surface-variant transition-colors border border-outline-variant/50">
+<span class="material-symbols-outlined text-on-surface" data-icon="favorite_border">favorite_border</span>
+</button>
+<button class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container hover:bg-surface-variant transition-colors border border-outline-variant/50">
+<span class="material-symbols-outlined text-on-surface" data-icon="share">share</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-5xl mx-auto pt-16 md:pt-24 px-0 md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-y-8 md:gap-x-md items-start">
+<!-- Image Gallery Canvas (Left Column Desktop) -->
+<div class="w-full md:col-span-7 relative">
+<div class="w-full aspect-[4/5] md:aspect-square bg-surface-container-high md:rounded-2xl overflow-hidden relative border-b md:border border-outline-variant/50 shadow-sm">
+<img alt="Close-up of vibrant, hand-painted wooden Channapatna toys including a stacking train and rings, sitting on a rustic woven mat with warm, soft natural sunlight highlighting the glossy lacquer finish" class="w-full h-full object-cover" data-alt="Close-up of vibrant, hand-painted wooden Channapatna toys including a stacking train and rings, sitting on a rustic woven mat with warm, soft natural sunlight highlighting the glossy lacquer finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWBw5kf9aoX5MKBbihK0zqoENE1hpA6T1bOwcUwI7CGoYQgO9zPC37sr29ZXLHsWW80VpdBUsKJQZG-2B_7bpCzJubBnDB40zTfja6NsWWlWjn5OtlgvOp-vSpsrsWb4xCv_4dDJbL7W8DKZFZ02BFw8ajis3XXEyEDmjeqZAVKEqD5Taswe9oMkc9a4ufsEZXpw1Rpk-38KOJzBNCB5EfgN-J9L4bwxlTSxJmGrGTnV7DVjCWcE8bqgjfod_SAO5y97BC27aibNvo"/>
+<!-- Trust Badge Stamp -->
+<div class="absolute top-md right-md w-20 h-20 bg-surface/90 backdrop-blur-sm rounded-full border border-primary/20 flex flex-col items-center justify-center shadow-lg rotate-12">
+<span class="material-symbols-outlined text-primary text-[28px] icon-filled mb-xs" data-icon="verified">verified</span>
+<span class="font-label-sm text-label-sm text-primary uppercase text-center leading-tight scale-90">Authentic<br/>Craft</span>
+</div>
+</div>
+<!-- Thumbnail Strip -->
+<div class="hidden md:flex gap-sm mt-sm px-margin-mobile md:px-0">
+<button class="w-20 h-20 rounded-lg overflow-hidden border-2 border-primary ring-2 ring-primary-container/20"><img alt="Thumbnail 1" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4OpCXdxShyV4Y0TwmnUM_VxvEJ3DdWiY_QC_ZflYx0PCsXY5Tt0EIlEnp3cPZZeu0AlRcWKpvl5Z8xyLp2bk2P6c9gOsC3W30QDhn5GvrDJaT4tcQuN2PT-9aS-QP_1IF_l6Ye-Wxy0isajn5TgIfiqF_OMk1f-FlGt6iFfv9UKuS41ibiJdvk0RmRTZk7DkpoZl2On9zH93Z9_dxC5D5V1v7FDHUJiA9e_Z9vVvsFgc-UybMxULnQ3hdiZ_fNO97WmVuqahzu0Ni"/></button>
+<button class="w-20 h-20 rounded-lg overflow-hidden border border-outline-variant opacity-70 hover:opacity-100 transition-opacity"><img alt="Thumbnail 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4526u8gU0fVl1eWXxmuM7upjxyJGFwjxubW6UhsdS0QNRV5F1NlTNbhpcCyxhI7qME70SgzfOY7Q-XetZSGxFmIQbIEfUc3HO5M0qPAkg-BiO_h8MKZlqmkil7daj8DM_sw6yg_ZnhMKq4ECNYyYfqSS82YhSw2Q_6ZCWCa7OLbg7fPHBvIzCeu4U8nkiifivRpJ4AnAh9sjW-c2S5ZHsimk5ruO6oo0V5XKVWWLYRureJiVZduxETV4bJgner2s2QllY94cXqm0y"/></button>
+<button class="w-20 h-20 rounded-lg overflow-hidden border border-outline-variant opacity-70 hover:opacity-100 transition-opacity"><img alt="Thumbnail 3" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvX1-Mw-GopXO1HN8sw4TrJgnkuZx_ms9gdPV7vMC68Adp_fPUnpGbsQVqZVgddwdXXB_HESOIt_rdb6dKHoG_MIuVPLk4939HoGrIjSWaU10Pj7F8tnuZ6sb8CFiu3bR4iXBI1lPh7LqHkUg17kpPrrIhRF_2J-I2DNpqLRWl-O98u77lek_iD4M2TmsBB11Ek1kY8byfWWZEzIy0-LFam6ZDJ3VLe7aTMi1itTEuut_YChqNOgG3XT_udpjoyWjWvw2sJI6tT9sv"/></button>
+</div>
+</div>
+<!-- Product Details Canvas (Right Column Desktop) -->
+<div class="w-full px-margin-mobile md:px-0 md:col-span-5 flex flex-col gap-lg pb-md md:sticky md:top-24">
+<!-- Core Info -->
+<section class="flex flex-col gap-sm">
+<!-- Tags/Chips -->
+<div class="flex flex-wrap gap-base">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-container/20 text-on-secondary-container border border-secondary-container/30 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] mr-1" data-icon="eco">eco</span>
+                        Non-Toxic Colors
+                    </span>
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-tertiary-container/20 text-on-tertiary-container border border-tertiary-container/30 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] mr-1" data-icon="handyman">handyman</span>
+                        Hand-turned Wood
+                    </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-background mt-xs">Classic Channapatna Stacking Train Set</h1>
+<div class="flex items-baseline gap-base mt-2">
+<span class="font-display-xl text-display-xl text-primary">₹850</span>
+<span class="font-body-md text-body-md text-on-surface-variant line-through">₹1,200</span>
+</div>
+<p class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Taxes included. Free shipping on artisan direct orders.</p>
+</section>
+<!-- Divider -->
+<hr class="border-t border-outline-variant/40"/>
+<!-- Artisan Card (Bento Style) -->
+<section class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md shadow-sm relative overflow-hidden group hover:border-primary/40 transition-colors cursor-pointer">
+<!-- Decorative background subtle pattern -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
+<div class="flex items-center gap-md">
+<div class="w-16 h-16 rounded-full overflow-hidden border-2 border-surface-container p-[2px] bg-gradient-to-tr from-secondary-container to-primary-container shrink-0">
+<img alt="Portrait of Gowramma, an elderly Indian artisan woman smiling warmly" class="w-full h-full object-cover rounded-full" data-alt="Portrait of Gowramma, an elderly Indian artisan woman smiling warmly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzLKJAUFbSI2TOjXQUKXfwVf-I0_XZ8zt2mUBHNco2XQciAiYS4l3K4jeGbrJ_PxZCNWwhP4qjW9PCpVc552ydR_sECObZbBYRAsHZPpR9hZLpIS4zeFG6CSIRzMCiMh6p0JfErMOIZIXOBS1LfXh0G28wx5q2gvUfaOlgOzRsBzT1DFNDB7Lu_iHYbsPWCMR8TCaJA5d0BPW9a-zd3zuzR-MTEgosCTpxai06SjAeSrMuq_D_xttMzFpEw993Ltp6BBBGVcvXE9-3"/>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Crafted By</p>
+<h3 class="font-headline-md text-[20px] leading-tight text-on-background">Gowramma &amp; Family</h3>
+<div class="flex items-center gap-1 text-secondary mt-1">
+<span class="material-symbols-outlined text-[16px]" data-icon="location_on">location_on</span>
+<span class="font-body-md text-[14px]">Channapatna, Karnataka</span>
+</div>
+</div>
+<div class="ml-auto">
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Heritage & Description Accordion/Content -->
+<section class="flex flex-col gap-md">
+<div>
+<h4 class="font-headline-md text-[20px] text-on-background mb-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="auto_stories">auto_stories</span>
+                        The Heritage
+                    </h4>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Rooted in a 200-year-old tradition patronized by Tipu Sultan, these toys are crafted from ivory-wood (Aale Mara). The distinct vibrant colors are achieved entirely through natural vegetable dyes—turmeric for yellow, indigo for blue, and kumkum for red—sealed with natural shellac for a safe, glossy finish.
+                    </p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-md border border-outline-variant/30">
+<h4 class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-sm">Product Details</h4>
+<ul class="font-body-md text-body-md text-on-surface-variant space-y-2">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-[18px] text-primary mt-1" data-icon="check_circle">check_circle</span> 100% Child-Safe &amp; Non-Toxic</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-[18px] text-primary mt-1" data-icon="check_circle">check_circle</span> Dimensions: 12cm x 8cm x 15cm</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-[18px] text-primary mt-1" data-icon="check_circle">check_circle</span> Weight: 350 grams</li>
+</ul>
+</div>
+</section>
+</div>
+</main>
+<!-- Sticky Action Area (Check Stock / Message Seller CTA) -->
+<div class="fixed md:sticky bottom-0 w-full md:w-auto z-50 bg-surface/95 backdrop-blur-md border-t md:border border-outline-variant/50 p-4 pb-safe md:p-md md:m-margin-desktop md:rounded-2xl shadow-[0_-8px_20px_rgba(155,63,37,0.08)] md:shadow-lg flex flex-col items-center gap-2">
+<button class="w-full max-w-md bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container font-headline-md text-[18px] py-4 rounded-xl shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined icon-filled" data-icon="chat">chat</span>
+            Check Stock &amp; Connect
+        </button>
+<p class="font-label-sm text-label-sm text-on-surface-variant text-center">
+            Message Gowramma directly to check availability.
+        </p>
+</div>
+</body></html>
