@@ -93,9 +93,9 @@ object SampleData {
             artisan = "Sunita Bai",
             location = "Madhya Pradesh",
             price = 320,
-            imageUrl = "https://lh3.googleusercontent.com/aida-public/AB6AXuBaswKqcfnVW8hzXhR85kuKLVbhc0uofKGMmBkGrP6v2TlW-lrIo1BoaLRkkKCWLUy5CL38k_MbVBqZvhD27PmOl-ZpF-xumx3HX6cxtbZjJQBbJeuL8KuTBvtOjnCPWpnlX80UNz8Xk9OtDGh8bML7A-URC-Biw1PLNBFyiRgRmnDNccZUz0YVPNlt_chbRN8LsZfO9Z8GebPbyUYquBwArAYNCqXUbL6pZLycerCBFJucq3JlhnYYcM6LOTh7KNvflb_VAGoK5DPQ",
+            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/b/b9/Tea_served_in_Kulhar_in_India.jpg",
             category = "terracotta",
-            description = "Small handmade terracotta tea cups arranged on a wooden board."
+            description = "Traditional clay kulhads (tea cups) used for serving chai across India."
         ),
         Product(
             id = "p7",
@@ -196,7 +196,7 @@ object SampleData {
             artisan = "Devika Sharma",
             location = "Jaipur, Rajasthan",
             price = 350,
-            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/d/d3/Making_of_Lac_Bangles_at_Aadi_Mahotsav_in_Delhi_28.jpg",
+            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/1/10/India_-_Delhi_-_048_-_Bright_Bangles_%282146857390%29.jpg",
             category = "jewelry",
             tags = listOf("Vibrant Colors", "Lightweight"),
             description = "Set of 6 hand-crafted lac bangles in ruby red, emerald green and gold mirror work."
@@ -241,7 +241,7 @@ object SampleData {
             artisan = "Ramesh Kumar",
             location = "Jaipur, Rajasthan",
             price = 720,
-            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/c/cc/Blue_Pottery%2C_Albert_Hall_Museum%2C_Jaipur.jpg",
+            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/3/3e/Blue_Pottery%2C_Jaipur_School_of_Art.jpg",
             category = "terracotta",
             tags = listOf("Turquoise", "Microwave Safe"),
             description = "Jaipur blue pottery bowl with Persian-inspired floral patterns in turquoise and cobalt blue."
@@ -253,7 +253,7 @@ object SampleData {
             location = "Kolhapur, Maharashtra",
             price = 1100,
             originalPrice = 1400,
-            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/9/91/Kolhapuri_foot_wear_in_Hyderabad%2C_India.jpg",
+            imageUrl = "drawable://kolhapuri_chappal",
             category = "leather",
             tags = listOf("Durable", "Water Resistant"),
             isFeatured = true,
@@ -265,7 +265,7 @@ object SampleData {
             artisan = "Northeast Artisans Co-op",
             location = "Assam",
             price = 580,
-            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/a/a1/A_bamboo_basket_image_1.JPG",
+            imageUrl = "drawable://bamboo_spice_box",
             category = "basketry",
             tags = listOf("7 Compartments", "Airtight Lid"),
             description = "Handwoven bamboo masala dabba with 7 compartments and natural cork lid to keep spices fresh."
@@ -383,7 +383,7 @@ object SampleData {
     )
 
     val bannerImageUrl =
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuATpzSLCRgJOe3Nuzkkaj6W2txVi5dir1XLu1DqVcQWLwOUsvVHK12Et-ji12R31jP5PHv6oT5sIccddrWPwzqUZbhHKi7TzF25Q59dEalhbwuKN4Cj6LiArLStqBx9mfXS7iRh_iA2edUql-wP_277BR-7TeQJBApOhzwb9E7kKsUF_FCHJtvwLmbOgAbS3vde3K1UaA4S87OXiR26uNTRKly2VPVd4uhDHQFtIIauZcHUQV2r7Djff4tW9cBlh6XfOyl6GFHbBbun"
+        "drawable://banner_fresh_loom"
 
     val orders = listOf(
         Order("ORD1001", "24 Oct 2023", "Delivered", listOf(CartItem(products[0], 1)), 450),

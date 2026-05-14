@@ -22,6 +22,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import coil.compose.AsyncImage
+import com.example.hallisanthe.ui.components.ProductImage
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import com.example.hallisanthe.data.CartViewModel
@@ -97,8 +98,8 @@ fun ProductDetailScreen(navController: NavController, productId: String, cartVie
                         .height(350.dp)
                         .background(SurfaceVariant)
                 ) {
-                    AsyncImage(
-                        model = product.imageUrl,
+                    ProductImage(
+                        imageUrl = product.imageUrl,
                         contentDescription = product.name,
                         modifier = Modifier.fillMaxSize(),
                         contentScale = ContentScale.Crop

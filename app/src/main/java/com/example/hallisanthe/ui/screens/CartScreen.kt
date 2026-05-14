@@ -24,6 +24,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import coil.compose.AsyncImage
+import com.example.hallisanthe.ui.components.ProductImage
 import com.example.hallisanthe.data.CartItem
 import com.example.hallisanthe.data.CartViewModel
 import com.example.hallisanthe.ui.theme.*
@@ -115,8 +116,8 @@ fun CartItemRow(item: CartItem, onIncrease: () -> Unit, onDecrease: () -> Unit) 
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
     ) {
         Row(modifier = Modifier.padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
-            AsyncImage(
-                model = item.product.imageUrl,
+            ProductImage(
+                imageUrl = item.product.imageUrl,
                 contentDescription = item.product.name,
                 modifier = Modifier
                     .size(90.dp)

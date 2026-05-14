@@ -18,7 +18,7 @@ import com.example.hallisanthe.data.local.entity.ProductEntity
 
 @Database(
     entities = [ProductEntity::class, ArtisanEntity::class, CategoryEntity::class, EnquiryEntity::class, OrderEntity::class],
-    version = 2,
+    version = 7,
     exportSchema = false
 )
 @TypeConverters(Converters::class)

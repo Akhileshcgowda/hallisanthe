@@ -37,6 +37,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import coil.compose.AsyncImage
+import com.example.hallisanthe.ui.components.ProductImage
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import com.example.hallisanthe.data.CartViewModel
@@ -148,12 +149,12 @@ fun HomeScreen(navController: NavController, cartViewModel: CartViewModel, wishl
                     Box(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .aspectRatio(21f / 9f)
+                            .aspectRatio(16f / 9f)
                             .shadow(4.dp, RoundedCornerShape(12.dp), spotColor = Primary)
                             .clip(RoundedCornerShape(12.dp))
                     ) {
-                        AsyncImage(
-                            model = "https://lh3.googleusercontent.com/aida-public/AB6AXuCXqI5h8Ayw-ubyU6YWmfRRVvv0hpjrns4dfLN0KzdogXdtfUYpTUidmfivGplZenG6_cDvzp1W-qQ1PKVoG6ACi20FOYnKhQEixUaTKmXr6BrGkujnnDhIYIPDySRggJx8xKEG-NWpiUAbbTcVvAyqyLmzirYbQ3PU82sSnWwJY6ial104obw8xom_tU6JSPzs2k47GgSE-4ffzau7lEL82lBl38hySulFmWkbEYn2zO94U_f5t4-WSQ9RKcOeudIvBB1rh-RcaZo",
+                        ProductImage(
+                            imageUrl = "drawable://banner_fresh_loom",
                             contentDescription = "Fresh from the Loom",
                             modifier = Modifier.fillMaxSize(),
                             contentScale = ContentScale.Crop
@@ -290,8 +291,8 @@ fun ProductCardMatched(product: com.example.hallisanthe.data.Product, cartViewMo
             .clickable { navController.navigate("product/${product.id}") }
     ) {
         Box(modifier = Modifier.fillMaxWidth().aspectRatio(1f)) {
-            AsyncImage(
-                model = product.imageUrl,
+            ProductImage(
+                imageUrl = product.imageUrl,
                 contentDescription = product.name,
                 modifier = Modifier.fillMaxSize().clip(RoundedCornerShape(topStart = 16.dp, topEnd = 16.dp)),
                 contentScale = ContentScale.Crop

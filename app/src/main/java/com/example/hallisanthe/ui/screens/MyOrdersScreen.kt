@@ -27,6 +27,7 @@ import androidx.navigation.NavController
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import coil.compose.AsyncImage
+import com.example.hallisanthe.ui.components.ProductImage
 import com.example.hallisanthe.data.local.entity.OrderEntity
 import com.example.hallisanthe.data.local.entity.OrderItemSnapshot
 import com.example.hallisanthe.data.viewmodel.OrderViewModel
@@ -119,10 +120,10 @@ fun OrderItemCard(order: OrderEntity) {
 
             items.forEach { item ->
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    AsyncImage(
-                        model = item.imageUrl,
+                    ProductImage(
+                        imageUrl = item.imageUrl,
                         contentDescription = null,
-                        modifier = Modifier.size(60.dp).clip(RoundedCornerShape(8.dp)),
+                        modifier = Modifier.size(60.dp),
                         contentScale = ContentScale.Crop
                     )
                     Spacer(Modifier.width(16.dp))

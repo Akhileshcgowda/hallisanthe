@@ -31,6 +31,17 @@ android {
             ""
         }
         buildConfigField("String", "GEMINI_API_KEY", "\"$geminiApiKey\"")
+
+        val googleWebClientId = if (localProperties.exists()) {
+            Properties().apply { load(localProperties.inputStream()) }
+                .getProperty("GOOGLE_WEB_CLIENT_ID", "")
+                .trim()
+                .removeSurrounding("\"")
+                .removeSurrounding("'")
+        } else {
+            ""
+        }
+        buildConfigField("String", "GOOGLE_WEB_CLIENT_ID", "\"$googleWebClientId\"")
     }
 
     buildTypes {

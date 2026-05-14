@@ -1,5 +1,6 @@
 package com.example.hallisanthe.ui.screens
 
+import com.example.hallisanthe.BuildConfig
 import com.example.hallisanthe.R
 import android.app.Activity
 import android.util.Log
@@ -462,7 +463,7 @@ fun LoginRegisterScreen(navController: NavController, isSeller: MutableState<Boo
                         }
                     }
 
-                    val webClientId = "YOUR_WEB_CLIENT_ID"
+                    val webClientId = BuildConfig.GOOGLE_WEB_CLIENT_ID
 
                     OutlinedButton(
                         onClick = {
