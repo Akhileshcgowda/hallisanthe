@@ -107,7 +107,23 @@ app/
 |-----------|-------------|--------|---------|
 | ![Dashboard](screenshots/seller_dashboard.png) | ![Add Product](screenshots/add_product.png) | ![Seller Orders](screenshots/seller_orders.png) | ![Profile](screenshots/buyer_profile.png) |
 
-## 🎨 UI/UX Design
+## � Demo
+
+### Live Demo (Browser)
+Try the app instantly in your browser using Appetize.io:
+- **Link**: *Coming soon* - [Request access to Android emulator preview](https://appetize.io/)
+
+### Video Walkthrough
+Watch a complete walkthrough of Halli Santhe features:
+- **YouTube**: *Coming soon* - [Link to be added after recording]
+
+### APK Download
+Install the latest debug APK directly on your Android device:
+- **GitHub Releases**: *Coming soon* - [Download APK](https://github.com/Akhileshcgowda/hallisanthe/releases)
+
+> 💡 **For Evaluators**: The project builds and runs locally with `./gradlew installDebug`. All core features work without API keys using intelligent fallback responses.
+
+## �🎨 UI/UX Design
 
 ### Design System
 - **Material Design 3**: Modern, adaptive design system
