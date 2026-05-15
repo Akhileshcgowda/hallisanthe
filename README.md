@@ -93,6 +93,8 @@ app/
    ./gradlew installDebug
    ```
 
+> ⚠️ **Important:** The project requires `local.properties` with `GEMINI_API_KEY` to build successfully. Without it, the AI assistant features will run in offline fallback mode. See step 3 above for configuration details.
+
 ## 📸 Screenshots
 
 ### Buyer Experience
