@@ -36,7 +36,7 @@ object SampleData {
             artisan = "Ravi Kumar",
             location = "Karnataka",
             price = 450,
-            imageUrl = "https://lh3.googleusercontent.com/aida-public/AB6AXuB-wOy7476DgerlknxStWYuXJhw2HMKJkUB6Rd2IgnDk9x-GlWtIu4QkqZO3iIJB0i97OwEiSBQoK6-rPaR_Vo4BjnXYCYDWdu6XyYQ_Ix2-GuwRBGEbFfy30P7YghBkG45cz2dWY0qysON9dtwGpoN9pnYVvI_5UD9z7BOT0Q8fg2GCd7o5uC4dCZXsdxgoxz6z1bqbUvybjmh42pI5yih-5rJv469v4zdIsZgT7FOavul1kLWIh1ENW4z3Kwni2gWqaa4TaDLvIYg",
+            imageUrl = "drawable://chanapatana_train",
             category = "toys",
             tags = listOf("Handcrafted"),
             description = "Vibrant hand-painted wooden toys in bright lacquer colors. Made using the 200-year-old Channapatna craft tradition.",
