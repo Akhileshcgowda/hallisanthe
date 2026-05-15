@@ -120,14 +120,16 @@ Watch a complete walkthrough of Halli Santhe features:
 ### APK Download
 Install the latest debug APK directly on your Android device:
 
-**📱 [Download hallisanthe-debug.apk](./apk/hallisanthe-debug.apk)** (28.3 MB)
+**📱 [Download hallisanthe-debug.apk](https://github.com/Akhileshcgowda/hallisanthe/releases)** (28.3 MB)
 
-- **Version**: Debug Build
+- **Version**: Debug Build v1.0.0
 - **Size**: 28.3 MB
 - **Requirements**: Android 8.0+ (API 26+)
 - **Installation**: Enable "Install from Unknown Sources" in Settings → Security
 
 > ⚠️ **Debug Build**: This is a debug APK for evaluation purposes. Some features require local.properties setup for full functionality.
+> 
+> 📝 **Note**: APK is distributed via GitHub Releases to keep the repository size optimized.
 
 > 💡 **For Evaluators**: The project builds and runs locally with `./gradlew installDebug`. All core features work without API keys using intelligent fallback responses.
 
