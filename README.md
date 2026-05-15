@@ -103,7 +103,7 @@ app/
 ### Seller Experience
 | Dashboard | Add Product | Orders | Profile |
 |-----------|-------------|--------|---------|
-| ![Dashboard](screenshots/seller_dashboard.png) | ![Add Product](screenshots/add_product.png) | ![Seller Orders](screenshots/seller_orders.png) | ![Profile](screenshots/seller_profile.png) |
+| ![Dashboard](screenshots/seller_dashboard.png) | ![Add Product](screenshots/add_product.png) | ![Seller Orders](screenshots/seller_orders.png) | ![Profile](screenshots/buyer_profile.png) |
 
 ## 🎨 UI/UX Design
 
